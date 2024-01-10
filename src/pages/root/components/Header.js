@@ -24,8 +24,8 @@ export default function Header() {
 
   return (
     <>
-      <div className="flex flex-row justify-between">
-        <div className="m-4 sm:m-6">
+      <div className="relative flex flex-row justify-between">
+        <div className="m-4  sm:m-6">
           <span className=" text-xl font-bold text-gray-800">Shoes</span>
           <span className="ml-1 rounded-md bg-orange-600 p-2 text-xl font-bold text-white">
             HUB
@@ -35,7 +35,7 @@ export default function Header() {
           <div className=" mx-3 text-2xl text-gray-800">
             <button className="relative">
               <TbShoppingBag aria-label="Shopping Cart" title="Shopping Cart" />
-              <span className=" absolute bottom-[-5px] right-[-5px]  h-[1.15rem] w-[1.15rem] rounded-full bg-orange-600  text-sm text-white">
+              <span className=" absolute bottom-[-7px] right-[-7px]  h-[1.15rem] w-[1.15rem] rounded-full bg-orange-600  text-sm text-white">
                 2
               </span>
             </button>
@@ -61,7 +61,7 @@ export default function Header() {
           <li className="m-4 sm:m-6">
             <NavLink
               className={({ isActive }) =>
-                `font-medium ${
+                `font-medium sm:text-xl  ${
                   isActive ? " text-orange-600" : " text-gray-800"
                 } `
               }
@@ -73,7 +73,7 @@ export default function Header() {
           <li className="m-4 sm:m-6">
             <NavLink
               className={({ isActive }) =>
-                `font-medium ${
+                `font-medium sm:text-xl  ${
                   isActive ? " text-orange-600" : " text-gray-800"
                 } `
               }
@@ -85,7 +85,7 @@ export default function Header() {
           <li className="m-4 sm:m-6">
             <NavLink
               className={({ isActive }) =>
-                ` font-medium${
+                ` font-medium sm:text-xl ${
                   isActive ? " text-orange-600" : " text-gray-800"
                 } `
               }
