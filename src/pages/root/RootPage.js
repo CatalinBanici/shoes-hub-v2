@@ -5,8 +5,8 @@ import Footer from "./components/Footer";
 
 export default function RootPage() {
   return (
-    <body>
-      <header>
+    <div className="font-roboto font-regular m-auto flex max-w-[1800px] flex-col ">
+      <header className="relative flex flex-col">
         <Header />
       </header>
       <main>
@@ -15,6 +15,6 @@ export default function RootPage() {
       <footer>
         <Footer />
       </footer>
-    </body>
+    </div>
   );
 }
