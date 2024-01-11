@@ -35,7 +35,7 @@
     {
       "id": "sneakers-1",
       "name": "New Fashion Men Sneakers",
-      "category": "sneakers",
+      "category": "walkers",
       "description": "2023 New Fashion Men Sneakers For Men Casual Shoes Breathable Lace Up Mens Casual Shoes Spring Shoes Men Chaussure Homme.",
       "stock": [
         {
@@ -252,7 +252,7 @@
     {
       "id": "sneakers-2",
       "name": "Running Shoes Lightweight",
-      "category": "sneakers",
+      "category": "dark walkers",
       "description": "Summer Autumn Running Shoes for Men Lightweight Design Quick-Dry Marathon Shock Absorption Support Male Sneakers.",
       "stock": [
         {
@@ -401,7 +401,7 @@
     {
       "id": "sneakers-3",
       "name": "Leather Loafers Casual Shoes For Men",
-      "category": "sneakers",
+      "category": "runners",
       "description": "Genuine Suede Leather Men Loafers Casual Shoes Men Sneakers Laup Oxford Shoes Outdoor Jogging Shoes Board Shoes Safety Shoes",
       "stock": [
         {
