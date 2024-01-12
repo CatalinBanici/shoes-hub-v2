@@ -114,12 +114,12 @@ export const productsSlice = createSlice({
       });
 
       if (productColors.length === 0) {
-        if (priceSortType === "price+") {
+        if (priceSortType === "price-asc") {
           const priceAsc = filteredProductsCopy.sort((a, b) => {
             return a.price.current < b.price.current ? -1 : 1;
           });
           state.colorFilteredAndPriceSortedProducts = priceAsc;
-        } else if (priceSortType === "price-") {
+        } else if (priceSortType === "price-desc") {
           const priceDesc = filteredProductsCopy.sort((a, b) => {
             return a.price.current > b.price.current ? -1 : 1;
           });
@@ -128,13 +128,13 @@ export const productsSlice = createSlice({
           return filteredProductsCopy;
         }
       } else {
-        if (priceSortType === "price+") {
+        if (priceSortType === "price-asc") {
           state.colorFilteredAndPriceSortedProducts = productColors.sort(
             (a, b) => {
               return a.price.current < b.price.current ? -1 : 1;
             },
           );
-        } else if (priceSortType === "price-") {
+        } else if (priceSortType === "price-desc") {
           state.colorFilteredAndPriceSortedProducts = productColors.sort(
             (a, b) => {
               return a.price.current > b.price.current ? -1 : 1;
@@ -146,6 +146,7 @@ export const productsSlice = createSlice({
       }
 
       // saving the state to session storage
+      console.log(state.colorFilteredAndPriceSortedProducts);
       const saveState = JSON.stringify(
         state.colorFilteredAndPriceSortedProducts,
       );

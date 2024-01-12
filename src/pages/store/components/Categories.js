@@ -5,6 +5,7 @@ import {
   filterByCategoryFemale,
   filterByCategoryMale,
   filterByGender,
+  resetFilterByColorAndSortByPrice,
 } from "../../../redux/features/slices/productsSlice";
 import { createSelector } from "@reduxjs/toolkit";
 
@@ -41,12 +42,13 @@ export default function Categories() {
           <button
             className={`${
               (showMaleCategories && " bg-gray-800 text-white") ||
-              " text-gray-800"
+              " bg-white text-gray-800"
             } m-2 rounded-full border-2 border-solid border-gray-800 px-6 py-px`}
             onClick={() => {
               dispatch(filterByGender("male"));
               setShowMaleCategories(!showMaleCategories);
               setShowFemaleCategories(false);
+              dispatch(resetFilterByColorAndSortByPrice());
             }}
           >
             Men
@@ -54,12 +56,13 @@ export default function Categories() {
           <button
             className={`${
               (showFemaleCategories && " bg-gray-800 text-white") ||
-              " text-gray-800"
+              " bg-white text-gray-800"
             } m-2 rounded-full border-2 border-solid border-gray-800 px-6 py-px`}
             onClick={() => {
               dispatch(filterByGender("female"));
               setShowFemaleCategories(!showFemaleCategories);
               setShowMaleCategories(false);
+              dispatch(resetFilterByColorAndSortByPrice());
             }}
           >
             Women
@@ -74,14 +77,15 @@ export default function Categories() {
                   className={`m-2 min-w-fit rounded-full border-2 border-solid border-gray-800 px-6 py-px ${
                     newSelectedCategories.toString() === category
                       ? " bg-gray-800 text-white"
-                      : " text-gray-800"
+                      : " bg-white text-gray-800"
                   }`}
                   key={index}
                   onClick={() => {
                     dispatch(filterByCategoryMale(category.toLowerCase()));
+                    dispatch(resetFilterByColorAndSortByPrice());
                   }}
                 >
-                  {category}
+                  {category.charAt(0).toUpperCase() + category.slice(1)}
                 </button>
               ))) ||
               (showFemaleCategories &&
@@ -90,14 +94,15 @@ export default function Categories() {
                     className={`m-2 min-w-fit rounded-full border-2 border-solid border-gray-800 px-6 py-px ${
                       newSelectedCategories.toString() === category
                         ? " bg-gray-800 text-white"
-                        : " text-gray-800"
+                        : " bg-white text-gray-800"
                     }`}
                     key={index}
                     onClick={() => {
                       dispatch(filterByCategoryFemale(category.toLowerCase()));
+                      dispatch(resetFilterByColorAndSortByPrice());
                     }}
                   >
-                    {category}
+                    {category.charAt(0).toUpperCase() + category.slice(1)}
                   </button>
                 )))}
           </div>
