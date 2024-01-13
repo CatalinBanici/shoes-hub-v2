@@ -84,36 +84,54 @@ export default function Filters() {
     filterByColor: singleColor,
     sortByPrice: price,
   };
+
+  console.log(filterAndSortValues);
   return (
-    <div className="p-2 lg:flex lg:flex-row-reverse">
+    <div className="p-2 lg:flex lg:flex-row-reverse lg:justify-around lg:bg-white">
       <div className=" flex flex-row items-center justify-around lg:justify-end">
         <button
           className="mx-2 flex h-8 w-full max-w-[40%] flex-row  items-center justify-around rounded-lg border-2 border-solid border-gray-800 bg-white px-2 py-px sm:w-[50%] sm:max-w-60  lg:hidden"
-          onClick={() => setShowFilters(!showFilters)}
+          onClick={() => setShowFilters((curr) => !curr)}
         >
           <span>Filters</span>
           <span className="flex flex-row">
             <IoFilterSharp />
-            <IoIosArrowDown />
+            <IoIosArrowDown className={showFilters && "rotate-180"} />
           </span>
         </button>
-        <div className="mx-2 flex h-8 max-w-[50%] flex-row rounded-lg border-2 border-solid border-gray-800 sm:w-[50%] sm:max-w-60 lg:w-full lg:max-w-none">
+        <div className="mx-2 flex h-8 max-w-[50%] flex-row rounded-lg border-2 border-solid border-gray-800 sm:w-[50%] sm:max-w-60 lg:w-96  lg:max-w-none">
           <input className="  w-full rounded-lg  px-2 py-px" type="search" />
           <button className="px-2">
             <IoMdSearch />
           </button>
         </div>
       </div>
-      <div className={`${showFilters ? "flex" : "hidden"} lg:flex `}>
-        <div>
-          <button ref={colorButtonRef} onClick={() => setColorMenu(!colorMenu)}>
+      <div
+        className={`${
+          showFilters
+            ? "mt-5 grid grid-cols-2 grid-rows-2 place-items-center bg-white py-2 sm:flex sm:flex-row sm:justify-evenly  "
+            : "hidden"
+        } lg:mt-0 lg:flex lg:w-full lg:flex-row lg:justify-around  lg:py-2  `}
+      >
+        {/* COLOR FILTER */}
+        <div className="relative m-2 flex min-w-fit flex-col items-center justify-center ">
+          <button
+            className={`${
+              colorMenu ? " bg-white " : "bg-gray-200"
+            } flex flex-row items-center justify-center rounded-md p-2 text-gray-800 shadow-md`}
+            ref={colorButtonRef}
+            onClick={() => setColorMenu((cur) => !cur)}
+          >
             Filter by Color{" "}
-            <span>{colorMenu ? <IoIosArrowUp /> : <IoIosArrowDown />}</span>
+            <IoIosArrowDown className={`${colorMenu && "rotate-180"} ml-1`} />
           </button>
           {colorMenu && (
-            <ul ref={colorMenuRef}>
+            <ul
+              className="absolute top-12 z-50 max-h-48 w-full overflow-y-auto rounded-md bg-white  shadow-md"
+              ref={colorMenuRef}
+            >
               {filteredColors.map((color, index) => (
-                <li className="p-2 " key={index}>
+                <li className="p-2 text-gray-800 " key={index}>
                   <input
                     className="cursor-pointer"
                     type="checkbox"
@@ -131,37 +149,54 @@ export default function Filters() {
             </ul>
           )}
         </div>
-        <div onChange={priceSort}>
-          <label htmlFor="price-asc">
+
+        {/* PRICE SORT */}
+        <div
+          className="m-2 flex max-w-fit flex-row items-center  justify-center rounded-md bg-gray-200 shadow-md"
+          onChange={priceSort}
+        >
+          <label
+            className=" relative z-20 p-2  text-gray-800 "
+            htmlFor="price-asc"
+          >
             Price Asc
             <input
+              className=" peer absolute left-0 top-0 h-full w-full cursor-pointer opacity-0"
               name="price-sort"
               id="price-asc"
               type="radio"
               value="price-asc"
               checked={price === "price-asc"}
             />
+            <span className="absolute left-0 top-0 -z-20 h-full w-full peer-checked:rounded-md peer-checked:border-2 peer-checked:border-solid peer-checked:border-gray-800"></span>
           </label>
-          <label htmlFor="price-desc">
+          <label
+            className=" relative z-20 p-2  text-gray-800 "
+            htmlFor="price-desc"
+          >
             Price Desc
             <input
+              className="  peer absolute left-0 top-0 h-full w-full cursor-pointer opacity-0"
               name="price-sort"
               id="price-desc"
               type="radio"
               value="price-desc"
               checked={price === "price-desc"}
             />
+            <span className="absolute left-0 top-0 -z-20 h-full w-full peer-checked:rounded-md peer-checked:border-2 peer-checked:border-solid peer-checked:border-gray-800"></span>
           </label>
         </div>
-        <div>
+
+        {/* APPLY AND RESET FILTERS */}
+        <div className=" col-span-2">
           <button
             onClick={() =>
               dispatch(filterByColorAndSortByPrice(filterAndSortValues))
             }
-            className="m-2 rounded-lg bg-gray-100 p-2 disabled:bg-white disabled:text-gray-400"
+            className="m-2 rounded-md bg-gray-200 p-2 text-gray-800 shadow-md disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none"
             disabled={
               !filterAndSortValues.filterByColor.length &&
-              filterAndSortValues.sortByPrice === null
+              filterAndSortValues.sortByPrice === "none"
             }
           >
             Apply Filters
@@ -170,9 +205,9 @@ export default function Filters() {
             onClick={() => {
               dispatch(resetFilterByColorAndSortByPrice());
               setFilteredColors(colors);
-              setPrice(null);
+              setPrice("none");
             }}
-            className="m-2 p-2 disabled:text-gray-400"
+            className="m-2 p-2 text-gray-800 disabled:text-gray-400"
           >
             Reset Filters
           </button>

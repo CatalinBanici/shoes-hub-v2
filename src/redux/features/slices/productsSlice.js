@@ -12,10 +12,7 @@ export const productsSlice = createSlice({
       JSON.parse(sessionStorage.getItem("categoryAndGenderFilteredProducts")) ||
       allProducts,
 
-    colorFilteredAndPriceSortedProducts:
-      JSON.parse(
-        sessionStorage.getItem("colorFilteredAndPriceSortedProducts"),
-      ) || [],
+    colorFilteredAndPriceSortedProducts: [],
 
     singleProduct:
       JSON.parse(sessionStorage.getItem("singleProduct")) || allProducts,
@@ -144,13 +141,6 @@ export const productsSlice = createSlice({
           state.colorFilteredAndPriceSortedProducts = productColors;
         }
       }
-
-      // saving the state to session storage
-      console.log(state.colorFilteredAndPriceSortedProducts);
-      const saveState = JSON.stringify(
-        state.colorFilteredAndPriceSortedProducts,
-      );
-      sessionStorage.setItem("colorFilteredAndPriceSortedProducts", saveState);
     },
 
     resetFilterByColorAndSortByPrice(state) {
