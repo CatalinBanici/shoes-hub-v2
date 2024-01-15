@@ -24,7 +24,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="relative flex flex-row justify-between">
+      <div className="relative flex flex-row justify-between border-b-2">
         <div className="m-4  sm:m-6">
           <span className=" text-xl font-bold text-gray-800">Shoes</span>
           <span className="ml-1 rounded-md bg-orange-600 p-2 text-xl font-bold text-white">

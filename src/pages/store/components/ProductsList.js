@@ -18,8 +18,8 @@ export default function ProductsList() {
   const dispatch = useDispatch();
 
   return (
-    <div className="flex flex-col">
-      <ul className="items-top m-10 flex flex-1 flex-wrap justify-around gap-10">
+    <div className="m-10 flex flex-col lg:col-span-3 lg:m-5 2xl:col-span-4">
+      <ul className="items-top  flex flex-1 flex-wrap justify-around gap-10">
         {colorFilteredAndPriceSortedProducts.length
           ? colorFilteredAndPriceSortedProducts.map((product) => (
               <li key={product.id}>

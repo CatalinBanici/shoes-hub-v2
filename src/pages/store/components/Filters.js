@@ -87,10 +87,10 @@ export default function Filters() {
 
   console.log(filterAndSortValues);
   return (
-    <div className="p-2 lg:flex lg:flex-row-reverse lg:justify-around lg:bg-white">
-      <div className=" flex flex-row items-center justify-around lg:justify-end">
+    <div className="p-2 lg:col-span-3 lg:m-5 lg:flex lg:flex-row-reverse lg:justify-around lg:bg-white 2xl:col-span-4">
+      <div className="flex flex-row items-center justify-around lg:w-[50%] lg:justify-end">
         <button
-          className="mx-2 flex h-8 w-full max-w-[40%] flex-row  items-center justify-around rounded-lg border-2 border-solid border-gray-800 bg-white px-2 py-px sm:w-[50%] sm:max-w-60  lg:hidden"
+          className="mx-2 flex h-8 w-full max-w-[40%] flex-row items-center  justify-around rounded-lg border-2 border-solid border-gray-800 bg-white px-2 py-px sm:w-[50%] sm:max-w-60   lg:hidden"
           onClick={() => setShowFilters((curr) => !curr)}
         >
           <span>Filters</span>
@@ -99,7 +99,7 @@ export default function Filters() {
             <IoIosArrowDown className={showFilters && "rotate-180"} />
           </span>
         </button>
-        <div className="mx-2 flex h-8 max-w-[50%] flex-row rounded-lg border-2 border-solid border-gray-800 sm:w-[50%] sm:max-w-60 lg:w-96  lg:max-w-none">
+        <div className="mx-2 flex h-8 max-w-[50%] flex-row rounded-lg border-2 border-solid border-gray-800 sm:w-[50%] sm:max-w-60 lg:w-full lg:max-w-full ">
           <input className="  w-full rounded-lg  px-2 py-px" type="search" />
           <button className="px-2">
             <IoMdSearch />
@@ -188,7 +188,7 @@ export default function Filters() {
         </div>
 
         {/* APPLY AND RESET FILTERS */}
-        <div className=" col-span-2">
+        <div className="col-span-2 flex flex-row">
           <button
             onClick={() =>
               dispatch(filterByColorAndSortByPrice(filterAndSortValues))

@@ -35,61 +35,45 @@ export default function Categories() {
   const newFemaleCategories = [...new Set(femaleCategories)];
 
   return (
-    <div className="flex flex-col items-center p-2">
-      <h2 className="m-2 text-lg font-bold text-gray-800">Categories</h2>
-      <div className="flex w-full flex-col items-center justify-center">
-        <div className="flex w-full flex-row justify-around">
-          <button
-            className={`${
-              (showMaleCategories && " bg-gray-800 text-white") ||
-              " bg-white text-gray-800"
-            } m-2 rounded-full border-2 border-solid border-gray-800 px-6 py-px`}
-            onClick={() => {
-              dispatch(filterByGender("male"));
-              setShowMaleCategories(!showMaleCategories);
-              setShowFemaleCategories(false);
-              dispatch(resetFilterByColorAndSortByPrice());
-            }}
-          >
-            Men
-          </button>
-          <button
-            className={`${
-              (showFemaleCategories && " bg-gray-800 text-white") ||
-              " bg-white text-gray-800"
-            } m-2 rounded-full border-2 border-solid border-gray-800 px-6 py-px`}
-            onClick={() => {
-              dispatch(filterByGender("female"));
-              setShowFemaleCategories(!showFemaleCategories);
-              setShowMaleCategories(false);
-              dispatch(resetFilterByColorAndSortByPrice());
-            }}
-          >
-            Women
-          </button>
-        </div>
+    <div className=" p-2 lg:row-span-2 lg:m-5 lg:bg-white">
+      <div className=" sticky top-[150px] w-full">
+        <h2 className="m-2 text-lg font-bold text-gray-800">Categories</h2>
+        <div className="flex w-full flex-col items-center justify-center">
+          <div className="flex w-full flex-row justify-around">
+            <button
+              className={`${
+                (showMaleCategories && " bg-gray-800 text-white") ||
+                " bg-white text-gray-800"
+              } m-2 rounded-full border-2 border-solid border-gray-800 px-6 py-px`}
+              onClick={() => {
+                dispatch(filterByGender("male"));
+                setShowMaleCategories(!showMaleCategories);
+                setShowFemaleCategories(false);
+                dispatch(resetFilterByColorAndSortByPrice());
+              }}
+            >
+              Men
+            </button>
+            <button
+              className={`${
+                (showFemaleCategories && " bg-gray-800 text-white") ||
+                " bg-white text-gray-800"
+              } m-2 rounded-full border-2 border-solid border-gray-800 px-6 py-px`}
+              onClick={() => {
+                dispatch(filterByGender("female"));
+                setShowFemaleCategories(!showFemaleCategories);
+                setShowMaleCategories(false);
+                dispatch(resetFilterByColorAndSortByPrice());
+              }}
+            >
+              Women
+            </button>
+          </div>
 
-        {showMaleCategories || showFemaleCategories ? (
-          <div className="flex w-full flex-row overflow-x-auto">
-            {(showMaleCategories &&
-              newMaleCategories.map((category, index) => (
-                <button
-                  className={`m-2 min-w-fit rounded-full border-2 border-solid border-gray-800 px-6 py-px ${
-                    newSelectedCategories.toString() === category
-                      ? " bg-gray-800 text-white"
-                      : " bg-white text-gray-800"
-                  }`}
-                  key={index}
-                  onClick={() => {
-                    dispatch(filterByCategoryMale(category.toLowerCase()));
-                    dispatch(resetFilterByColorAndSortByPrice());
-                  }}
-                >
-                  {category.charAt(0).toUpperCase() + category.slice(1)}
-                </button>
-              ))) ||
-              (showFemaleCategories &&
-                newFemaleCategories.map((category, index) => (
+          {showMaleCategories || showFemaleCategories ? (
+            <div className="flex w-full flex-row overflow-x-auto">
+              {(showMaleCategories &&
+                newMaleCategories.map((category, index) => (
                   <button
                     className={`m-2 min-w-fit rounded-full border-2 border-solid border-gray-800 px-6 py-px ${
                       newSelectedCategories.toString() === category
@@ -98,15 +82,35 @@ export default function Categories() {
                     }`}
                     key={index}
                     onClick={() => {
-                      dispatch(filterByCategoryFemale(category.toLowerCase()));
+                      dispatch(filterByCategoryMale(category.toLowerCase()));
                       dispatch(resetFilterByColorAndSortByPrice());
                     }}
                   >
                     {category.charAt(0).toUpperCase() + category.slice(1)}
                   </button>
-                )))}
-          </div>
-        ) : null}
+                ))) ||
+                (showFemaleCategories &&
+                  newFemaleCategories.map((category, index) => (
+                    <button
+                      className={`m-2 min-w-fit rounded-full border-2 border-solid border-gray-800 px-6 py-px ${
+                        newSelectedCategories.toString() === category
+                          ? " bg-gray-800 text-white"
+                          : " bg-white text-gray-800"
+                      }`}
+                      key={index}
+                      onClick={() => {
+                        dispatch(
+                          filterByCategoryFemale(category.toLowerCase()),
+                        );
+                        dispatch(resetFilterByColorAndSortByPrice());
+                      }}
+                    >
+                      {category.charAt(0).toUpperCase() + category.slice(1)}
+                    </button>
+                  )))}
+            </div>
+          ) : null}
+        </div>
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import Categories from "./components/Categories";
 import { useSelector } from "react-redux";
 import Filters from "./components/Filters";
 import ProductsList from "./components/ProductsList";
+import Footer from "../root/components/Footer";
 
 export default function StorePage() {
   const categoryAndGenderFilteredProducts = useSelector(
@@ -22,10 +23,11 @@ export default function StorePage() {
     colorFilteredAndPriceSortedProducts,
   );
   return (
-    <div className="relative  top-[64px] bg-gray-100 sm:top-[80px]">
+    <div className="relative  top-[64px] bg-gray-100 sm:top-[80px] lg:grid lg:grid-cols-4 2xl:grid-cols-5 ">
       <Categories />
       <Filters />
       <ProductsList />
+      <Footer />
     </div>
   );
 }
