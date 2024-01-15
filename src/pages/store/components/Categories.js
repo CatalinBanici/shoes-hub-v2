@@ -120,11 +120,11 @@ export default function Categories() {
         <div className=" my-14">
           <h2 className="text-2xl font-bold text-gray-800">Categories</h2>
         </div>
+
+        {/* men */}
         <div className="my-4 flex w-full flex-col items-start ">
           <button
-            className={`my-2 w-full border-b-2 border-solid duration-200 ease-out hover:border-gray-800 ${
-              showMaleCategories ? "border-gray-300" : "border-white"
-            }`}
+            className="group relative my-2 w-full"
             onClick={() => {
               setShowMaleCategories((current) => !current);
               setShowFemaleCategories(false);
@@ -132,7 +132,7 @@ export default function Categories() {
             }}
           >
             <span
-              className={`flex w-full flex-row items-center justify-start text-lg duration-200 ease-out hover:translate-x-2 ${
+              className={`flex w-full flex-row items-center justify-start text-lg duration-300 ease-out hover:translate-x-2 ${
                 showMaleCategories
                   ? "translate-x-2 font-medium italic text-black "
                   : "font-regular text-gray-700"
@@ -145,16 +145,17 @@ export default function Categories() {
                 />
               </span>
             </span>
+            <div
+              className={`absolute bottom-0 h-0.5 w-full origin-left scale-x-0 duration-300 ease-out group-hover:scale-x-100 group-hover:bg-gray-800 ${
+                showMaleCategories && "scale-x-100 bg-gray-300"
+              }`}
+            />
           </button>
           {showMaleCategories && (
             <div className="m-2 flex w-full flex-col items-start">
               {newMaleCategories.map((category, index) => (
                 <button
-                  className={`solid relative my-2 w-full border-b-2 text-left duration-200 ease-out hover:border-gray-800 ${
-                    newSelectedCategories.toString() === category
-                      ? "border-gray-300"
-                      : "border-white"
-                  } `}
+                  className="group relative my-2 w-full text-left"
                   key={index}
                   onClick={() => {
                     dispatch(filterByCategoryMale(category.toLowerCase()));
@@ -162,7 +163,7 @@ export default function Categories() {
                   }}
                 >
                   <span
-                    className={`text-md font-regular block w-full duration-200 ease-out hover:translate-x-2 ${
+                    className={`text-md font-regular block w-full duration-300 ease-out hover:translate-x-2 ${
                       newSelectedCategories.toString() === category
                         ? "translate-x-2 font-medium italic text-black"
                         : "text-gray-700"
@@ -170,16 +171,22 @@ export default function Categories() {
                   >
                     {category.charAt(0).toUpperCase() + category.slice(1)}
                   </span>
+                  <div
+                    className={`absolute bottom-0 h-0.5 w-full origin-left scale-x-0 duration-300 ease-out group-hover:scale-x-100 group-hover:bg-gray-800 ${
+                      newSelectedCategories.toString() === category &&
+                      "scale-x-100 bg-gray-300"
+                    }`}
+                  />
                 </button>
               ))}
             </div>
           )}
         </div>
+
+        {/* women */}
         <div className="my-4 flex w-full flex-col items-start ">
           <button
-            className={`my-2 w-full border-b-2 border-solid duration-200 ease-out hover:border-gray-800 ${
-              showFemaleCategories ? "border-gray-300" : "border-white"
-            }`}
+            className="group relative my-2 w-full"
             onClick={() => {
               setShowFemaleCategories((current) => !current);
               setShowMaleCategories(false);
@@ -187,7 +194,7 @@ export default function Categories() {
             }}
           >
             <span
-              className={`flex w-full flex-row items-center justify-start text-lg duration-200 ease-out hover:translate-x-2 ${
+              className={`flex w-full flex-row items-center justify-start text-lg duration-300 ease-out hover:translate-x-2 ${
                 showFemaleCategories
                   ? "translate-x-2 font-medium italic text-black "
                   : "font-regular text-gray-700"
@@ -200,16 +207,17 @@ export default function Categories() {
                 />
               </span>
             </span>
+            <div
+              className={`absolute bottom-0 h-0.5 w-full origin-left scale-x-0 duration-300 ease-out group-hover:scale-x-100 group-hover:bg-gray-800 ${
+                showFemaleCategories && "scale-x-100 bg-gray-300"
+              }`}
+            />
           </button>
           {showFemaleCategories && (
             <div className="m-2 flex w-full flex-col items-start">
               {newFemaleCategories.map((category, index) => (
                 <button
-                  className={`solid relative my-2 w-full border-b-2 text-left duration-200 ease-out hover:border-gray-800 ${
-                    newSelectedCategories.toString() === category
-                      ? "border-gray-300"
-                      : "border-white"
-                  } `}
+                  className="group relative my-2 w-full text-left"
                   key={index}
                   onClick={() => {
                     dispatch(filterByCategoryFemale(category.toLowerCase()));
@@ -217,7 +225,7 @@ export default function Categories() {
                   }}
                 >
                   <span
-                    className={`text-md font-regular block w-full duration-200 ease-out hover:translate-x-2 ${
+                    className={`text-md font-regular block w-full duration-300 ease-out hover:translate-x-2 ${
                       newSelectedCategories.toString() === category
                         ? "translate-x-2 font-medium italic text-black"
                         : "text-gray-700"
@@ -225,6 +233,12 @@ export default function Categories() {
                   >
                     {category.charAt(0).toUpperCase() + category.slice(1)}
                   </span>
+                  <div
+                    className={`absolute bottom-0 h-0.5 w-full origin-left scale-x-0 duration-300 ease-out group-hover:scale-x-100 group-hover:bg-gray-800 ${
+                      newSelectedCategories.toString() === category &&
+                      "scale-x-100 bg-gray-300"
+                    }`}
+                  />
                 </button>
               ))}
             </div>
