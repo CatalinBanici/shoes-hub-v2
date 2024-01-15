@@ -10,7 +10,7 @@ export default function ProductCard({ product }) {
   const discount = divide * 100;
 
   return (
-    <div className=" flex h-[350px] w-60 flex-col rounded-lg bg-white shadow-xl duration-150 ease-out hover:scale-105">
+    <div className=" flex h-[350px] w-60 flex-col rounded-lg bg-white shadow-xl duration-150 ease-out lg:hover:scale-105">
       <div className="relative overflow-hidden border-b-2">
         {product.price.discount && (
           <span className="absolute -left-7 top-5 w-32 rotate-[320deg] bg-black text-center text-sm text-white">
