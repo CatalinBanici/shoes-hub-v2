@@ -5,6 +5,7 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { useDispatch, useSelector } from "react-redux";
 import {
   filterByColorAndSortByPrice,
+  filterBySearch,
   resetFilterByColorAndSortByPrice,
 } from "../../../redux/features/slices/productsSlice";
 
@@ -18,6 +19,7 @@ export default function Filters() {
 
   const colorMenuRef = useRef();
   const colorButtonRef = useRef();
+  let searchInputRef = useRef();
   const dispatch = useDispatch();
 
   const productColors = products.map((product) => {
@@ -105,8 +107,15 @@ export default function Filters() {
             className="  w-full rounded-lg  px-2 py-px"
             type="search"
             placeholder="Search..."
+            ref={searchInputRef}
           />
-          <button className="px-2">
+          <button
+            className="px-2"
+            onClick={() =>
+              searchInputRef.current.value &&
+              dispatch(filterBySearch(searchInputRef.current.value))
+            }
+          >
             <IoMdSearch />
           </button>
         </div>
@@ -195,9 +204,10 @@ export default function Filters() {
         {/* APPLY AND RESET FILTERS */}
         <div className="col-span-2 flex flex-row">
           <button
-            onClick={() =>
-              dispatch(filterByColorAndSortByPrice(filterAndSortValues))
-            }
+            onClick={() => {
+              dispatch(filterByColorAndSortByPrice(filterAndSortValues));
+              searchInputRef.current.value = "";
+            }}
             className="m-2 rounded-md bg-gray-200 p-2 text-gray-800 shadow-md disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none"
             disabled={
               !filterAndSortValues.filterByColor.length &&
@@ -211,6 +221,7 @@ export default function Filters() {
               dispatch(resetFilterByColorAndSortByPrice());
               setFilteredColors(colors);
               setPrice("none");
+              searchInputRef.current.value = "";
             }}
             className="m-2 p-2 text-gray-800 disabled:text-gray-400"
           >

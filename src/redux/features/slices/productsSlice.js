@@ -93,6 +93,16 @@ export const productsSlice = createSlice({
       sessionStorage.setItem("singleProduct", saveState);
     },
 
+    filterBySearch(state, action) {
+      const searchKeywords = action.payload;
+      const filteredProductsCopy = [...state.categoryAndGenderFilteredProducts];
+
+      const searchFilteredProducts = filteredProductsCopy.filter((product) =>
+        product.name.toLowerCase().includes(searchKeywords.toLowerCase()),
+      );
+      state.colorFilteredAndPriceSortedProducts = searchFilteredProducts;
+    },
+
     filterByColorAndSortByPrice(state, action) {
       const filteredProductsCopy = [...state.categoryAndGenderFilteredProducts];
       const colorFilterType = action.payload.filterByColor;
@@ -155,6 +165,7 @@ export const {
   filterByCategory,
   filterByGender,
   filterById,
+  filterBySearch,
   filterByColorAndSortByPrice,
   resetFilterByColorAndSortByPrice,
 } = productsSlice.actions;
