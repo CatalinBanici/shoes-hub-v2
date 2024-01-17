@@ -88,19 +88,24 @@ export default function Filters() {
   console.log(filterAndSortValues);
   return (
     <div className="p-2 lg:col-span-3 lg:m-5 lg:flex lg:flex-row-reverse lg:justify-around lg:bg-white 2xl:col-span-4">
-      <div className="flex flex-row items-center justify-around lg:w-[50%] lg:justify-end">
+      <div className="flex flex-col-reverse items-center justify-around sm:flex-row lg:w-[50%] lg:justify-end">
         <button
-          className="mx-2 flex h-8 w-full max-w-[40%] flex-row items-center  justify-around rounded-lg border-2 border-solid border-gray-800 bg-white px-2 py-px sm:w-[50%] sm:max-w-60   lg:hidden"
+          className={`m-2 flex h-8 w-full max-w-[200px] flex-row items-center  justify-around rounded-lg border-2 border-solid border-gray-800 px-2 py-px sm:w-[50%] sm:max-w-60 lg:hidden ${
+            showFilters ? "bg-gray-800 text-white" : "bg-white text-gray-800"
+          }`}
           onClick={() => setShowFilters((curr) => !curr)}
         >
-          <span>Filters</span>
+          <span>Filter / Sort</span>
           <span className="flex flex-row">
-            <IoFilterSharp />
             <IoIosArrowDown className={showFilters && "rotate-180"} />
           </span>
         </button>
-        <div className="mx-2 flex h-8 max-w-[50%] flex-row rounded-lg border-2 border-solid border-gray-800 sm:w-[50%] sm:max-w-60 lg:w-full lg:max-w-full ">
-          <input className="  w-full rounded-lg  px-2 py-px" type="search" />
+        <div className="m-2 flex h-8 max-w-[200px] flex-row rounded-lg border-2 border-solid border-gray-800 sm:w-[50%] sm:max-w-60 lg:w-full lg:max-w-full ">
+          <input
+            className="  w-full rounded-lg  px-2 py-px"
+            type="search"
+            placeholder="Search..."
+          />
           <button className="px-2">
             <IoMdSearch />
           </button>
@@ -199,7 +204,7 @@ export default function Filters() {
               filterAndSortValues.sortByPrice === "none"
             }
           >
-            Apply Filters
+            Apply
           </button>
           <button
             onClick={() => {
@@ -209,7 +214,7 @@ export default function Filters() {
             }}
             className="m-2 p-2 text-gray-800 disabled:text-gray-400"
           >
-            Reset Filters
+            Reset
           </button>
         </div>
       </div>
