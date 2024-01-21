@@ -19,8 +19,8 @@ export default function ProductsList() {
 
   return (
     <div className="m-10 flex flex-col lg:col-span-3 lg:m-5 2xl:col-span-4">
-      <ul className="items-top  flex flex-1 flex-wrap justify-around gap-10">
-        {colorFilteredAndPriceSortedProducts.length
+      <ul className="items-top flex  min-h-screen flex-1 flex-wrap justify-around gap-10">
+        {Array.isArray(colorFilteredAndPriceSortedProducts)
           ? colorFilteredAndPriceSortedProducts.map((product) => (
               <li key={product.id}>
                 <Link
@@ -41,6 +41,13 @@ export default function ProductsList() {
                 </Link>
               </li>
             ))}
+        {!colorFilteredAndPriceSortedProducts.length && (
+          <div>
+            <h2 className="m-2 p-2 text-lg text-gray-800 lg:m-5 lg:p-5 lg:text-2xl">
+              No results that match your keywords!
+            </h2>
+          </div>
+        )}
       </ul>
     </div>
   );

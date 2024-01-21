@@ -12,7 +12,7 @@ export const productsSlice = createSlice({
       JSON.parse(sessionStorage.getItem("categoryAndGenderFilteredProducts")) ||
       allProducts,
 
-    colorFilteredAndPriceSortedProducts: [],
+    colorFilteredAndPriceSortedProducts: "no-filter",
 
     singleProduct:
       JSON.parse(sessionStorage.getItem("singleProduct")) || allProducts,
@@ -100,7 +100,10 @@ export const productsSlice = createSlice({
       const searchFilteredProducts = filteredProductsCopy.filter((product) =>
         product.name.toLowerCase().includes(searchKeywords.toLowerCase()),
       );
-      state.colorFilteredAndPriceSortedProducts = searchFilteredProducts;
+
+      if (searchKeywords) {
+        state.colorFilteredAndPriceSortedProducts = searchFilteredProducts;
+      }
     },
 
     filterByColorAndSortByPrice(state, action) {
@@ -154,7 +157,7 @@ export const productsSlice = createSlice({
     },
 
     resetFilterByColorAndSortByPrice(state) {
-      state.colorFilteredAndPriceSortedProducts = [];
+      state.colorFilteredAndPriceSortedProducts = "no-filter";
     },
   },
 });

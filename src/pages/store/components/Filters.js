@@ -78,7 +78,6 @@ export default function Filters() {
   useEffect(() => {
     setFilteredColors(colors);
     setPrice("none");
-    console.log("effect");
   }, [categoryAndGenderFilteredProducts]);
 
   // values to be dispatched
@@ -87,7 +86,6 @@ export default function Filters() {
     sortByPrice: price,
   };
 
-  console.log(filterAndSortValues);
   return (
     <div className="p-2 lg:col-span-3 lg:m-5 lg:flex lg:flex-row-reverse lg:justify-around lg:bg-white 2xl:col-span-4">
       <div className="flex flex-col-reverse items-center justify-around sm:flex-row lg:w-[50%] lg:justify-end">
@@ -102,7 +100,10 @@ export default function Filters() {
             <IoIosArrowDown className={showFilters && "rotate-180"} />
           </span>
         </button>
-        <div className="m-2 flex h-8 max-w-[200px] flex-row rounded-lg border-2 border-solid border-gray-800 sm:w-[50%] sm:max-w-60 lg:w-full lg:max-w-full ">
+        <form
+          onSubmit={(e) => e.preventDefault()}
+          className="m-2 flex h-8 max-w-[200px] flex-row rounded-lg border-2 border-solid border-gray-800 sm:w-[50%] sm:max-w-60 lg:w-full lg:max-w-full "
+        >
           <input
             className="  w-full rounded-lg  px-2 py-px"
             type="search"
@@ -111,14 +112,16 @@ export default function Filters() {
           />
           <button
             className="px-2"
-            onClick={() =>
+            onClick={() => {
               searchInputRef.current.value &&
-              dispatch(filterBySearch(searchInputRef.current.value))
-            }
+                dispatch(filterBySearch(searchInputRef.current.value));
+              setFilteredColors(colors);
+              setPrice("none");
+            }}
           >
             <IoMdSearch />
           </button>
-        </div>
+        </form>
       </div>
       <div
         className={`${
@@ -173,7 +176,7 @@ export default function Filters() {
             className=" relative z-20 p-2  text-gray-800 "
             htmlFor="price-asc"
           >
-            Price Asc
+            {"Price (asc)"}
             <input
               className=" peer absolute left-0 top-0 h-full w-full cursor-pointer opacity-0"
               name="price-sort"
@@ -188,7 +191,7 @@ export default function Filters() {
             className=" relative z-20 p-2  text-gray-800 "
             htmlFor="price-desc"
           >
-            Price Desc
+            {"Price (desc)"}
             <input
               className="  peer absolute left-0 top-0 h-full w-full cursor-pointer opacity-0"
               name="price-sort"

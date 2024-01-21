@@ -14,7 +14,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import "./carousel.css";
+import "./swiperStyles.css";
 import { Link } from "react-router-dom";
 
 export default function Carousel() {
