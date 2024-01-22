@@ -5,14 +5,16 @@ import Footer from "./components/Footer";
 
 export default function RootPage() {
   return (
-    <div className="font-regular m-auto flex max-w-[1800px] flex-col font-roboto ">
+    <div className="font-regular relative m-auto flex max-w-[1800px] flex-col font-roboto">
       <header className="fixed z-10 flex w-full max-w-[1800px] flex-col bg-white sm:bg-transparent ">
         <Header />
       </header>
-      <main>
+      <main className="mb-[70px]">
         <Outlet />
       </main>
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
