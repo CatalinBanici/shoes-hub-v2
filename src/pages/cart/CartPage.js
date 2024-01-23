@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { TiDelete } from "react-icons/ti";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { Link } from "react-router-dom";
+import { removeFromCart } from "../../redux/features/slices/cartSlice";
 
 export default function CartPage() {
   const dispatch = useDispatch();
@@ -32,19 +34,13 @@ export default function CartPage() {
       <div className="m-2 rounded-lg bg-white p-2 text-gray-800">
         {totalProductsAmount > 0 ? (
           <ul>
-            {cart.map((item) => (
+            {cart.map((item, index) => (
               <li
                 className="flex w-full flex-row items-center border-b-2"
-                key={item.id}
+                key={index}
               >
                 <div className="flex w-10 flex-col items-center justify-center sm:mx-3 sm:text-xl md:mx-6">
-                  <button>
-                    <IoIosArrowUp />
-                  </button>
                   <div>x{item.amount}</div>
-                  <button>
-                    <IoIosArrowDown />
-                  </button>
                 </div>
                 <div>
                   <div className="relative overflow-hidden">
@@ -62,6 +58,7 @@ export default function CartPage() {
                 </div>
                 <div className="flex-1 sm:mx-5">
                   <h3 className=" my-2 text-lg font-medium">{item.name}</h3>
+
                   <div>
                     <div className="my-2 flex flex-row flex-wrap items-center">
                       <strong className="text-gray-500">Color:</strong>
@@ -122,7 +119,11 @@ export default function CartPage() {
                   </div>
                 </div>
                 <div className="flex w-10 items-center justify-center sm:mx-3 md:mx-6">
-                  <button title="Remove from Shopping Bag">
+                  <button
+                    onClick={() => dispatch(removeFromCart(item))}
+                    title="Remove from Shopping Bag"
+                    aria-label="Remove from Shopping Bag"
+                  >
                     <TiDelete className=" text-3xl text-red-500  sm:text-4xl" />
                   </button>
                 </div>

@@ -55,8 +55,41 @@ export const cartSlice = createSlice({
       const saveTotalProductsPrice = JSON.stringify(state.totalProductsPrice);
       localStorage.setItem("totalProductsPrice", saveTotalProductsPrice);
     },
+
+    removeFromCart(state, action) {
+      const productAlreadyExists = state.cart.find((product) => {
+        return (
+          product.id === action.payload.id &&
+          product.sizeNumber === action.payload.sizeNumber &&
+          product.colorName === action.payload.colorName
+        );
+      });
+
+      if (productAlreadyExists) {
+        state.cart = state.cart.filter(
+          (product) =>
+            product.id !== action.payload.id ||
+            product.sizeNumber !== action.payload.sizeNumber ||
+            product.colorName !== action.payload.colorName,
+        );
+        state.totalProductsAmount -= action.payload.amount;
+        state.totalProductsPrice -= action.payload.totalPrice;
+      } else {
+        productAlreadyExists.amount -= action.payload.amount;
+        productAlreadyExists.totalPrice -= action.payload.totalPrice;
+        state.totalProductsAmount -= action.payload.amount;
+        state.totalProductsPrice -= action.payload.totalPrice;
+      }
+
+      const saveCart = JSON.stringify(state.cart);
+      localStorage.setItem("cart", saveCart);
+      const saveTotalProductsAmount = JSON.stringify(state.totalProductsAmount);
+      localStorage.setItem("totalProductsAmount", saveTotalProductsAmount);
+      const saveTotalProductsPrice = JSON.stringify(state.totalProductsPrice);
+      localStorage.setItem("totalProductsPrice", saveTotalProductsPrice);
+    },
   },
 });
 
-export const { addToCart } = cartSlice.actions;
+export const { addToCart, removeFromCart } = cartSlice.actions;
 export default cartSlice.reducer;
