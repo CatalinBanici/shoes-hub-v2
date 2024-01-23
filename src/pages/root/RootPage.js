@@ -9,7 +9,7 @@ export default function RootPage() {
       <header className="fixed z-10 flex w-full max-w-[1800px] flex-col bg-white sm:bg-transparent ">
         <Header />
       </header>
-      <main className="mb-[70px]">
+      <main className="mb-[70px] sm:mb-[90px]">
         <Outlet />
       </main>
       <footer>

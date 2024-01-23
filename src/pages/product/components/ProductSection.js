@@ -19,6 +19,7 @@ export default function ProductSection({ product }) {
   const [selectedProductStock, setSelectedProductStock] = useState(stock[0]);
   const [colorName, setColorName] = useState("");
   const [colorValue, setColorValue] = useState("");
+  const [colorImage, setColorImage] = useState("");
   const [sizeNumber, setSizeNumber] = useState(selectedProductStock.size);
   const [numberOfProducts, setNumberOfProducts] = useState(0);
   const [productCount, setProductCount] = useState(1);
@@ -105,6 +106,7 @@ export default function ProductSection({ product }) {
                     onChange={() => {
                       setColorName(colorItem.colorName);
                       setColorValue(colorItem.colorValue);
+                      setColorImage(colorItem.colorImage);
                       setNumberOfProducts(colorItem.numberOfItems);
                       setProductCount(1);
                     }}
@@ -171,8 +173,12 @@ export default function ProductSection({ product }) {
                       sizeNumber: sizeNumber,
                       colorName: colorName,
                       colorValue: colorValue,
+                      colorImage: colorImage,
                       price: product[0].price.current,
+                      oldPrice: product[0].price.old,
                       totalPrice: product[0].price.current,
+                      totalOldPrice:
+                        product[0].price.discount && product[0].price.old,
                       amount: productCount,
                     }),
                   );
@@ -194,8 +200,11 @@ export default function ProductSection({ product }) {
                       sizeNumber: sizeNumber,
                       colorName: colorName,
                       colorValue: colorValue,
+                      colorImage: colorImage,
                       price: product[0].price.current,
+                      oldPrice: product[0].price.old,
                       totalPrice: product[0].price.current,
+                      totalOldPrice: product[0].price.old,
                       amount: productCount,
                     }),
                   );

@@ -42,7 +42,14 @@ export default function ProductCard({ product }) {
             ))}
           </div>
           <div className="flex flex-row items-center">
-            <div className="mx-2 text-xl">{"$" + product.price.current}</div>
+            <div
+              className="mx-2 text-xl font-medium"
+              style={
+                product.price.discount ? { color: "RGB(77, 181, 67)" } : null
+              }
+            >
+              {"$" + product.price.current}
+            </div>
             {product.price.discount && (
               <div className=" mx-2 text-sm text-gray-600 line-through">
                 ${product.price.old}

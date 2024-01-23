@@ -2,11 +2,12 @@ import React, { useEffect, useRef, useState } from "react";
 import { TbShoppingBag } from "react-icons/tb";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export default function Header() {
   const navRef = useRef();
   const [showNavbar, setShowNavbar] = useState(false);
+  const navigate = useNavigate();
 
   // close navigation when user clicks outside of it on mobile display
   useEffect(() => {
@@ -33,7 +34,7 @@ export default function Header() {
         </div>
         <div className="m-4 flex flex-row items-center justify-center sm:m-6 ">
           <div className=" mx-3 text-2xl text-gray-800">
-            <button className="relative">
+            <button className="relative" onClick={() => navigate("cart")}>
               <TbShoppingBag aria-label="Shopping Cart" title="Shopping Cart" />
               <span className=" absolute bottom-[-7px] right-[-7px]  h-[1.15rem] w-[1.15rem] rounded-full bg-orange-600  text-sm text-white">
                 2
