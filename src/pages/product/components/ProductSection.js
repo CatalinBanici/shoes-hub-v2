@@ -179,6 +179,7 @@ export default function ProductSection({ product }) {
                       totalPrice: product[0].price.current,
                       totalOldPrice:
                         product[0].price.discount && product[0].price.old,
+                      numberOfProducts: numberOfProducts,
                       amount: productCount,
                     }),
                   );
@@ -204,7 +205,9 @@ export default function ProductSection({ product }) {
                       price: product[0].price.current,
                       oldPrice: product[0].price.old,
                       totalPrice: product[0].price.current,
-                      totalOldPrice: product[0].price.old,
+                      totalOldPrice:
+                        product[0].price.discount && product[0].price.old,
+                      numberOfProducts: numberOfProducts,
                       amount: productCount,
                     }),
                   );

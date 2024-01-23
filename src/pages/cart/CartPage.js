@@ -3,7 +3,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { TiDelete } from "react-icons/ti";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { Link } from "react-router-dom";
-import { removeFromCart } from "../../redux/features/slices/cartSlice";
+import {
+  modifyCartAmount,
+  removeFromCart,
+} from "../../redux/features/slices/cartSlice";
 
 export default function CartPage() {
   const dispatch = useDispatch();
@@ -40,7 +43,21 @@ export default function CartPage() {
                 key={index}
               >
                 <div className="flex w-10 flex-col items-center justify-center sm:mx-3 sm:text-xl md:mx-6">
+                  <button
+                    className="disabled:text-gray-400"
+                    onClick={() => dispatch(modifyCartAmount([item, "+"]))}
+                    disabled={item.amount >= cart[index].numberOfProducts}
+                  >
+                    <IoIosArrowUp />
+                  </button>
                   <div>x{item.amount}</div>
+                  <button
+                    className="disabled:text-gray-400"
+                    onClick={() => dispatch(modifyCartAmount([item, "-"]))}
+                    disabled={item.amount === 1}
+                  >
+                    <IoIosArrowDown />
+                  </button>
                 </div>
                 <div>
                   <div className="relative overflow-hidden">

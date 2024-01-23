@@ -41,6 +41,7 @@ export const cartSlice = createSlice({
           totalOldPrice:
             action.payload.totalOldPrice &&
             action.payload.totalOldPrice * action.payload.amount,
+          numberOfProducts: action.payload.numberOfProducts,
           amount: action.payload.amount,
         });
         state.totalProductsAmount += action.payload.amount;
@@ -88,8 +89,51 @@ export const cartSlice = createSlice({
       const saveTotalProductsPrice = JSON.stringify(state.totalProductsPrice);
       localStorage.setItem("totalProductsPrice", saveTotalProductsPrice);
     },
+
+    modifyCartAmount(state, action) {
+      const productAlreadyExists = state.cart.find((product) => {
+        return (
+          product.id === action.payload[0].id &&
+          product.sizeNumber === action.payload[0].sizeNumber &&
+          product.colorName === action.payload[0].colorName
+        );
+      });
+
+      switch (action.payload[1]) {
+        case "-":
+          if (productAlreadyExists.amount > 1) {
+            productAlreadyExists.amount--;
+            productAlreadyExists.totalPrice -= action.payload[0].price;
+            state.totalProductsAmount--;
+            state.totalProductsPrice -= action.payload[0].price;
+          }
+
+          break;
+        case "+":
+          if (
+            productAlreadyExists.amount < action.payload[0].numberOfProducts
+          ) {
+            productAlreadyExists.amount++;
+            productAlreadyExists.totalPrice += action.payload[0].price;
+            state.totalProductsAmount++;
+            state.totalProductsPrice += action.payload[0].price;
+          }
+
+          break;
+        default:
+          return null;
+      }
+
+      const saveCart = JSON.stringify(state.cart);
+      localStorage.setItem("cart", saveCart);
+      const saveTotalProductsAmount = JSON.stringify(state.totalProductsAmount);
+      localStorage.setItem("totalProductsAmount", saveTotalProductsAmount);
+      const saveTotalProductsPrice = JSON.stringify(state.totalProductsPrice);
+      localStorage.setItem("totalProductsPrice", saveTotalProductsPrice);
+    },
   },
 });
 
-export const { addToCart, removeFromCart } = cartSlice.actions;
+export const { addToCart, removeFromCart, modifyCartAmount } =
+  cartSlice.actions;
 export default cartSlice.reducer;
