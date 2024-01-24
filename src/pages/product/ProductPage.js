@@ -11,7 +11,7 @@ export default function ProductPage() {
     <div className="relative top-[64px] flex flex-col pb-10 sm:top-[80px] lg:m-5  lg:grid lg:grid-cols-2  lg:gap-5">
       <ProductGallery product={singleProduct} />
       <ProductSection product={singleProduct} />
-      <ProductRecommendations />
+      <ProductRecommendations product={singleProduct} />
     </div>
   );
 }
