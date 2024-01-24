@@ -22,7 +22,7 @@ export default function ProductGallery({ product }) {
   const productImages = product[0].gallery.images.map((image) => image);
 
   return (
-    <div className=" w-full max-w-[600px] self-center lg:m-5 lg:w-[50%] lg:max-w-[650px] lg:self-start">
+    <div className=" w-full max-w-[600px] self-center justify-self-center lg:m-5   lg:self-start">
       {/* product image */}
       <Swiper
         style={{

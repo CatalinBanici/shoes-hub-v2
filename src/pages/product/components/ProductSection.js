@@ -26,7 +26,7 @@ export default function ProductSection({ product }) {
   const [errorMessage, setErrorMessage] = useState("");
 
   return (
-    <section className="w-full lg:m-5 lg:w-[50%] lg:self-start">
+    <section className="w-full justify-self-center lg:m-5">
       {/* product name and description */}
       <div className="mb-5 bg-white p-5">
         <h2 className=" my-5 text-2xl text-gray-800">{product[0].name}</h2>
