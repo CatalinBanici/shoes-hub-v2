@@ -134,8 +134,10 @@ export default function Filters() {
         <div className="relative m-2 flex min-w-fit flex-col items-center justify-center ">
           <button
             className={`${
-              colorMenu ? " bg-white " : "bg-gray-200"
-            } flex flex-row items-center justify-center rounded-md p-2 text-gray-800 shadow-md`}
+              colorMenu
+                ? "  border-gray-200 bg-white "
+                : "border-gray-200 bg-gray-200"
+            } flex flex-row items-center justify-center rounded-md border-2 border-solid p-2 text-gray-800 shadow-md`}
             ref={colorButtonRef}
             onClick={() => setColorMenu((cur) => !cur)}
           >

@@ -14,7 +14,7 @@ export default function ProductCard({ product }) {
       <div className="relative overflow-hidden border-b-2">
         {product.price.discount && (
           <span className="absolute -left-7 top-5 w-32 rotate-[320deg] bg-black text-center text-sm text-white">
-            {Math.trunc(discount)}% off
+            {Math.abs(Math.trunc(discount))}% off
           </span>
         )}
         <img
