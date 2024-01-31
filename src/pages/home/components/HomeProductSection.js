@@ -18,7 +18,10 @@ import "swiper/css/scrollbar";
 import "./swiperStyles.css";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { filterById } from "../../../redux/features/slices/productsSlice";
+import {
+  filterById,
+  resetCategoryAndGenderFilteredProducts,
+} from "../../../redux/features/slices/productsSlice";
 
 export default function HomeProductSection() {
   const dispatch = useDispatch();
@@ -107,7 +110,9 @@ export default function HomeProductSection() {
             <SwiperSlide className="my-10" key={element.id}>
               <Link
                 to={`store/${element.id}`}
-                onClick={() => dispatch(filterById(element.id))}
+                onClick={() => {
+                  dispatch(filterById(element.id));
+                }}
               >
                 <ProductCard product={element} />
               </Link>
@@ -159,7 +164,9 @@ export default function HomeProductSection() {
             <SwiperSlide className="my-10" key={element.id}>
               <Link
                 to={`store/${element.id}`}
-                onClick={() => dispatch(filterById(element.id))}
+                onClick={() => {
+                  dispatch(filterById(element.id));
+                }}
               >
                 <ProductCard product={element} />
               </Link>
@@ -211,7 +218,9 @@ export default function HomeProductSection() {
             <SwiperSlide className="my-10" key={element.id}>
               <Link
                 to={`store/${element.id}`}
-                onClick={() => dispatch(filterById(element.id))}
+                onClick={() => {
+                  dispatch(filterById(element.id));
+                }}
               >
                 <ProductCard product={element} />
               </Link>

@@ -3,11 +3,15 @@ import { Link } from "react-router-dom";
 
 import menCategory from "../../../assets/images/home-page/men.jpg";
 import womenCategory from "../../../assets/images/home-page/women.jpg";
+import { useDispatch } from "react-redux";
+import { filterByGender } from "../../../redux/features/slices/productsSlice";
 
 export default function Categories() {
+  const dispatch = useDispatch();
+
   return (
     <div className=" mb-14  h-[50vh] sm:h-[70vh]">
-      <h1 className=" font-josefin text-md  flex h-[10vh] items-center justify-center px-3 text-center text-gray-600 sm:h-[20vh]">
+      <h1 className=" text-md flex  h-[10vh] items-center justify-center px-3 text-center font-josefin text-gray-600 sm:h-[20vh]">
         The only shoe website that will get you addicted {"(in a good way)"}.
       </h1>
       <div className="flex h-[40vh] flex-col gap-2 sm:h-[50vh] sm:flex-row sm:justify-evenly">
@@ -23,7 +27,11 @@ export default function Categories() {
             alt="Men Shoe Category"
           />
           <div className="absolute bottom-5 flex w-full items-center justify-center">
-            <Link className="rounded-md bg-orange-600 px-4 py-2 text-white">
+            <Link
+              className="rounded-md bg-orange-600 px-4 py-2 text-white"
+              to="store"
+              onClick={() => dispatch(filterByGender("male"))}
+            >
               Shop Now
             </Link>
           </div>
@@ -40,7 +48,11 @@ export default function Categories() {
             alt="Women Shoe Category"
           />
           <div className="absolute bottom-5 flex w-full items-center justify-center">
-            <Link className="rounded-md bg-orange-600 px-4 py-2 text-white">
+            <Link
+              className="rounded-md bg-orange-600 px-4 py-2 text-white"
+              to="store"
+              onClick={() => dispatch(filterByGender("female"))}
+            >
               Shop Now
             </Link>
           </div>

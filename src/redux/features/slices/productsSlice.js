@@ -81,11 +81,9 @@ export const productsSlice = createSlice({
     },
 
     filterById(state, action) {
-      const oneProduct = state.categoryAndGenderFilteredProducts.filter(
-        (product) => {
-          return product.id === action.payload;
-        },
-      );
+      const oneProduct = allProducts.filter((product) => {
+        return product.id === action.payload;
+      });
       state.singleProduct = oneProduct;
 
       // saving the state to session storage
@@ -159,6 +157,13 @@ export const productsSlice = createSlice({
     resetFilterByColorAndSortByPrice(state) {
       state.colorFilteredAndPriceSortedProducts = "no-filter";
     },
+
+    resetCategoryAndGenderFilteredProducts(state) {
+      state.categoryAndGenderFilteredProducts = allProducts;
+
+      const saveState = JSON.stringify(state.categoryAndGenderFilteredProducts);
+      sessionStorage.setItem("categoryAndGenderFilteredProducts", saveState);
+    },
   },
 });
 
@@ -171,5 +176,6 @@ export const {
   filterBySearch,
   filterByColorAndSortByPrice,
   resetFilterByColorAndSortByPrice,
+  resetCategoryAndGenderFilteredProducts,
 } = productsSlice.actions;
 export default productsSlice.reducer;
