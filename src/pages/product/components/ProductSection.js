@@ -37,7 +37,12 @@ export default function ProductSection({ product }) {
 
       {/* product price */}
       <div className="my-5">
-        <span className="mx-5 text-3xl text-gray-900">
+        <span
+          className="mx-5 text-3xl text-gray-900"
+          style={
+            product[0].price.discount ? { color: "RGB(77, 181, 67)" } : null
+          }
+        >
           ${product[0].price.current}
         </span>
         {product[0].price.discount && (

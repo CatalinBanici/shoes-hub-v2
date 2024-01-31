@@ -18,3 +18,8 @@
 .swiper-pagination-bullet-active {
   background-color: rgb(34, 34, 34);
 }
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
