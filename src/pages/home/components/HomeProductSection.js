@@ -70,7 +70,7 @@ export default function HomeProductSection() {
       {/* new arrivals */}
       <div>
         <h2 className=" px-5 pt-5 text-xl font-medium text-gray-800 sm:ml-10">
-          New Arrivals
+          New Arrivals:
         </h2>
         <Swiper
           className="h-full"
@@ -124,7 +124,7 @@ export default function HomeProductSection() {
       {/* sneakers sale */}
       <div>
         <h2 className=" px-5 pt-5 text-xl font-medium text-gray-800 sm:ml-10">
-          Sneakers Sale over 30%
+          Sneakers Sale over 30%:
         </h2>
         <Swiper
           className="h-full"
@@ -178,7 +178,7 @@ export default function HomeProductSection() {
       {/* boots sale */}
       <div>
         <h2 className=" px-5 pt-5 text-xl font-medium text-gray-800 sm:ml-10">
-          Winter Sale over 40% on our Boots
+          Winter Sale over 40% on our Boots:
         </h2>
         <Swiper
           className="h-full"

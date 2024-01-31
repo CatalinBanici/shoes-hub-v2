@@ -1,7 +1,13 @@
 import React from "react";
 import data from "../../../data/data.json";
+import ProductCard from "../../store/components/ProductCard";
+import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { filterById } from "../../../redux/features/slices/productsSlice";
 
 export default function ProductRecommendations({ product }) {
+  const dispatch = useDispatch();
+
   const products = data.products.map((products) => products);
   const allProducts = [...products];
 
@@ -15,5 +21,23 @@ export default function ProductRecommendations({ product }) {
     )
     .filter((item) => item.id !== product[0].id);
 
-  return <div className="col-span-2 bg-white">ProductRecommendations</div>;
+  return (
+    <div className="col-span-2 ">
+      <h3 className=" p-5 text-xl font-medium text-gray-800 sm:ml-5 ">
+        You may also like:
+      </h3>
+      <ul className="flex flex-row flex-wrap justify-around gap-10">
+        {productRecommendation.map((product) => (
+          <li key={product.id}>
+            <Link
+              to={`/store/${product.id}`}
+              onClick={() => dispatch(filterById(product.id))}
+            >
+              <ProductCard product={product} />
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
