@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { TiDelete } from "react-icons/ti";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import { Link } from "react-router-dom";
+import {
+  IoIosArrowDown,
+  IoIosArrowUp,
+  IoIosArrowRoundForward,
+} from "react-icons/io";
+import { Link, useNavigate } from "react-router-dom";
 import {
   modifyCartAmount,
   removeFromCart,
 } from "../../redux/features/slices/cartSlice";
 
 export default function CartPage() {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart.cart);
   const totalProductsAmount = useSelector(
@@ -152,6 +157,19 @@ export default function CartPage() {
             Your Shopping Bag is Empty!
           </h3>
         )}
+      </div>
+
+      <div className="flex flex-col">
+        <button
+          className="m-5 flex flex-row items-center self-center rounded-lg bg-orange-600 px-10 py-2 text-white"
+          onClick={() => navigate("/checkout")}
+        >
+          Checkout
+          <span>
+            {" "}
+            <IoIosArrowRoundForward className="ml-2 text-xl" />
+          </span>
+        </button>
       </div>
     </div>
   );
