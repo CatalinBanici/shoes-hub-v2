@@ -1,5 +1,5 @@
 // REACT
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // REDUX
 import { useDispatch } from "react-redux";
@@ -24,6 +24,10 @@ export default function ProductSection({ product }) {
   const [numberOfProducts, setNumberOfProducts] = useState(0);
   const [productCount, setProductCount] = useState(1);
   const [errorMessage, setErrorMessage] = useState("");
+
+  useEffect(() => {
+    setSelectedProductStock(stock[0]);
+  }, [product]);
 
   return (
     <section className="w-full justify-self-center lg:m-5">
