@@ -9,6 +9,11 @@ export default function CheckoutPage() {
   const totalProductsPrice = useSelector(
     (state) => state.cart.totalProductsPrice,
   );
+  const totalProductsOldPrice = useSelector(
+    (state) => state.cart.totalProductsOldPrice,
+  );
+
+  const discountedProducts = cart.filter((item) => item.discount);
 
   return (
     <div className="relative top-[64px] text-gray-800 sm:top-[80px]">
@@ -96,12 +101,44 @@ export default function CheckoutPage() {
             <h3>There are no products in your Shopping Bag!</h3>
           )}
           <div className="flex w-full flex-row justify-between">
-            <h3 className="font medium text-md mx-3 sm:mx-6 sm:text-lg">
+            <h3 className="font medium mx-3 text-base font-medium sm:mx-6 sm:text-lg">
               Total Products: {totalProductsAmount}
             </h3>
-            <h3 className="font medium text-md mx-3 sm:mx-6 sm:text-lg">
-              Total Price: ${totalProductsPrice}
-            </h3>
+            <div className="mx-3 flex  flex-col sm:mx-6">
+              <h3 className="font medium flex flex-row flex-wrap items-center  text-base font-medium sm:text-lg">
+                Total Price:
+                <span
+                  className="ml-2"
+                  style={
+                    discountedProducts.length
+                      ? { color: "RGB(77, 181, 67)" }
+                      : null
+                  }
+                >
+                  ${totalProductsPrice}
+                </span>
+                {discountedProducts.length ? (
+                  <span className="ml-1 text-sm text-gray-500 line-through sm:text-base">
+                    ${totalProductsOldPrice}
+                  </span>
+                ) : null}
+              </h3>
+              {discountedProducts.length > 0 && (
+                <p className="text-sm sm:text-base">
+                  You save:
+                  <span
+                    className="ml-2 font-medium"
+                    style={
+                      discountedProducts.length
+                        ? { color: "RGB(77, 181, 67)" }
+                        : null
+                    }
+                  >
+                    ${totalProductsOldPrice - totalProductsPrice}
+                  </span>
+                </p>
+              )}
+            </div>
           </div>
         </div>
       </div>

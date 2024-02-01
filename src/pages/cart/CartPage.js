@@ -22,20 +22,39 @@ export default function CartPage() {
   const totalProductsPrice = useSelector(
     (state) => state.cart.totalProductsPrice,
   );
+  const totalProductsOldPrice = useSelector(
+    (state) => state.cart.totalProductsOldPrice,
+  );
 
   console.log("cart", cart);
   console.log("totalProductsAmount", totalProductsAmount);
   console.log("totalProductsPrice", totalProductsPrice);
+  console.log("totalProductsOldPrice", totalProductsOldPrice);
+
+  const discountedProducts = cart.filter((item) => item.discount);
 
   return (
     <div className="relative top-[64px] min-h-screen sm:top-[80px]">
       <div className="m-2 flex flex-row items-center justify-between  text-gray-800">
         <h2 className="m-2 text-lg font-bold sm:text-xl ">Shopping Bag</h2>
-        <h3 className="text-md m-2 font-medium sm:text-lg ">
+        <h3 className="m-2 text-base font-medium sm:text-lg ">
           Total Products: {totalProductsAmount}
         </h3>
-        <h3 className="text-md m-2 font-medium sm:text-lg ">
-          Total Price: ${totalProductsPrice}
+        <h3 className="text-md m-2 flex flex-row flex-wrap items-center font-medium sm:text-lg ">
+          Total Price:
+          <span
+            className="ml-2"
+            style={
+              discountedProducts.length ? { color: "RGB(77, 181, 67)" } : null
+            }
+          >
+            ${totalProductsPrice}
+          </span>
+          {discountedProducts.length > 0 && (
+            <span className="ml-1 text-sm text-gray-500 line-through sm:text-base">
+              ${totalProductsOldPrice}
+            </span>
+          )}
         </h3>
       </div>
 
@@ -159,18 +178,20 @@ export default function CartPage() {
         )}
       </div>
 
-      <div className="flex flex-col">
-        <button
-          className="m-5 flex flex-row items-center self-center rounded-lg bg-orange-600 px-10 py-2 text-white"
-          onClick={() => navigate("/checkout")}
-        >
-          Checkout
-          <span>
-            {" "}
-            <IoIosArrowRoundForward className="ml-2 text-xl" />
-          </span>
-        </button>
-      </div>
+      {totalProductsAmount > 0 && (
+        <div className="flex flex-col">
+          <button
+            className="m-5 flex flex-row items-center self-center rounded-lg bg-orange-600 px-10 py-2 text-white"
+            onClick={() => navigate("/checkout")}
+          >
+            Checkout
+            <span>
+              {" "}
+              <IoIosArrowRoundForward className="ml-2 text-xl" />
+            </span>
+          </button>
+        </div>
+      )}
     </div>
   );
 }

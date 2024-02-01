@@ -8,6 +8,8 @@ export const cartSlice = createSlice({
       JSON.parse(localStorage.getItem("totalProductsAmount")) || 0,
     totalProductsPrice:
       JSON.parse(localStorage.getItem("totalProductsPrice")) || 0,
+    totalProductsOldPrice:
+      JSON.parse(localStorage.getItem("totalProductsOldPrice")) || 0,
   },
   reducers: {
     addToCart(state, action) {
@@ -26,6 +28,8 @@ export const cartSlice = createSlice({
         state.totalProductsAmount += action.payload.amount;
         state.totalProductsPrice +=
           action.payload.price * action.payload.amount;
+        state.totalProductsOldPrice +=
+          action.payload.oldPrice * action.payload.amount;
       } else {
         state.cart.push({
           id: action.payload.id,
@@ -48,6 +52,8 @@ export const cartSlice = createSlice({
         state.totalProductsAmount += action.payload.amount;
         state.totalProductsPrice +=
           action.payload.price * action.payload.amount;
+        state.totalProductsOldPrice +=
+          action.payload.oldPrice * action.payload.amount;
       }
 
       const saveCart = JSON.stringify(state.cart);
@@ -56,6 +62,10 @@ export const cartSlice = createSlice({
       localStorage.setItem("totalProductsAmount", saveTotalProductsAmount);
       const saveTotalProductsPrice = JSON.stringify(state.totalProductsPrice);
       localStorage.setItem("totalProductsPrice", saveTotalProductsPrice);
+      const saveTotalProductsOldPrice = JSON.stringify(
+        state.totalProductsOldPrice,
+      );
+      localStorage.setItem("totalProductsOldPrice", saveTotalProductsOldPrice);
     },
 
     removeFromCart(state, action) {
@@ -76,11 +86,13 @@ export const cartSlice = createSlice({
         );
         state.totalProductsAmount -= action.payload.amount;
         state.totalProductsPrice -= action.payload.totalPrice;
+        state.totalProductsOldPrice -= action.payload.totalOldPrice;
       } else {
         productAlreadyExists.amount -= action.payload.amount;
         productAlreadyExists.totalPrice -= action.payload.totalPrice;
         state.totalProductsAmount -= action.payload.amount;
         state.totalProductsPrice -= action.payload.totalPrice;
+        state.totalProductsOldPrice -= action.payload.totalOldPrice;
       }
 
       const saveCart = JSON.stringify(state.cart);
@@ -89,6 +101,10 @@ export const cartSlice = createSlice({
       localStorage.setItem("totalProductsAmount", saveTotalProductsAmount);
       const saveTotalProductsPrice = JSON.stringify(state.totalProductsPrice);
       localStorage.setItem("totalProductsPrice", saveTotalProductsPrice);
+      const saveTotalProductsOldPrice = JSON.stringify(
+        state.totalProductsOldPrice,
+      );
+      localStorage.setItem("totalProductsOldPrice", saveTotalProductsOldPrice);
     },
 
     modifyCartAmount(state, action) {
@@ -108,6 +124,7 @@ export const cartSlice = createSlice({
             productAlreadyExists.totalOldPrice -= action.payload[0].oldPrice;
             state.totalProductsAmount--;
             state.totalProductsPrice -= action.payload[0].price;
+            state.totalProductsOldPrice -= action.payload[0].oldPrice;
           }
 
           break;
@@ -120,6 +137,7 @@ export const cartSlice = createSlice({
             productAlreadyExists.totalOldPrice += action.payload[0].oldPrice;
             state.totalProductsAmount++;
             state.totalProductsPrice += action.payload[0].price;
+            state.totalProductsOldPrice += action.payload[0].oldPrice;
           }
 
           break;
@@ -133,6 +151,10 @@ export const cartSlice = createSlice({
       localStorage.setItem("totalProductsAmount", saveTotalProductsAmount);
       const saveTotalProductsPrice = JSON.stringify(state.totalProductsPrice);
       localStorage.setItem("totalProductsPrice", saveTotalProductsPrice);
+      const saveTotalProductsOldPrice = JSON.stringify(
+        state.totalProductsOldPrice,
+      );
+      localStorage.setItem("totalProductsOldPrice", saveTotalProductsOldPrice);
     },
   },
 });
