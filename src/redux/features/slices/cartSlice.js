@@ -41,6 +41,7 @@ export const cartSlice = createSlice({
           totalOldPrice:
             action.payload.totalOldPrice &&
             action.payload.totalOldPrice * action.payload.amount,
+          discount: action.payload.discount,
           numberOfProducts: action.payload.numberOfProducts,
           amount: action.payload.amount,
         });

@@ -71,7 +71,7 @@ export default function CartPage() {
                       src={item.img}
                       alt={item.name}
                     />
-                    {item.oldPrice && (
+                    {item.discount && (
                       <div className="absolute left-[-20px] top-[-3px] w-[60px] -rotate-45 bg-black text-center text-white">
                         %
                       </div>
@@ -104,12 +104,12 @@ export default function CartPage() {
                         <span
                           className="mx-1 font-medium"
                           style={
-                            item.oldPrice ? { color: "RGB(77, 181, 67)" } : null
+                            item.discount ? { color: "RGB(77, 181, 67)" } : null
                           }
                         >
                           ${item.price}
                         </span>
-                        {item.oldPrice && (
+                        {item.discount && (
                           <span className=" text-sm text-gray-500 line-through">
                             ${item.oldPrice}
                           </span>
@@ -123,14 +123,14 @@ export default function CartPage() {
                           <span
                             className="mx-1 font-medium"
                             style={
-                              item.oldPrice
+                              item.discount
                                 ? { color: "RGB(77, 181, 67)" }
                                 : null
                             }
                           >
                             ${item.totalPrice}
                           </span>
-                          {item.oldPrice && (
+                          {item.discount && (
                             <span className="text-sm text-gray-500 line-through">
                               ${item.totalOldPrice}
                             </span>

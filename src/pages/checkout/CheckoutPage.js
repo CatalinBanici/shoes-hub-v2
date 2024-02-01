@@ -48,14 +48,14 @@ export default function CheckoutPage() {
                             <span
                               className="mx-1 font-medium"
                               style={
-                                item.oldPrice
+                                item.discount
                                   ? { color: "RGB(77, 181, 67)" }
                                   : null
                               }
                             >
                               ${item.price}
                             </span>
-                            {item.oldPrice && (
+                            {item.discount && (
                               <span className=" text-sm text-gray-500 line-through">
                                 ${item.oldPrice}
                               </span>
@@ -70,14 +70,14 @@ export default function CheckoutPage() {
                               <span
                                 className="mx-1 font-medium"
                                 style={
-                                  item.oldPrice
+                                  item.discount
                                     ? { color: "RGB(77, 181, 67)" }
                                     : null
                                 }
                               >
                                 ${item.totalPrice}
                               </span>
-                              {item.totalOldPrice && (
+                              {item.discount && (
                                 <span className="text-sm text-gray-500 line-through">
                                   ${item.totalOldPrice}
                                 </span>

@@ -378,7 +378,7 @@
       "price": {
         "current": 41,
         "discount": false,
-        "old": ""
+        "old": 41
       },
       "gender": "male",
       "specs": {
@@ -1360,7 +1360,7 @@
       "price": {
         "current": 69,
         "discount": false,
-        "old": ""
+        "old": 69
       },
       "gender": "female",
       "specs": {
@@ -1652,7 +1652,7 @@
       "price": {
         "current": 35,
         "discount": false,
-        "old": ""
+        "old": 35
       },
       "gender": "female",
       "specs": {
@@ -2263,7 +2263,7 @@
       "price": {
         "current": 69,
         "discount": false,
-        "old": ""
+        "old": 69
       },
       "gender": "male",
       "specs": {
@@ -2433,7 +2433,7 @@
       "price": {
         "current": 79,
         "discount": false,
-        "old": ""
+        "old": 79
       },
       "gender": "male",
       "specs": {
@@ -2841,7 +2841,7 @@
       "price": {
         "current": 109,
         "discount": false,
-        "old": ""
+        "old": 109
       },
       "gender": "male",
       "specs": {
@@ -2965,7 +2965,7 @@
       "price": {
         "current": 74,
         "discount": false,
-        "old": ""
+        "old": 74
       },
       "gender": "female",
       "specs": {
