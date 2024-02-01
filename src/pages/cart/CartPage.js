@@ -130,7 +130,7 @@ export default function CartPage() {
                           >
                             ${item.totalPrice}
                           </span>
-                          {item.totalOldPrice && (
+                          {item.oldPrice && (
                             <span className="text-sm text-gray-500 line-through">
                               ${item.totalOldPrice}
                             </span>

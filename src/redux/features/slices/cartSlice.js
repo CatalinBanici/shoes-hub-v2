@@ -104,6 +104,7 @@ export const cartSlice = createSlice({
           if (productAlreadyExists.amount > 1) {
             productAlreadyExists.amount--;
             productAlreadyExists.totalPrice -= action.payload[0].price;
+            productAlreadyExists.totalOldPrice -= action.payload[0].oldPrice;
             state.totalProductsAmount--;
             state.totalProductsPrice -= action.payload[0].price;
           }
@@ -115,6 +116,7 @@ export const cartSlice = createSlice({
           ) {
             productAlreadyExists.amount++;
             productAlreadyExists.totalPrice += action.payload[0].price;
+            productAlreadyExists.totalOldPrice += action.payload[0].oldPrice;
             state.totalProductsAmount++;
             state.totalProductsPrice += action.payload[0].price;
           }
