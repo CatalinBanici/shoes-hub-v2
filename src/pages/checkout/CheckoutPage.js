@@ -1,5 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import Summary from "./components/Summary";
+import BillingDetails from "./components/BillingDetails";
+import * as yup from "yup";
+import { useFormik } from "formik";
 
 export default function CheckoutPage() {
   const cart = useSelector((state) => state.cart.cart);
@@ -13,134 +17,81 @@ export default function CheckoutPage() {
     (state) => state.cart.totalProductsOldPrice,
   );
 
+  const [freeShipping, setFreeShipping] = useState(false);
+  const shippingCost = 20;
+  const minCostFreeShipping = 200;
+  const totalPrice = freeShipping
+    ? totalProductsPrice
+    : totalProductsPrice + shippingCost;
+
+  console.log("totalPrice", totalPrice);
+
   const discountedProducts = cart.filter((item) => item.discount);
 
-  return (
-    <div className="relative top-[64px] text-gray-800 sm:top-[80px]">
-      <div>
-        <h2 className="m-3 text-lg font-medium sm:m-6 sm:text-xl">Summary:</h2>
-        <div>
-          {totalProductsAmount > 0 ? (
-            <ul className="m-2 max-h-[50vh] overflow-auto rounded-md bg-white sm:m-5">
-              {cart.map((item, index) => (
-                <>
-                  <li className="flex flex-row sm:my-2 " key={index}>
-                    <div className="flex items-center justify-center">
-                      <div className=" m-1 sm:m-3">x{item.amount}</div>
-                    </div>
-                    <div className="flex flex-row items-center">
-                      <div className="mr-3">
-                        <img
-                          className="max-h-10 min-h-10 min-w-10 max-w-10"
-                          src={item.img}
-                          alt={item.name}
-                        />
-                      </div>
-                      <div>
-                        <h3 className="font-medium">{item.name}</h3>
-                        <p className="flex flex-row items-center">
-                          <strong className="mr-1">Color:</strong>{" "}
-                          <span
-                            className="mx-1 block h-4 w-4 rounded-full border-2 border-solid"
-                            style={{ backgroundColor: `${item.colorValue}` }}
-                          ></span>{" "}
-                          {item.colorName.charAt(0).toUpperCase() +
-                            item.colorName.slice(1)}
-                        </p>
-                        <p className="flex flex-row flex-wrap">
-                          <span className="mr-2">
-                            <strong className="text-gray-800">Price: </strong>
-                            <span
-                              className="mx-1 font-medium"
-                              style={
-                                item.discount
-                                  ? { color: "RGB(77, 181, 67)" }
-                                  : null
-                              }
-                            >
-                              ${item.price}
-                            </span>
-                            {item.discount && (
-                              <span className=" text-sm text-gray-500 line-through">
-                                ${item.oldPrice}
-                              </span>
-                            )}
-                          </span>
+  useEffect(() => {
+    if (totalProductsPrice >= minCostFreeShipping) {
+      setFreeShipping(true);
+    } else {
+      setFreeShipping(false);
+    }
 
-                          {item.amount > 1 && (
-                            <span>
-                              <strong className="text-gray-800">
-                                Total Price:{" "}
-                              </strong>
-                              <span
-                                className="mx-1 font-medium"
-                                style={
-                                  item.discount
-                                    ? { color: "RGB(77, 181, 67)" }
-                                    : null
-                                }
-                              >
-                                ${item.totalPrice}
-                              </span>
-                              {item.discount && (
-                                <span className="text-sm text-gray-500 line-through">
-                                  ${item.totalOldPrice}
-                                </span>
-                              )}
-                            </span>
-                          )}
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <hr />
-                </>
-              ))}
-            </ul>
-          ) : (
-            <h3>There are no products in your Shopping Bag!</h3>
-          )}
-          <div className="flex w-full flex-row justify-between">
-            <h3 className="font medium mx-3 text-base font-medium sm:mx-6 sm:text-lg">
-              Total Products: {totalProductsAmount}
-            </h3>
-            <div className="mx-3 flex  flex-col sm:mx-6">
-              <h3 className="font medium flex flex-row flex-wrap items-center  text-base font-medium sm:text-lg">
-                Total Price:
-                <span
-                  className="ml-2"
-                  style={
-                    discountedProducts.length
-                      ? { color: "RGB(77, 181, 67)" }
-                      : null
-                  }
-                >
-                  ${totalProductsPrice}
-                </span>
-                {discountedProducts.length ? (
-                  <span className="ml-1 text-sm text-gray-500 line-through sm:text-base">
-                    ${totalProductsOldPrice}
-                  </span>
-                ) : null}
-              </h3>
-              {discountedProducts.length > 0 && (
-                <p className="text-sm sm:text-base">
-                  You save:
-                  <span
-                    className="ml-2 font-medium"
-                    style={
-                      discountedProducts.length
-                        ? { color: "RGB(77, 181, 67)" }
-                        : null
-                    }
-                  >
-                    ${totalProductsOldPrice - totalProductsPrice}
-                  </span>
-                </p>
-              )}
-            </div>
-          </div>
-        </div>
+    console.log("shipping effect");
+  }, [totalProductsPrice]);
+
+  const initialValues = {
+    firstName: "",
+    lastName: "",
+    emailAddress: "",
+    phoneNumber: "",
+    address: "",
+    city: "",
+    country: "",
+    zipCode: "",
+    paymentMethod: "",
+    eMoneyNumber: "",
+    eMoneyPin: "",
+  };
+
+  const validationSchema = yup.object().shape({});
+
+  async function onSubmit(values, actions) {
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+    console.log(values);
+
+    actions.resetForm();
+  }
+
+  const {
+    values,
+    errors,
+    touched,
+    isSubmitting,
+    handleChange,
+    handleBlur,
+    handleSubmit,
+  } = useFormik({
+    initialValues,
+    validationSchema,
+    onSubmit,
+  });
+
+  return (
+    <div className="relative top-[64px] m-auto flex max-w-[1400px] flex-col text-gray-800 sm:top-[80px] ">
+      <h2 className="m-3 mt-7 text-xl font-medium sm:m-5 sm:mt-10 sm:text-2xl ">
+        Checkout
+      </h2>
+      <div className="flex w-full flex-col lg:flex-row">
+        <BillingDetails />
+        <Summary
+          cart={cart}
+          totalProductsAmount={totalProductsAmount}
+          totalProductsPrice={totalProductsPrice}
+          totalProductsOldPrice={totalProductsOldPrice}
+          discountedProducts={discountedProducts}
+          freeShipping={freeShipping}
+          shippingCost={shippingCost}
+          totalPrice={totalPrice}
+        />
       </div>
     </div>
   );
