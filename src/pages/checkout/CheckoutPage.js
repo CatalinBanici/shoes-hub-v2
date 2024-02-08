@@ -45,9 +45,10 @@ export default function CheckoutPage() {
     emailAddress: "",
     phoneNumber: "",
     address: "",
+    apartment: "",
+    zipCode: "",
     city: "",
     country: "",
-    zipCode: "",
     paymentMethod: "",
     eMoneyNumber: "",
     eMoneyPin: "",
@@ -63,29 +64,26 @@ export default function CheckoutPage() {
       .required("Can't be blank!"),
     phoneNumber: yup.number().typeError("Must be numbers!"),
     address: yup.string().required("Can't be blank!"),
+    apartment: yup.string(),
+    zipCode: yup.string().required("Can't be blank!"),
     city: yup.string().required("Can't be blank!"),
     country: yup.string().required("Can't be blank!"),
-    zipCode: yup.string().required("Can't be blank!"),
     paymentMethod: yup
       .string()
       .oneOf(["Cash-on-Delivery", "e-Money"])
       .required("You must pick an option!"),
-    eMoneyNumber: yup
-      .number()
-      .typeError("Must be numbers!")
-      .required("Can't be blank!"),
-    // eMoneyNumber: yup.number().when([], {
-    //   is: () => paymentMethodValue === "e-Money",
-    //   then: yup
-    //     .number()
-    //     .typeError("Must be numbers!")
-    //     .required("Can't be blank!"),
-    //   otherwise: yup.number().notRequired(),
-    // }),
-    eMoneyPin: yup
-      .number()
-      .typeError("Must be numbers!")
-      .required("Can't be blank!"),
+    eMoneyNumber: yup.number().when("paymentMethod", {
+      is: (val) => val === "e-Money",
+      then: () =>
+        yup.number().typeError("Must be numbers!").required("Can't be blank!"),
+      otherwise: () => yup.number().notRequired(),
+    }),
+    eMoneyPin: yup.number().when("paymentMethod", {
+      is: (val) => val === "e-Money",
+      then: () =>
+        yup.number().typeError("Must be numbers!").required("Can't be blank!"),
+      otherwise: () => yup.number().notRequired(),
+    }),
     terms: yup
       .boolean()
       .oneOf([true], "Please accept the terms of service!")
@@ -113,16 +111,12 @@ export default function CheckoutPage() {
     onSubmit,
   });
 
-  // var paymentMethodValue = values.paymentMethod;
-
-  // console.log(paymentMethodValue);
-
   console.log("values", values);
 
   return (
     <div className="relative top-[64px] m-auto flex max-w-[1400px] flex-col text-gray-800 sm:top-[80px] ">
       <h2 className="m-3 mt-7 text-xl font-medium sm:m-5 sm:mt-10 sm:text-2xl ">
-        Checkout
+        CHECKOUT
       </h2>
       <div className="flex w-full flex-col lg:flex-row">
         <BillingDetails

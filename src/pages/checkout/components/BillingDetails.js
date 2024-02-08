@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+import CashImage from "../../../assets/images/other/cash-icon.4d83fcbc.svg";
 
 export default function BillingDetails(props) {
   const { values, errors, touched, handleChange, handleBlur, paymentOptions } =
     props;
 
+  const paymentOptionsArray = paymentOptions.map((item) => item);
+
   return (
     <div className=" text-gray-800 lg:flex-1">
       <form className="m-3 rounded-md bg-white sm:m-5">
+        <p className="px-3 pt-3 sm:px-5 sm:pt-5">
+          Fields with " <span className="text-red-700">*</span> " are required!
+        </p>
         {/* BILLING DETAILS */}
         <div className="p-3 sm:p-5">
           <h3 className=" py-3 text-base font-medium uppercase text-orange-500 ">
@@ -141,6 +147,52 @@ export default function BillingDetails(props) {
               />
             </div>
             <div className="col-span-2 my-2 grid grid-cols-2 sm:col-span-1">
+              <label htmlFor="apartment">Apartment</label>
+              {errors.apartment && touched.apartment && (
+                <p className="text-right text-sm text-red-700">
+                  {errors.apartment}
+                </p>
+              )}
+              <input
+                className="col-span-2 rounded-md border-2 border-solid p-2"
+                style={
+                  errors.apartment &&
+                  touched.apartment && { border: "2px solid rgb(185 28 28)" }
+                }
+                type="text"
+                placeholder="e.g. Block 5, Staircase B, Apartment 10"
+                id="apartment"
+                name="apartment"
+                value={values.apartment}
+                onChange={handleChange}
+                onBlur={handleBlur}
+              />
+            </div>
+            <div className="col-span-2 my-2 grid grid-cols-2 sm:col-span-1">
+              <label htmlFor="zipCode">
+                ZIP Code <span className="text-red-700">*</span>
+              </label>
+              {errors.zipCode && touched.zipCode && (
+                <p className="text-right text-sm text-red-700">
+                  {errors.zipCode}
+                </p>
+              )}
+              <input
+                className="col-span-2 rounded-md border-2 border-solid p-2"
+                style={
+                  errors.zipCode &&
+                  touched.zipCode && { border: "2px solid rgb(185 28 28)" }
+                }
+                type="text"
+                placeholder="e.g. 234789"
+                id="zipCode"
+                name="zipCode"
+                value={values.zipCode}
+                onChange={handleChange}
+                onBlur={handleBlur}
+              />
+            </div>
+            <div className="col-span-2 my-2 grid grid-cols-2 sm:col-span-1">
               <label htmlFor="city">
                 City <span className="text-red-700">*</span>
               </label>
@@ -186,30 +238,6 @@ export default function BillingDetails(props) {
                 onBlur={handleBlur}
               />
             </div>
-            <div className="col-span-2 my-2 grid grid-cols-2 sm:col-span-1">
-              <label htmlFor="zipCode">
-                ZIP Code <span className="text-red-700">*</span>
-              </label>
-              {errors.zipCode && touched.zipCode && (
-                <p className="text-right text-sm text-red-700">
-                  {errors.zipCode}
-                </p>
-              )}
-              <input
-                className="col-span-2 rounded-md border-2 border-solid p-2"
-                style={
-                  errors.zipCode &&
-                  touched.zipCode && { border: "2px solid rgb(185 28 28)" }
-                }
-                type="text"
-                placeholder="e.g. 234789"
-                id="zipCode"
-                name="zipCode"
-                value={values.zipCode}
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-            </div>
           </div>
         </div>
 
@@ -226,7 +254,7 @@ export default function BillingDetails(props) {
           <div className=" grid grid-cols-2 gap-x-3">
             {paymentOptions.map((item) => (
               <div
-                className="col-span-2 my-2 rounded-md border-2 border-solid p-2 sm:col-span-1"
+                className="col-span-2 my-2  sm:col-span-1"
                 style={
                   errors.paymentMethod &&
                   touched.paymentMethod && {
@@ -235,9 +263,12 @@ export default function BillingDetails(props) {
                 }
                 key={item.value}
               >
-                <label htmlFor={item.value}>
+                <label
+                  className="block h-full w-full cursor-pointer rounded-md border-2 border-solid p-2 "
+                  htmlFor={item.value}
+                >
                   <input
-                    className="mx-2"
+                    className=" mx-2"
                     type="radio"
                     name="paymentMethod"
                     id={item.value}
@@ -250,61 +281,81 @@ export default function BillingDetails(props) {
                 </label>
               </div>
             ))}
-            <div className="col-span-2 my-2 grid grid-cols-2 sm:col-span-1">
-              <label htmlFor="eMoneyNumber">
-                e-Money Number <span className="text-red-700">*</span>
-              </label>
-              {errors.eMoneyNumber && touched.eMoneyNumber && (
-                <p className="text-right text-sm text-red-700">
-                  {errors.eMoneyNumber}
-                </p>
-              )}
-              <input
-                className="col-span-2 rounded-md border-2 border-solid p-2"
-                style={
-                  errors.eMoneyNumber &&
-                  touched.eMoneyNumber && { border: "2px solid rgb(185 28 28)" }
-                }
-                type="text"
-                placeholder="e.g. 123456789"
-                id="eMoneyNumber"
-                name="eMoneyNumber"
-                value={values.eMoneyNumber}
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-            </div>
-            <div className="col-span-2 my-2 grid grid-cols-2 sm:col-span-1">
-              <label className="text-gray-800" htmlFor="eMoneyPin">
-                e-Money Pin <span className="text-red-700">*</span>
-              </label>
-              {errors.eMoneyPin && touched.eMoneyPin && (
-                <p className="text-right text-sm text-red-700">
-                  {errors.eMoneyPin}
-                </p>
-              )}
-              <input
-                className="col-span-2 rounded-md border-2 border-solid p-2"
-                style={
-                  errors.eMoneyPin &&
-                  touched.eMoneyPin && { border: "2px solid rgb(185 28 28)" }
-                }
-                type="text"
-                placeholder="e.g. 3456"
-                id="eMoneyPin"
-                name="eMoneyPin"
-                value={values.eMoneyPin}
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-            </div>
+            {values.paymentMethod === paymentOptionsArray[0].value ? (
+              <div className="col-span-2 mt-3 flex flex-row items-center">
+                <div className="m-3 sm:m-5">
+                  <img className="min-w-10" src={CashImage} alt="cash" />
+                </div>
+                <div className="text-gray-500">
+                  The ‘Cash on Delivery’ option enables you to pay in cash when
+                  our delivery courier arrives at your residence. Just make sure
+                  your address is correct so that your order will not be
+                  cancelled.
+                </div>
+              </div>
+            ) : values.paymentMethod === paymentOptionsArray[1].value ? (
+              <>
+                <div className="col-span-2 my-2 grid grid-cols-2 sm:col-span-1">
+                  <label htmlFor="eMoneyNumber">
+                    e-Money Number <span className="text-red-700">*</span>
+                  </label>
+                  {errors.eMoneyNumber && touched.eMoneyNumber && (
+                    <p className="text-right text-sm text-red-700">
+                      {errors.eMoneyNumber}
+                    </p>
+                  )}
+                  <input
+                    className="col-span-2 rounded-md border-2 border-solid p-2"
+                    style={
+                      errors.eMoneyNumber &&
+                      touched.eMoneyNumber && {
+                        border: "2px solid rgb(185 28 28)",
+                      }
+                    }
+                    type="text"
+                    placeholder="e.g. 123456789"
+                    id="eMoneyNumber"
+                    name="eMoneyNumber"
+                    value={values.eMoneyNumber}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                  />
+                </div>
+                <div className="col-span-2 my-2 grid grid-cols-2 sm:col-span-1">
+                  <label className="text-gray-800" htmlFor="eMoneyPin">
+                    e-Money Pin <span className="text-red-700">*</span>
+                  </label>
+                  {errors.eMoneyPin && touched.eMoneyPin && (
+                    <p className="text-right text-sm text-red-700">
+                      {errors.eMoneyPin}
+                    </p>
+                  )}
+                  <input
+                    className="col-span-2 rounded-md border-2 border-solid p-2"
+                    style={
+                      errors.eMoneyPin &&
+                      touched.eMoneyPin && {
+                        border: "2px solid rgb(185 28 28)",
+                      }
+                    }
+                    type="text"
+                    placeholder="e.g. 3456"
+                    id="eMoneyPin"
+                    name="eMoneyPin"
+                    value={values.eMoneyPin}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                  />
+                </div>{" "}
+              </>
+            ) : null}
           </div>
         </div>
         <div className="p-3 sm:p-5">
           {errors.terms && touched.terms && (
             <p className="text-left text-sm text-red-700">{errors.terms}</p>
           )}
-          <label>
+          <label className="cursor-pointer text-lg">
             <input
               className="mr-3"
               type="checkbox"
