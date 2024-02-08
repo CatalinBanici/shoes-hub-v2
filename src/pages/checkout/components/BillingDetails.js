@@ -1,182 +1,322 @@
 import React from "react";
 
-export default function BillingDetails() {
+export default function BillingDetails(props) {
+  const { values, errors, touched, handleChange, handleBlur, paymentOptions } =
+    props;
+
   return (
-    <div className=" lg:flex-1">
+    <div className=" text-gray-800 lg:flex-1">
       <form className="m-3 rounded-md bg-white sm:m-5">
+        {/* BILLING DETAILS */}
         <div className="p-3 sm:p-5">
           <h3 className=" py-3 text-base font-medium uppercase text-orange-500 ">
             Billing Details
           </h3>
           <div className="grid grid-cols-2 gap-x-3">
             <div className="col-span-2 my-2 grid grid-cols-2 sm:col-span-1">
-              <label className="text-gray-800" htmlFor="first-name">
+              <label htmlFor="firstName">
                 First Name <span className="text-red-700">*</span>
               </label>
-              <p className="text-right text-red-700">Error</p>
+              {errors.firstName && touched.firstName && (
+                <p className="text-right text-sm text-red-700">
+                  {errors.firstName}
+                </p>
+              )}
               <input
                 className="col-span-2 rounded-md border-2 border-solid p-2"
+                style={
+                  errors.firstName &&
+                  touched.firstName && { border: "2px solid rgb(185 28 28)" }
+                }
                 type="text"
                 placeholder="e.g. John"
-                id="first-name"
-                name="first-name"
+                id="firstName"
+                name="firstName"
+                value={values.firstName}
+                onChange={handleChange}
+                onBlur={handleBlur}
               />
             </div>
             <div className="col-span-2 my-2 grid grid-cols-2 sm:col-span-1">
-              <label className="text-gray-800" htmlFor="last-name">
+              <label htmlFor="lastName">
                 Last Name <span className="text-red-700">*</span>
               </label>
-              <p className="text-right text-red-700">Error</p>
+              {errors.lastName && touched.lastName && (
+                <p className="text-right text-sm text-red-700">
+                  {errors.lastName}
+                </p>
+              )}
               <input
                 className="col-span-2 rounded-md border-2 border-solid p-2"
+                style={
+                  errors.lastName &&
+                  touched.lastName && { border: "2px solid rgb(185 28 28)" }
+                }
                 type="text"
                 placeholder="e.g. Doe"
-                id="last-name"
-                name="last-name"
+                id="lastName"
+                name="lastName"
+                value={values.lastName}
+                onChange={handleChange}
+                onBlur={handleBlur}
               />
             </div>
             <div className="col-span-2 my-2 grid grid-cols-2 sm:col-span-1">
-              <label className="text-gray-800" htmlFor="email-address">
+              <label htmlFor="emailAddress">
                 Email Address <span className="text-red-700">*</span>
               </label>
-              <p className="text-right text-red-700">Error</p>
+              {errors.emailAddress && touched.emailAddress && (
+                <p className="text-right text-sm text-red-700">
+                  {errors.emailAddress}
+                </p>
+              )}
               <input
                 className="col-span-2 rounded-md border-2 border-solid p-2"
+                style={
+                  errors.emailAddress &&
+                  touched.emailAddress && { border: "2px solid rgb(185 28 28)" }
+                }
                 type="email"
                 placeholder="e.g. johndoe@email.com"
-                id="email-address"
-                name="email-address"
+                id="emailAddress"
+                name="emailAddress"
+                value={values.emailAddress}
+                onChange={handleChange}
+                onBlur={handleBlur}
               />
             </div>
             <div className="col-span-2 my-2 grid grid-cols-2 sm:col-span-1">
-              <label className="text-gray-800" htmlFor="phone-number">
-                Phone Number
-              </label>
-              <p className="text-right text-red-700">Error</p>
+              <label htmlFor="phoneNumber">Phone Number</label>
+              {errors.phoneNumber && touched.phoneNumber && (
+                <p className="text-right text-sm text-red-700">
+                  {errors.phoneNumber}
+                </p>
+              )}
               <input
                 className="col-span-2 rounded-md border-2 border-solid p-2"
+                style={
+                  errors.phoneNumber &&
+                  touched.phoneNumber && { border: "2px solid rgb(185 28 28)" }
+                }
                 type="tel"
                 placeholder="e.g. +40123456789"
-                id="phone-number"
-                name="phone-number"
+                id="phoneNumber"
+                name="phoneNumber"
+                value={values.phoneNumber}
+                onChange={handleChange}
+                onBlur={handleBlur}
               />
             </div>
           </div>
         </div>
+
+        {/* SHIPPING INFO */}
         <div className="p-3 sm:p-5">
           <h3 className=" py-3 text-base font-medium uppercase text-orange-500 ">
             Shipping Info
           </h3>
           <div className="grid grid-cols-2 gap-x-3">
             <div className="col-span-2 my-2 grid grid-cols-2 sm:col-span-2">
-              <label className="text-gray-800" htmlFor="address">
+              <label htmlFor="address">
                 Address <span className="text-red-700">*</span>
               </label>
-              <p className="text-right text-red-700">Error</p>
+              {errors.address && touched.address && (
+                <p className="text-right text-sm text-red-700">
+                  {errors.address}
+                </p>
+              )}
               <input
                 className="col-span-2 rounded-md border-2 border-solid p-2"
+                style={
+                  errors.address &&
+                  touched.address && { border: "2px solid rgb(185 28 28)" }
+                }
                 type="text"
                 placeholder="e.g. Peaceful Street no. 123"
                 id="address"
                 name="address"
+                value={values.address}
+                onChange={handleChange}
+                onBlur={handleBlur}
               />
             </div>
             <div className="col-span-2 my-2 grid grid-cols-2 sm:col-span-1">
-              <label className="text-gray-800" htmlFor="city">
+              <label htmlFor="city">
                 City <span className="text-red-700">*</span>
               </label>
-              <p className="text-right text-red-700">Error</p>
+              {errors.city && touched.city && (
+                <p className="text-right text-sm text-red-700">{errors.city}</p>
+              )}
               <input
                 className="col-span-2 rounded-md border-2 border-solid p-2"
+                style={
+                  errors.city &&
+                  touched.city && { border: "2px solid rgb(185 28 28)" }
+                }
                 type="text"
                 placeholder="e.g. London"
                 id="city"
                 name="city"
+                value={values.city}
+                onChange={handleChange}
+                onBlur={handleBlur}
               />
             </div>
             <div className="col-span-2 my-2 grid grid-cols-2 sm:col-span-1">
-              <label className="text-gray-800" htmlFor="country">
+              <label htmlFor="country">
                 Country <span className="text-red-700">*</span>
               </label>
-              <p className="text-right text-red-700">Error</p>
+              {errors.country && touched.country && (
+                <p className="text-right text-sm text-red-700">
+                  {errors.country}
+                </p>
+              )}
               <input
                 className="col-span-2 rounded-md border-2 border-solid p-2"
+                style={
+                  errors.country &&
+                  touched.country && { border: "2px solid rgb(185 28 28)" }
+                }
                 type="text"
                 placeholder="e.g. United Kingdom"
                 id="country"
                 name="country"
+                value={values.country}
+                onChange={handleChange}
+                onBlur={handleBlur}
               />
             </div>
             <div className="col-span-2 my-2 grid grid-cols-2 sm:col-span-1">
-              <label className="text-gray-800" htmlFor="zip-code">
+              <label htmlFor="zipCode">
                 ZIP Code <span className="text-red-700">*</span>
               </label>
-              <p className="text-right text-red-700">Error</p>
+              {errors.zipCode && touched.zipCode && (
+                <p className="text-right text-sm text-red-700">
+                  {errors.zipCode}
+                </p>
+              )}
               <input
                 className="col-span-2 rounded-md border-2 border-solid p-2"
+                style={
+                  errors.zipCode &&
+                  touched.zipCode && { border: "2px solid rgb(185 28 28)" }
+                }
                 type="text"
                 placeholder="e.g. 234789"
-                id="zip-code"
-                name="zip-code"
+                id="zipCode"
+                name="zipCode"
+                value={values.zipCode}
+                onChange={handleChange}
+                onBlur={handleBlur}
               />
             </div>
           </div>
         </div>
 
+        {/* PAYMENT METHOD */}
         <div className="p-3 sm:p-5">
           <h3 className=" py-3 text-base font-medium uppercase text-orange-500 ">
             Payment Method
           </h3>
+          {errors.paymentMethod && touched.paymentMethod && (
+            <p className="text-right text-sm text-red-700">
+              {errors.paymentMethod}
+            </p>
+          )}
           <div className=" grid grid-cols-2 gap-x-3">
-            <div className="col-span-2 my-2 rounded-md border-2 border-solid p-2 sm:col-span-1">
-              <label className=" text-gray-800">
-                <input
-                  className="mx-2"
-                  type="radio"
-                  name="cash-on-delivery"
-                  id="cash-on-delivery"
-                />
-                Cash on Delivery
-              </label>
-            </div>
-            <div className="col-span-2 my-2 rounded-md border-2 border-solid p-2 sm:col-span-1">
-              <label className=" text-gray-800">
-                <input
-                  className="mx-2"
-                  type="radio"
-                  name="e-money"
-                  id="e-money"
-                />
-                e-Money
-              </label>
-            </div>
+            {paymentOptions.map((item) => (
+              <div
+                className="col-span-2 my-2 rounded-md border-2 border-solid p-2 sm:col-span-1"
+                style={
+                  errors.paymentMethod &&
+                  touched.paymentMethod && {
+                    border: "2px solid rgb(185 28 28)",
+                  }
+                }
+                key={item.value}
+              >
+                <label htmlFor={item.value}>
+                  <input
+                    className="mx-2"
+                    type="radio"
+                    name="paymentMethod"
+                    id={item.value}
+                    value={item.value}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    checked={values.paymentMethod === item.value}
+                  />
+                  {item.label}
+                </label>
+              </div>
+            ))}
             <div className="col-span-2 my-2 grid grid-cols-2 sm:col-span-1">
-              <label className="text-gray-800" htmlFor="e-money-number">
+              <label htmlFor="eMoneyNumber">
                 e-Money Number <span className="text-red-700">*</span>
               </label>
-              <p className="text-right text-red-700">Error</p>
+              {errors.eMoneyNumber && touched.eMoneyNumber && (
+                <p className="text-right text-sm text-red-700">
+                  {errors.eMoneyNumber}
+                </p>
+              )}
               <input
                 className="col-span-2 rounded-md border-2 border-solid p-2"
+                style={
+                  errors.eMoneyNumber &&
+                  touched.eMoneyNumber && { border: "2px solid rgb(185 28 28)" }
+                }
                 type="text"
                 placeholder="e.g. 123456789"
-                id="e-money-number"
-                name="e-money-number"
+                id="eMoneyNumber"
+                name="eMoneyNumber"
+                value={values.eMoneyNumber}
+                onChange={handleChange}
+                onBlur={handleBlur}
               />
             </div>
             <div className="col-span-2 my-2 grid grid-cols-2 sm:col-span-1">
-              <label className="text-gray-800" htmlFor="e-money-pin">
+              <label className="text-gray-800" htmlFor="eMoneyPin">
                 e-Money Pin <span className="text-red-700">*</span>
               </label>
-              <p className="text-right text-red-700">Error</p>
+              {errors.eMoneyPin && touched.eMoneyPin && (
+                <p className="text-right text-sm text-red-700">
+                  {errors.eMoneyPin}
+                </p>
+              )}
               <input
                 className="col-span-2 rounded-md border-2 border-solid p-2"
+                style={
+                  errors.eMoneyPin &&
+                  touched.eMoneyPin && { border: "2px solid rgb(185 28 28)" }
+                }
                 type="text"
                 placeholder="e.g. 3456"
-                id="e-money-pin"
-                name="e-money-pin"
+                id="eMoneyPin"
+                name="eMoneyPin"
+                value={values.eMoneyPin}
+                onChange={handleChange}
+                onBlur={handleBlur}
               />
             </div>
           </div>
+        </div>
+        <div className="p-3 sm:p-5">
+          {errors.terms && touched.terms && (
+            <p className="text-left text-sm text-red-700">{errors.terms}</p>
+          )}
+          <label>
+            <input
+              className="mr-3"
+              type="checkbox"
+              id="terms"
+              name="terms"
+              value={values.terms}
+              onChange={handleChange}
+              onBlur={handleBlur}
+              checked={values.terms}
+            />
+            I accept the Terms of Service!
+          </label>
         </div>
       </form>
     </div>

@@ -24,8 +24,6 @@ export default function CheckoutPage() {
     ? totalProductsPrice
     : totalProductsPrice + shippingCost;
 
-  console.log("totalPrice", totalPrice);
-
   const discountedProducts = cart.filter((item) => item.discount);
 
   useEffect(() => {
@@ -34,9 +32,12 @@ export default function CheckoutPage() {
     } else {
       setFreeShipping(false);
     }
-
-    console.log("shipping effect");
   }, [totalProductsPrice]);
+
+  const paymentOptions = [
+    { label: "Cash on Delivery", value: "Cash-on-Delivery" },
+    { label: "e-Money", value: "e-Money" },
+  ];
 
   const initialValues = {
     firstName: "",
@@ -50,9 +51,46 @@ export default function CheckoutPage() {
     paymentMethod: "",
     eMoneyNumber: "",
     eMoneyPin: "",
+    terms: false,
   };
 
-  const validationSchema = yup.object().shape({});
+  const validationSchema = yup.object().shape({
+    firstName: yup.string().required("Can't be blank!"),
+    lastName: yup.string().required("Can't be blank!"),
+    emailAddress: yup
+      .string()
+      .email("Invalid email format!")
+      .required("Can't be blank!"),
+    phoneNumber: yup.number().typeError("Must be numbers!"),
+    address: yup.string().required("Can't be blank!"),
+    city: yup.string().required("Can't be blank!"),
+    country: yup.string().required("Can't be blank!"),
+    zipCode: yup.string().required("Can't be blank!"),
+    paymentMethod: yup
+      .string()
+      .oneOf(["Cash-on-Delivery", "e-Money"])
+      .required("You must pick an option!"),
+    eMoneyNumber: yup
+      .number()
+      .typeError("Must be numbers!")
+      .required("Can't be blank!"),
+    // eMoneyNumber: yup.number().when([], {
+    //   is: () => paymentMethodValue === "e-Money",
+    //   then: yup
+    //     .number()
+    //     .typeError("Must be numbers!")
+    //     .required("Can't be blank!"),
+    //   otherwise: yup.number().notRequired(),
+    // }),
+    eMoneyPin: yup
+      .number()
+      .typeError("Must be numbers!")
+      .required("Can't be blank!"),
+    terms: yup
+      .boolean()
+      .oneOf([true], "Please accept the terms of service!")
+      .required("Please accept the terms of service!"),
+  });
 
   async function onSubmit(values, actions) {
     await new Promise((resolve) => setTimeout(resolve, 2000));
@@ -75,13 +113,26 @@ export default function CheckoutPage() {
     onSubmit,
   });
 
+  // var paymentMethodValue = values.paymentMethod;
+
+  // console.log(paymentMethodValue);
+
+  console.log("values", values);
+
   return (
     <div className="relative top-[64px] m-auto flex max-w-[1400px] flex-col text-gray-800 sm:top-[80px] ">
       <h2 className="m-3 mt-7 text-xl font-medium sm:m-5 sm:mt-10 sm:text-2xl ">
         Checkout
       </h2>
       <div className="flex w-full flex-col lg:flex-row">
-        <BillingDetails />
+        <BillingDetails
+          values={values}
+          errors={errors}
+          touched={touched}
+          handleChange={handleChange}
+          handleBlur={handleBlur}
+          paymentOptions={paymentOptions}
+        />
         <Summary
           cart={cart}
           totalProductsAmount={totalProductsAmount}
