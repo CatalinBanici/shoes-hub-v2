@@ -253,18 +253,15 @@ export default function BillingDetails(props) {
           )}
           <div className=" grid grid-cols-2 gap-x-3">
             {paymentOptions.map((item) => (
-              <div
-                className="col-span-2 my-2  sm:col-span-1"
-                style={
-                  errors.paymentMethod &&
-                  touched.paymentMethod && {
-                    border: "2px solid rgb(185 28 28)",
-                  }
-                }
-                key={item.value}
-              >
+              <div className="col-span-2 my-2  sm:col-span-1" key={item.value}>
                 <label
                   className="block h-full w-full cursor-pointer rounded-md border-2 border-solid p-2 "
+                  style={
+                    errors.paymentMethod &&
+                    touched.paymentMethod && {
+                      border: "2px solid rgb(185 28 28)",
+                    }
+                  }
                   htmlFor={item.value}
                 >
                   <input
@@ -355,7 +352,15 @@ export default function BillingDetails(props) {
           {errors.terms && touched.terms && (
             <p className="text-left text-sm text-red-700">{errors.terms}</p>
           )}
-          <label className="cursor-pointer text-lg">
+          <label
+            className="cursor-pointer text-lg"
+            style={
+              errors.terms &&
+              touched.terms && {
+                borderBottom: "2px solid rgb(185 28 28)",
+              }
+            }
+          >
             <input
               className="mr-3"
               type="checkbox"

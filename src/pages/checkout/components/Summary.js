@@ -1,4 +1,5 @@
 import React from "react";
+import { ClipLoader } from "react-spinners";
 
 export default function Summary({
   cart,
@@ -9,6 +10,8 @@ export default function Summary({
   totalPrice,
   discountedProducts,
   totalProductsPrice,
+  handleSubmit,
+  isSubmitting,
 }) {
   return (
     <div className="lg:w-[35%]">
@@ -155,8 +158,17 @@ export default function Summary({
             </li>
           </ul>
           <div className="m-3 flex items-center justify-center sm:m-5">
-            <button className=" w-full rounded-md bg-orange-600 p-3 text-xl text-white">
-              Place Order
+            <button
+              className=" flex w-full items-center justify-center rounded-md bg-orange-600 p-3 text-xl text-white disabled:bg-gray-300"
+              type="submit"
+              onClick={handleSubmit}
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? (
+                <ClipLoader color="#ffffff" size={28} />
+              ) : (
+                "Place Order"
+              )}
             </button>
           </div>
         </section>

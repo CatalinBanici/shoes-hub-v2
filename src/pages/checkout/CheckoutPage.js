@@ -111,8 +111,6 @@ export default function CheckoutPage() {
     onSubmit,
   });
 
-  console.log("values", values);
-
   return (
     <div className="relative top-[64px] m-auto flex max-w-[1400px] flex-col text-gray-800 sm:top-[80px] ">
       <h2 className="m-3 mt-7 text-xl font-medium sm:m-5 sm:mt-10 sm:text-2xl ">
@@ -136,6 +134,8 @@ export default function CheckoutPage() {
           freeShipping={freeShipping}
           shippingCost={shippingCost}
           totalPrice={totalPrice}
+          handleSubmit={handleSubmit}
+          isSubmitting={isSubmitting}
         />
       </div>
     </div>
