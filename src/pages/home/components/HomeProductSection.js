@@ -66,11 +66,11 @@ export default function HomeProductSection() {
   );
 
   return (
-    <div>
+    <div className="max-w-[1280px] xl:m-auto">
       {/* new arrivals */}
       <div>
         <h2 className=" px-5 pt-5 text-xl font-medium text-gray-800 sm:ml-10">
-          New Arrivals:
+          NEW ARRIVALS:
         </h2>
         <Swiper
           className="h-full"
@@ -90,17 +90,13 @@ export default function HomeProductSection() {
               spaceBetween: 20,
               slidesPerView: 4,
             },
-            1400: {
-              spaceBetween: 20,
-              slidesPerView: 5,
-            },
           }}
           navigation
           pagination={{ clickable: true }}
           loop={true}
           scrollbar={{ draggable: true }}
           autoplay={{
-            delay: 7000,
+            delay: 5000,
             disableOnInteraction: false,
           }}
           onSlideChange={() => null}
@@ -124,7 +120,7 @@ export default function HomeProductSection() {
       {/* sneakers sale */}
       <div>
         <h2 className=" px-5 pt-5 text-xl font-medium text-gray-800 sm:ml-10">
-          Sneakers Sale over 30%:
+          SNEAKERS SALE OVER 30% - in progress:
         </h2>
         <Swiper
           className="h-full"
@@ -144,17 +140,13 @@ export default function HomeProductSection() {
               spaceBetween: 20,
               slidesPerView: 4,
             },
-            1400: {
-              spaceBetween: 20,
-              slidesPerView: 5,
-            },
           }}
           navigation
           pagination={{ clickable: true }}
           loop={true}
           scrollbar={{ draggable: true }}
           autoplay={{
-            delay: 7000,
+            delay: 5000,
             disableOnInteraction: false,
           }}
           onSlideChange={() => null}
@@ -178,7 +170,7 @@ export default function HomeProductSection() {
       {/* boots sale */}
       <div>
         <h2 className=" px-5 pt-5 text-xl font-medium text-gray-800 sm:ml-10">
-          Winter Sale over 40% on our Boots:
+          WINTER SALE OVER 40% ON OUR BOOTS - in progress:
         </h2>
         <Swiper
           className="h-full"
@@ -198,17 +190,13 @@ export default function HomeProductSection() {
               spaceBetween: 20,
               slidesPerView: 4,
             },
-            1400: {
-              spaceBetween: 20,
-              slidesPerView: 5,
-            },
           }}
           navigation
           pagination={{ clickable: true }}
           loop={true}
           scrollbar={{ draggable: true }}
           autoplay={{
-            delay: 7000,
+            delay: 5000,
             disableOnInteraction: false,
           }}
           onSlideChange={() => null}

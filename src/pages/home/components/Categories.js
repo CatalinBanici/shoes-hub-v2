@@ -10,14 +10,11 @@ export default function Categories() {
   const dispatch = useDispatch();
 
   return (
-    <div className=" mb-14  h-[50vh] sm:h-[70vh]">
-      <h1 className=" text-md flex  h-[10vh] items-center justify-center px-3 text-center font-josefin text-gray-600 sm:h-[20vh]">
-        The only shoe website that will get you addicted {"(in a good way)"}.
-      </h1>
-      <div className="flex h-[40vh] flex-col gap-2 sm:h-[50vh] sm:flex-row sm:justify-evenly">
-        <div className="relative h-[20vh] sm:h-full">
-          <div className="absolute top-5 flex w-full items-center justify-center text-white ">
-            <p className=" rounded-sm bg-black bg-opacity-50 px-3 py-1 uppercase">
+    <div className=" m-3 mb-14 h-[50vh]  sm:m-5 sm:h-[60vh]">
+      <div className="flex h-[40vh]  flex-col gap-2 sm:h-[50vh] sm:flex-row sm:justify-evenly">
+        <div className="group relative h-[20vh] sm:h-full lg:overflow-hidden">
+          <div className="absolute top-10 flex w-full items-center justify-center text-white ">
+            <p className=" rounded-sm bg-black bg-opacity-50 px-8 py-4 uppercase">
               Men's Collection
             </p>
           </div>
@@ -26,9 +23,9 @@ export default function Categories() {
             src={menCategory}
             alt="Men Shoe Category"
           />
-          <div className="absolute bottom-5 flex w-full items-center justify-center">
+          <div className="absolute bottom-10 flex w-full items-center justify-center text-lg lg:bottom-[-230px] lg:h-[50%] lg:bg-black lg:bg-opacity-50 lg:text-xl lg:transition lg:delay-100 lg:ease-out lg:group-hover:translate-y-[-230px]">
             <Link
-              className="rounded-md bg-orange-600 px-4 py-2 text-white"
+              className="rounded-md bg-amber-500 px-8 py-4 text-white lg:transition lg:delay-75 lg:ease-out lg:hover:scale-105 lg:hover:bg-amber-400"
               to="store"
               onClick={() => dispatch(filterByGender("male"))}
             >
@@ -36,9 +33,9 @@ export default function Categories() {
             </Link>
           </div>
         </div>
-        <div className="relative h-[20vh] sm:h-full">
-          <div className="absolute top-5 flex w-full items-center justify-center text-white ">
-            <p className=" rounded-sm bg-black bg-opacity-50 px-3 py-1 uppercase">
+        <div className="group relative h-[20vh] sm:h-full lg:overflow-hidden">
+          <div className="absolute top-10 flex w-full items-center justify-center text-white ">
+            <p className=" rounded-sm bg-black bg-opacity-50 px-8 py-4 uppercase">
               Women's Collection
             </p>
           </div>
@@ -47,9 +44,9 @@ export default function Categories() {
             src={womenCategory}
             alt="Women Shoe Category"
           />
-          <div className="absolute bottom-5 flex w-full items-center justify-center">
+          <div className="absolute bottom-10 flex w-full items-center justify-center text-lg lg:bottom-[-230px] lg:h-[50%] lg:bg-black lg:bg-opacity-50 lg:text-xl lg:transition lg:delay-100 lg:ease-out lg:group-hover:translate-y-[-230px]">
             <Link
-              className="rounded-md bg-orange-600 px-4 py-2 text-white"
+              className="rounded-md bg-amber-500 px-8 py-4 text-white lg:transition lg:delay-75 lg:ease-out lg:hover:scale-105 lg:hover:bg-amber-400"
               to="store"
               onClick={() => dispatch(filterByGender("female"))}
             >

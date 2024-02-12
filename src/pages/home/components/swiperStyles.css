@@ -8,6 +8,20 @@
 .swiper-button-next,
 .swiper-button-prev {
   color: rgba(255, 255, 255, 0.651);
+  transition: ease-out 75ms;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    transform: scale(105%);
+  }
 }
 
 .swiper-pagination-bullet {

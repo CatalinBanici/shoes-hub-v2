@@ -43,15 +43,15 @@ export default function Carousel() {
                 <h2 className="text-md font-medium sm:my-2 sm:text-lg">
                   {element.title}
                 </h2>
-                <h3 className="font-regular sm:text-md text-sm text-gray-200 sm:my-1">
+                <h3 className="font-regular text-sm text-gray-200 sm:my-1 sm:text-base">
                   {element.text}
                 </h3>
                 <Link
-                  className="m-2 flex flex-row items-center justify-center rounded-md  bg-orange-600 px-5 py-2 text-white sm:my-5"
+                  className="m-2 flex flex-row items-center justify-center rounded-md bg-amber-500 px-10 py-2 text-lg  text-white sm:my-5 lg:px-16 lg:py-3 lg:text-2xl lg:transition lg:delay-75 lg:ease-out lg:hover:scale-105 lg:hover:bg-amber-400"
                   to="store"
                 >
                   Store
-                  <IoIosArrowRoundForward className="ml-2 text-xl" />
+                  <IoIosArrowRoundForward className="ml-2 text-2xl lg:text-4xl" />
                 </Link>
               </div>
               <img

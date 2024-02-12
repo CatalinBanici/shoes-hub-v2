@@ -2,8 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 import { TbShoppingBag } from "react-icons/tb";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { FiHome } from "react-icons/fi";
+import { MdStorefront } from "react-icons/md";
+import { clearConfigCache } from "prettier";
 
 export default function Header() {
   const navRef = useRef();
@@ -31,12 +34,12 @@ export default function Header() {
   return (
     <>
       <div className="relative flex flex-row justify-between border-b-2">
-        <div className="m-4  sm:m-6">
+        <Link className="m-4  sm:m-6" to="/">
           <span className=" text-xl font-bold text-gray-800">Shoes</span>
           <span className="ml-1 rounded-md bg-orange-600 p-2 text-xl font-bold text-white">
             HUB
           </span>
-        </div>
+        </Link>
         <div className="m-4 flex flex-row items-center justify-center sm:m-6 ">
           <div className=" mx-3 text-2xl text-gray-800">
             <button className="relative" onClick={() => navigate("cart")}>
@@ -69,37 +72,32 @@ export default function Header() {
           <li className="m-4 sm:m-6">
             <NavLink
               className={({ isActive }) =>
-                `font-medium sm:text-xl  ${
+                `flex flex-row items-center justify-center text-lg font-medium sm:text-xl  ${
                   isActive ? " text-orange-600" : " text-gray-800"
                 } `
               }
               to="/"
             >
-              Home
+              <span className="m-2 sm:my-0">
+                <FiHome />
+              </span>
+              <span className="m-2 sm:my-0">Home</span>
             </NavLink>
           </li>
+
           <li className="m-4 sm:m-6">
             <NavLink
               className={({ isActive }) =>
-                `font-medium sm:text-xl  ${
-                  isActive ? " text-orange-600" : " text-gray-800"
-                } `
-              }
-              to="/"
-            >
-              About
-            </NavLink>
-          </li>
-          <li className="m-4 sm:m-6">
-            <NavLink
-              className={({ isActive }) =>
-                ` font-medium sm:text-xl ${
+                ` flex flex-row items-center justify-center text-lg font-medium sm:text-xl ${
                   isActive ? " text-orange-600" : " text-gray-800"
                 } `
               }
               to="store"
             >
-              Store
+              <span className="m-2 sm:my-0">
+                <MdStorefront />
+              </span>
+              <span className="m-2 sm:my-0">Store</span>
             </NavLink>
           </li>
         </ul>
