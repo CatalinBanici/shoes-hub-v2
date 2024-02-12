@@ -26,15 +26,10 @@ export default function CartPage() {
     (state) => state.cart.totalProductsOldPrice,
   );
 
-  console.log("cart", cart);
-  console.log("totalProductsAmount", totalProductsAmount);
-  console.log("totalProductsPrice", totalProductsPrice);
-  console.log("totalProductsOldPrice", totalProductsOldPrice);
-
   const discountedProducts = cart.filter((item) => item.discount);
 
   return (
-    <div className="relative top-[64px] min-h-screen sm:top-[80px]">
+    <div className="relative top-[64px] min-h-screen max-w-[1024px] sm:top-[80px] lg:m-auto">
       <div className="m-2 flex flex-row items-center justify-between  text-gray-800">
         <h2 className="m-2 text-lg font-bold sm:text-xl ">Shopping Bag</h2>
         <h3 className="m-2 text-base font-medium sm:text-lg ">
@@ -181,7 +176,7 @@ export default function CartPage() {
       {totalProductsAmount > 0 && (
         <div className="flex flex-col">
           <button
-            className="m-5 flex flex-row items-center self-center rounded-lg bg-orange-600 px-10 py-2 text-white"
+            className="m-5 flex flex-row items-center self-center rounded-lg bg-orange-600 px-10 py-2 text-white lg:px-16 lg:py-4 lg:text-xl"
             onClick={() => navigate("/checkout")}
           >
             Checkout

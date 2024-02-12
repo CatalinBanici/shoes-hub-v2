@@ -27,6 +27,12 @@ export default function ProductSection({ product }) {
 
   useEffect(() => {
     setSelectedProductStock(stock[0]);
+    setColorName("");
+    setColorValue("");
+    setColorImage("");
+    setProductCount(1);
+    setNumberOfProducts(0);
+    setErrorMessage("");
   }, [product]);
 
   return (
