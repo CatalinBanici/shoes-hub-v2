@@ -63,7 +63,7 @@ export default function CartPage() {
               >
                 <div className="flex w-10 flex-col items-center justify-center sm:mx-3 sm:text-xl md:mx-6">
                   <button
-                    className="disabled:text-gray-400"
+                    className="disabled:cursor-not-allowed disabled:text-gray-400 lg:transition lg:delay-75 lg:ease-out lg:hover:scale-125 lg:hover:text-gray-500 lg:disabled:hover:scale-100 lg:disabled:hover:text-gray-400"
                     onClick={() => dispatch(modifyCartAmount([item, "+"]))}
                     disabled={item.amount >= cart[index].numberOfProducts}
                   >
@@ -71,7 +71,7 @@ export default function CartPage() {
                   </button>
                   <div>x{item.amount}</div>
                   <button
-                    className="disabled:text-gray-400"
+                    className="disabled:cursor-not-allowed disabled:text-gray-400 lg:transition lg:delay-75 lg:ease-out lg:hover:scale-125 lg:hover:text-gray-500 lg:disabled:hover:scale-100 lg:disabled:hover:text-gray-400"
                     onClick={() => dispatch(modifyCartAmount([item, "-"]))}
                     disabled={item.amount === 1}
                   >
@@ -160,7 +160,7 @@ export default function CartPage() {
                     title="Remove from Shopping Bag"
                     aria-label="Remove from Shopping Bag"
                   >
-                    <TiDelete className=" text-3xl text-red-500  sm:text-4xl" />
+                    <TiDelete className=" text-3xl text-red-500 sm:text-4xl lg:transition lg:delay-75 lg:ease-out lg:hover:scale-110  lg:hover:text-red-400" />
                   </button>
                 </div>
               </li>
@@ -176,13 +176,13 @@ export default function CartPage() {
       {totalProductsAmount > 0 && (
         <div className="flex flex-col">
           <button
-            className="m-5 flex flex-row items-center self-center rounded-lg bg-orange-600 px-10 py-2 text-white lg:px-16 lg:py-4 lg:text-xl"
+            className="m-5 flex flex-row items-center self-center rounded-lg bg-amber-500 px-16 py-3 text-white  lg:px-20 lg:py-4 lg:text-xl lg:transition lg:delay-75 lg:ease-out lg:hover:scale-105 lg:hover:bg-amber-400"
             onClick={() => navigate("/checkout")}
           >
-            Checkout
+            CHECKOUT
             <span>
               {" "}
-              <IoIosArrowRoundForward className="ml-2 text-xl" />
+              <IoIosArrowRoundForward className="ml-2 text-xl lg:text-3xl" />
             </span>
           </button>
         </div>

@@ -29,7 +29,7 @@ export default function BillingDetails(props) {
                 </p>
               )}
               <input
-                className="col-span-2 rounded-md border-2 border-solid p-2"
+                className="col-span-2 rounded-md border-2 border-solid p-2 lg:transition lg:delay-75 lg:ease-out lg:hover:border-gray-400"
                 style={
                   errors.firstName &&
                   touched.firstName && { border: "2px solid rgb(185 28 28)" }
@@ -53,7 +53,7 @@ export default function BillingDetails(props) {
                 </p>
               )}
               <input
-                className="col-span-2 rounded-md border-2 border-solid p-2"
+                className="col-span-2 rounded-md border-2 border-solid p-2 lg:transition lg:delay-75 lg:ease-out lg:hover:border-gray-400"
                 style={
                   errors.lastName &&
                   touched.lastName && { border: "2px solid rgb(185 28 28)" }
@@ -77,7 +77,7 @@ export default function BillingDetails(props) {
                 </p>
               )}
               <input
-                className="col-span-2 rounded-md border-2 border-solid p-2"
+                className="col-span-2 rounded-md border-2 border-solid p-2 lg:transition lg:delay-75 lg:ease-out lg:hover:border-gray-400"
                 style={
                   errors.emailAddress &&
                   touched.emailAddress && { border: "2px solid rgb(185 28 28)" }
@@ -99,7 +99,7 @@ export default function BillingDetails(props) {
                 </p>
               )}
               <input
-                className="col-span-2 rounded-md border-2 border-solid p-2"
+                className="col-span-2 rounded-md border-2 border-solid p-2 lg:transition lg:delay-75 lg:ease-out lg:hover:border-gray-400"
                 style={
                   errors.phoneNumber &&
                   touched.phoneNumber && { border: "2px solid rgb(185 28 28)" }
@@ -132,7 +132,7 @@ export default function BillingDetails(props) {
                 </p>
               )}
               <input
-                className="col-span-2 rounded-md border-2 border-solid p-2"
+                className="col-span-2 rounded-md border-2 border-solid p-2 lg:transition lg:delay-75 lg:ease-out lg:hover:border-gray-400"
                 style={
                   errors.address &&
                   touched.address && { border: "2px solid rgb(185 28 28)" }
@@ -154,7 +154,7 @@ export default function BillingDetails(props) {
                 </p>
               )}
               <input
-                className="col-span-2 rounded-md border-2 border-solid p-2"
+                className="col-span-2 rounded-md border-2 border-solid p-2 lg:transition lg:delay-75 lg:ease-out lg:hover:border-gray-400"
                 style={
                   errors.apartment &&
                   touched.apartment && { border: "2px solid rgb(185 28 28)" }
@@ -178,7 +178,7 @@ export default function BillingDetails(props) {
                 </p>
               )}
               <input
-                className="col-span-2 rounded-md border-2 border-solid p-2"
+                className="col-span-2 rounded-md border-2 border-solid p-2 lg:transition lg:delay-75 lg:ease-out lg:hover:border-gray-400"
                 style={
                   errors.zipCode &&
                   touched.zipCode && { border: "2px solid rgb(185 28 28)" }
@@ -200,7 +200,7 @@ export default function BillingDetails(props) {
                 <p className="text-right text-sm text-red-700">{errors.city}</p>
               )}
               <input
-                className="col-span-2 rounded-md border-2 border-solid p-2"
+                className="col-span-2 rounded-md border-2 border-solid p-2 lg:transition lg:delay-75 lg:ease-out lg:hover:border-gray-400"
                 style={
                   errors.city &&
                   touched.city && { border: "2px solid rgb(185 28 28)" }
@@ -224,7 +224,7 @@ export default function BillingDetails(props) {
                 </p>
               )}
               <input
-                className="col-span-2 rounded-md border-2 border-solid p-2"
+                className="col-span-2 rounded-md border-2 border-solid p-2 lg:transition lg:delay-75 lg:ease-out lg:hover:border-gray-400"
                 style={
                   errors.country &&
                   touched.country && { border: "2px solid rgb(185 28 28)" }
@@ -255,7 +255,7 @@ export default function BillingDetails(props) {
             {paymentOptions.map((item) => (
               <div className="col-span-2 my-2  sm:col-span-1" key={item.value}>
                 <label
-                  className="block h-full w-full cursor-pointer rounded-md border-2 border-solid p-2 "
+                  className="block h-full w-full cursor-pointer rounded-md border-2 border-solid p-2 lg:transition lg:delay-75 lg:ease-out lg:hover:border-gray-400 "
                   style={
                     errors.paymentMethod &&
                     touched.paymentMethod && {
@@ -302,7 +302,7 @@ export default function BillingDetails(props) {
                     </p>
                   )}
                   <input
-                    className="col-span-2 rounded-md border-2 border-solid p-2"
+                    className="col-span-2 rounded-md border-2 border-solid p-2 lg:transition lg:delay-75 lg:ease-out lg:hover:border-gray-400"
                     style={
                       errors.eMoneyNumber &&
                       touched.eMoneyNumber && {
@@ -328,7 +328,7 @@ export default function BillingDetails(props) {
                     </p>
                   )}
                   <input
-                    className="col-span-2 rounded-md border-2 border-solid p-2"
+                    className="col-span-2 rounded-md border-2 border-solid p-2 lg:transition lg:delay-75 lg:ease-out lg:hover:border-gray-400"
                     style={
                       errors.eMoneyPin &&
                       touched.eMoneyPin && {

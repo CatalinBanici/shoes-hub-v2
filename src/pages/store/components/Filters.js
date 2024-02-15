@@ -102,16 +102,16 @@ export default function Filters() {
         </button>
         <form
           onSubmit={(e) => e.preventDefault()}
-          className="m-2 flex h-8 max-w-[200px] flex-row rounded-lg border-2 border-solid border-gray-800 sm:w-[50%] sm:max-w-60 lg:w-full lg:max-w-full "
+          className="m-2 flex h-8 max-w-[200px] flex-row rounded-lg border-2 border-solid border-gray-800 bg-gray-100 sm:w-[50%] sm:max-w-60 lg:w-full lg:max-w-full "
         >
           <input
-            className="  w-full rounded-lg  px-2 py-px"
+            className="  w-full rounded-lg   px-2 py-px outline-none"
             type="search"
             placeholder="Search..."
             ref={searchInputRef}
           />
           <button
-            className="px-2"
+            className=" rounded-br-md rounded-tr-md px-2 lg:transition lg:delay-75 lg:ease-out lg:hover:bg-gray-200"
             onClick={() => {
               searchInputRef.current.value &&
                 dispatch(filterBySearch(searchInputRef.current.value));
@@ -135,9 +135,9 @@ export default function Filters() {
           <button
             className={`${
               colorMenu
-                ? "  border-gray-200 bg-white "
-                : "border-gray-200 bg-gray-200"
-            } flex flex-row items-center justify-center rounded-md border-2 border-solid p-2 text-gray-800 shadow-md`}
+                ? "  border-gray-800 bg-gray-200 lg:hover:border-gray-600 lg:hover:bg-gray-100"
+                : "border-gray-200 bg-gray-200 lg:hover:border-gray-100 lg:hover:bg-gray-100"
+            } flex flex-row items-center justify-center rounded-md border-2 border-solid p-2 text-gray-800 shadow-md lg:transition lg:delay-75 lg:ease-out`}
             ref={colorButtonRef}
             onClick={() => setColorMenu((cur) => !cur)}
           >
@@ -150,9 +150,12 @@ export default function Filters() {
               ref={colorMenuRef}
             >
               {filteredColors.map((color, index) => (
-                <li className="p-2 text-gray-800 " key={index}>
+                <li
+                  className="flex flex-row  text-gray-800 lg:transition lg:delay-75 lg:ease-out lg:hover:bg-gray-100 "
+                  key={index}
+                >
                   <input
-                    className="cursor-pointer"
+                    className="ml-2 cursor-pointer"
                     type="checkbox"
                     name="color-filter"
                     id={color.name}
@@ -160,7 +163,10 @@ export default function Filters() {
                     checked={color.selected}
                     onChange={() => toggleColor(index)}
                   />
-                  <label className="cursor-pointer px-2" htmlFor={color.name}>
+                  <label
+                    className="block h-full w-full cursor-pointer p-2"
+                    htmlFor={color.name}
+                  >
                     {color.name.charAt(0).toUpperCase() + color.name.slice(1)}
                   </label>
                 </li>
@@ -175,7 +181,7 @@ export default function Filters() {
           onChange={priceSort}
         >
           <label
-            className=" relative z-20 p-2  text-gray-800 "
+            className=" relative z-20 mx-1  rounded-md p-2 text-gray-800 lg:transition lg:delay-75 lg:ease-out lg:hover:bg-gray-100"
             htmlFor="price-asc"
           >
             {"Price (asc)"}
@@ -190,7 +196,7 @@ export default function Filters() {
             <span className="absolute left-0 top-0 -z-20 h-full w-full peer-checked:rounded-md peer-checked:border-2 peer-checked:border-solid peer-checked:border-gray-800"></span>
           </label>
           <label
-            className=" relative z-20 p-2  text-gray-800 "
+            className=" relative z-20 mx-1  rounded-md p-2 text-gray-800 lg:transition lg:delay-75 lg:ease-out lg:hover:bg-gray-100"
             htmlFor="price-desc"
           >
             {"Price (desc)"}
@@ -213,7 +219,7 @@ export default function Filters() {
               dispatch(filterByColorAndSortByPrice(filterAndSortValues));
               searchInputRef.current.value = "";
             }}
-            className="m-2 rounded-md bg-gray-200 p-2 text-gray-800 shadow-md disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none"
+            className="m-2 rounded-md bg-gray-200 p-2 text-gray-800 shadow-md disabled:cursor-not-allowed disabled:bg-transparent disabled:text-gray-400 disabled:shadow-none lg:transition lg:delay-75 lg:ease-out lg:hover:bg-gray-100 disabled:lg:hover:bg-white"
             disabled={
               !filterAndSortValues.filterByColor.length &&
               filterAndSortValues.sortByPrice === "none"
@@ -228,7 +234,7 @@ export default function Filters() {
               setPrice("none");
               searchInputRef.current.value = "";
             }}
-            className="m-2 p-2 text-gray-800 disabled:text-gray-400"
+            className="m-2 p-2 text-gray-800 disabled:text-gray-400  lg:hover:underline"
           >
             Reset
           </button>

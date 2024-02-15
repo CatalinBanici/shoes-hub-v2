@@ -61,7 +61,7 @@ export default function ProductSection({ product }) {
               ${product[0].price.old}
             </span>
             <span className="text-md text-gray-600">
-              {Math.trunc(discount)}% off
+              {Math.abs(Math.trunc(discount))}% off
             </span>
           </>
         )}
@@ -73,9 +73,9 @@ export default function ProductSection({ product }) {
           <h2 className="my-3 text-xl">Select a size:</h2>
           <div className="flex flex-row flex-wrap">
             {stock.map((stockItem, index) => (
-              <div className="relative m-2 h-10 w-10" key={index}>
+              <div className="relative m-2 h-10 w-10 " key={index}>
                 <input
-                  className="peer relative left-0 top-0 z-10 h-full w-full cursor-pointer opacity-0 "
+                  className="peer peer relative left-0 top-0 z-10 h-full w-full cursor-pointer opacity-0 "
                   type="radio"
                   id={index}
                   name="size"
@@ -90,7 +90,7 @@ export default function ProductSection({ product }) {
                   }}
                   checked={stockItem.size === selectedProductStock.size}
                 />
-                <label className="absolute left-0 top-0 flex h-full w-full  items-center justify-center rounded-full border-2 border-gray-300 peer-checked:border-gray-600 ">
+                <label className="absolute left-0 top-0  flex h-full  w-full items-center justify-center rounded-full border-2 border-gray-300 peer-checked:border-gray-600 lg:transition lg:delay-75 lg:ease-out lg:peer-hover:bg-gray-200">
                   {stockItem.size}
                 </label>
               </div>
@@ -113,7 +113,7 @@ export default function ProductSection({ product }) {
 
                 <div className="relative h-20 w-20">
                   <input
-                    className="peer relative z-10 h-full w-full  cursor-pointer opacity-0 "
+                    className="peer relative z-10 h-full w-full  cursor-pointer opacity-0 disabled:cursor-not-allowed "
                     id={index}
                     name="color"
                     type="radio"
@@ -130,7 +130,7 @@ export default function ProductSection({ product }) {
                   <img
                     className={`${
                       colorItem.numberOfItems <= 0 && " opacity-50"
-                    } border-gray absolute left-0 top-0 h-full w-full border-2 peer-checked:border-gray-600 peer-disabled:border-red-500  `}
+                    } border-gray absolute left-0 top-0 h-full w-full border-2 peer-checked:border-gray-800  peer-disabled:border-red-500 lg:transition lg:delay-75 lg:ease-out lg:peer-hover:border-gray-400`}
                     src={`${colorItem.colorImage}`}
                     alt={`${colorItem.colorName}`}
                   />
@@ -158,14 +158,14 @@ export default function ProductSection({ product }) {
             <button
               disabled={productCount === 1 || !colorName}
               onClick={() => setProductCount((count) => count - 1)}
-              className="h-7 w-7 rounded-full bg-gray-200 text-lg disabled:cursor-not-allowed disabled:bg-gray-100 disabled:text-gray-400"
+              className="h-7 w-7 rounded-full bg-gray-200 text-lg shadow-md disabled:cursor-not-allowed disabled:bg-gray-100 disabled:text-gray-400 lg:transition lg:delay-75 lg:ease-out lg:hover:scale-110 lg:hover:bg-gray-100 lg:disabled:hover:scale-100"
             >
               -
             </button>
             <span className="mx-2">{productCount}</span>
             <button
               onClick={() => setProductCount((count) => count + 1)}
-              className="h-7 w-7 rounded-full bg-gray-200 text-lg disabled:cursor-not-allowed disabled:bg-gray-100 disabled:text-gray-400"
+              className="h-7 w-7 rounded-full bg-gray-200 text-lg shadow-md disabled:cursor-not-allowed disabled:bg-gray-100 disabled:text-gray-400 lg:transition lg:delay-75 lg:ease-out lg:hover:scale-110 lg:hover:bg-gray-100 lg:disabled:hover:scale-100"
               disabled={productCount === numberOfProducts || !colorName}
             >
               +
@@ -177,7 +177,7 @@ export default function ProductSection({ product }) {
         <div>
           <div className="flex h-20 w-full items-center justify-around">
             <button
-              className="rounded-xl border-2 border-solid border-orange-500 bg-orange-500 px-5 py-2 text-lg text-white "
+              className="rounded-xl border-2 border-solid border-amber-500 bg-amber-500 px-5 py-2 text-lg text-white lg:px-14 lg:transition lg:delay-75 lg:ease-out lg:hover:scale-105 lg:hover:border-amber-400 lg:hover:bg-amber-400 "
               onClick={() => {
                 numberOfProducts &&
                   dispatch(
@@ -206,7 +206,7 @@ export default function ProductSection({ product }) {
               Buy Now
             </button>
             <button
-              className="rounded-lg border-2 border-gray-400 px-5 py-2 text-lg text-gray-800"
+              className="rounded-lg border-2 border-gray-400 px-5 py-2 text-lg text-gray-800 lg:px-14 lg:transition lg:delay-75 lg:ease-out lg:hover:scale-105 lg:hover:border-gray-300"
               onClick={() => {
                 numberOfProducts &&
                   dispatch(

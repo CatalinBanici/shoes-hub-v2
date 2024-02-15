@@ -36,16 +36,21 @@ export default function Header() {
       <div className="relative flex flex-row justify-between border-b-2">
         <Link className="m-4  sm:m-6" to="/">
           <span className=" text-xl font-bold text-gray-800">Shoes</span>
-          <span className="ml-1 rounded-md bg-orange-600 p-2 text-xl font-bold text-white">
+          <span className="ml-1 rounded-md bg-amber-500 p-2 text-xl font-bold text-white">
             HUB
           </span>
         </Link>
         <div className="m-4 flex flex-row items-center justify-center sm:m-6 ">
           <div className=" mx-3 text-2xl text-gray-800">
-            <button className="relative" onClick={() => navigate("cart")}>
-              <TbShoppingBag aria-label="Shopping Cart" title="Shopping Cart" />
+            <button
+              className="relative lg:transition lg:delay-75 lg:ease-out lg:hover:scale-110 lg:hover:text-gray-600"
+              aria-label="Shopping Cart"
+              title="Shopping Cart"
+              onClick={() => navigate("cart")}
+            >
+              <TbShoppingBag />
               {totalProductsAmount > 0 && (
-                <span className=" absolute bottom-[-7px] right-[-7px]  h-[1.15rem] w-[1.15rem] rounded-full bg-orange-600  text-sm text-white">
+                <span className=" absolute bottom-[-7px] right-[-7px]  h-[1.15rem] w-[1.15rem] rounded-full bg-amber-500  text-sm text-white">
                   {totalProductsAmount}
                 </span>
               )}
@@ -72,32 +77,30 @@ export default function Header() {
           <li className="m-4 sm:m-6">
             <NavLink
               className={({ isActive }) =>
-                `flex flex-row items-center justify-center text-lg font-medium sm:text-xl  ${
-                  isActive ? " text-orange-600" : " text-gray-800"
+                `text-lg font-medium sm:text-xl lg:transition lg:delay-75 lg:ease-out ${
+                  isActive
+                    ? " text-amber-500  lg:hover:text-amber-400"
+                    : " text-gray-800 lg:hover:text-gray-500"
                 } `
               }
               to="/"
             >
-              <span className="m-2 sm:my-0">
-                <FiHome />
-              </span>
-              <span className="m-2 sm:my-0">Home</span>
+              Home
             </NavLink>
           </li>
 
           <li className="m-4 sm:m-6">
             <NavLink
               className={({ isActive }) =>
-                ` flex flex-row items-center justify-center text-lg font-medium sm:text-xl ${
-                  isActive ? " text-orange-600" : " text-gray-800"
+                `text-lg font-medium sm:text-xl lg:transition lg:delay-75 lg:ease-out ${
+                  isActive
+                    ? " text-amber-500  lg:hover:text-amber-400"
+                    : " text-gray-800 lg:hover:text-gray-500"
                 } `
               }
               to="store"
             >
-              <span className="m-2 sm:my-0">
-                <MdStorefront />
-              </span>
-              <span className="m-2 sm:my-0">Store</span>
+              Store
             </NavLink>
           </li>
         </ul>
