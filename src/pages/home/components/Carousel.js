@@ -19,7 +19,7 @@ import { Link } from "react-router-dom";
 
 export default function Carousel() {
   return (
-    <div className="h-[50vh] sm:h-[100vh]">
+    <div className="h-[60vh] sm:h-[100vh]">
       <Swiper
         className="h-full"
         modules={[Navigation, Pagination, Scrollbar, Autoplay, A11y]}

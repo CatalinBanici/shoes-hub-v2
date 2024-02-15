@@ -159,7 +159,7 @@ export default function Summary({
           </ul>
           <div className="m-3 flex items-center justify-center sm:m-5">
             <button
-              className=" flex w-full items-center justify-center rounded-md bg-amber-500 p-3 text-xl text-white disabled:bg-gray-300 lg:transition lg:delay-75 lg:ease-out lg:hover:scale-105 lg:hover:bg-amber-400"
+              className=" flex w-full items-center justify-center rounded-md bg-amber-500 p-3 text-xl text-white disabled:bg-gray-300 lg:transition lg:delay-75 lg:ease-out lg:hover:scale-105 lg:hover:bg-amber-400 lg:disabled:hover:bg-gray-300"
               type="submit"
               onClick={handleSubmit}
               disabled={isSubmitting}

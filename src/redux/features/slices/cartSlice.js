@@ -156,9 +156,29 @@ export const cartSlice = createSlice({
       );
       localStorage.setItem("totalProductsOldPrice", saveTotalProductsOldPrice);
     },
+
+    resetCart(state, action) {
+      if (state.cart) {
+        state.cart = [];
+        state.totalProductsAmount = 0;
+        state.totalProductsPrice = 0;
+        state.totalProductsOldPrice = 0;
+      }
+
+      const saveCart = JSON.stringify(state.cart);
+      localStorage.setItem("cart", saveCart);
+      const saveTotalProductsAmount = JSON.stringify(state.totalProductsAmount);
+      localStorage.setItem("totalProductsAmount", saveTotalProductsAmount);
+      const saveTotalProductsPrice = JSON.stringify(state.totalProductsPrice);
+      localStorage.setItem("totalProductsPrice", saveTotalProductsPrice);
+      const saveTotalProductsOldPrice = JSON.stringify(
+        state.totalProductsOldPrice,
+      );
+      localStorage.setItem("totalProductsOldPrice", saveTotalProductsOldPrice);
+    },
   },
 });
 
-export const { addToCart, removeFromCart, modifyCartAmount } =
+export const { addToCart, removeFromCart, modifyCartAmount, resetCart } =
   cartSlice.actions;
 export default cartSlice.reducer;

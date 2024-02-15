@@ -46,11 +46,6 @@ export default function About() {
           for footwear essentials. Step into style and comfort with us today!
         </p>
       </div>
-      <div>
-        <h1 className=" text-md flex  h-[10vh] items-center justify-center px-3 text-center font-josefin text-gray-600 sm:h-[20vh]">
-          The only shoe website that will get you addicted {"(in a good way)"}.
-        </h1>
-      </div>
     </div>
   );
 }

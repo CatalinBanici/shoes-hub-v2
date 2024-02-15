@@ -9,9 +9,9 @@ export default function HomePage() {
     <>
       <div>
         <Carousel />
-        <About />
         <Categories />
         <HomeProductSection />
+        <About />
       </div>
     </>
   );

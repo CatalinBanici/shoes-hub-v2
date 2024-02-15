@@ -10,6 +10,7 @@ import { Link, useNavigate } from "react-router-dom";
 import {
   modifyCartAmount,
   removeFromCart,
+  resetCart,
 } from "../../redux/features/slices/cartSlice";
 
 export default function CartPage() {
