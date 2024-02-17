@@ -98,6 +98,21 @@ export default function Header() {
                     : " text-gray-800 lg:hover:text-gray-500"
                 } `
               }
+              to="about"
+            >
+              About
+            </NavLink>
+          </li>
+
+          <li className="m-4 sm:m-6">
+            <NavLink
+              className={({ isActive }) =>
+                `text-lg font-medium sm:text-xl lg:transition lg:delay-75 lg:ease-out ${
+                  isActive
+                    ? " text-amber-500  lg:hover:text-amber-400"
+                    : " text-gray-800 lg:hover:text-gray-500"
+                } `
+              }
               to="store"
             >
               Store

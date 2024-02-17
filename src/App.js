@@ -12,7 +12,7 @@ import ProductPage from "./pages/product/ProductPage";
 import CheckoutPage from "./pages/checkout/CheckoutPage";
 import CartPage from "./pages/cart/CartPage";
 import { useSelector } from "react-redux";
-import About from "./pages/home/components/About";
+import About from "./pages/about/About";
 
 function App() {
   const aboutSecttionRef = useRef();
