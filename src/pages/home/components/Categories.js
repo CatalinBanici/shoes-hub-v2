@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import menCategory from "../../../assets/images/home-page/men.jpg";
@@ -6,7 +6,14 @@ import womenCategory from "../../../assets/images/home-page/women.jpg";
 import { useDispatch } from "react-redux";
 import { filterByGender } from "../../../redux/features/slices/productsSlice";
 
+import aos from "aos";
+import "aos/dist/aos.css";
+
 export default function Categories() {
+  useEffect(() => {
+    aos.init();
+  }, []);
+
   const dispatch = useDispatch();
 
   return (
@@ -15,7 +22,12 @@ export default function Categories() {
         The only shoe website that will get you addicted {"(in a good way)"}.
       </h1>
       <div className="flex   flex-col gap-2  sm:flex-row sm:justify-evenly">
-        <div className="group relative h-[20vh] sm:h-full lg:overflow-hidden">
+        <div
+          className="group relative h-[20vh] sm:h-full lg:overflow-hidden"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-delay="200"
+        >
           <div className="absolute top-3 flex w-full items-center justify-center text-white sm:top-10 ">
             <p className=" rounded-sm bg-black bg-opacity-50 px-4 py-2 uppercase sm:px-8 sm:py-3">
               Men's Collection
@@ -36,7 +48,12 @@ export default function Categories() {
             </Link>
           </div>
         </div>
-        <div className="group relative h-[20vh] sm:h-full lg:overflow-hidden">
+        <div
+          className="group relative h-[20vh] sm:h-full lg:overflow-hidden"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-delay="200"
+        >
           <div className="absolute top-3 flex w-full items-center justify-center text-white sm:top-10 ">
             <p className=" rounded-sm bg-black bg-opacity-50 px-4 py-2 uppercase sm:px-8 sm:py-3">
               Women's Collection

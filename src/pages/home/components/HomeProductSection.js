@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import data from "../../../data/data.json";
 import ProductCard from "../../store/components/ProductCard";
 
@@ -23,7 +23,14 @@ import {
   resetCategoryAndGenderFilteredProducts,
 } from "../../../redux/features/slices/productsSlice";
 
+import aos from "aos";
+import "aos/dist/aos.css";
+
 export default function HomeProductSection() {
+  useEffect(() => {
+    aos.init();
+  }, []);
+
   const dispatch = useDispatch();
 
   // getting all the products from the local json file
@@ -68,7 +75,12 @@ export default function HomeProductSection() {
   return (
     <div className="max-w-[1280px] xl:m-auto">
       {/* new arrivals */}
-      <div>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-delay="200"
+        data-aos-offset="300"
+      >
         <h2 className=" px-5 pt-5 text-xl font-medium text-gray-800 sm:ml-10">
           NEW ARRIVALS:
         </h2>
@@ -118,7 +130,12 @@ export default function HomeProductSection() {
       </div>
 
       {/* sneakers sale */}
-      <div>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-delay="200"
+        data-aos-offset="300"
+      >
         <h2 className=" px-5 pt-5 text-xl font-medium text-gray-800 sm:ml-10">
           SNEAKERS SALE OVER 30% - in progress:
         </h2>
@@ -168,7 +185,12 @@ export default function HomeProductSection() {
       </div>
 
       {/* boots sale */}
-      <div>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-delay="200"
+        data-aos-offset="300"
+      >
         <h2 className=" px-5 pt-5 text-xl font-medium text-gray-800 sm:ml-10">
           WINTER SALE OVER 40% ON OUR BOOTS - in progress:
         </h2>

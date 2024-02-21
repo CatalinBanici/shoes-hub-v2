@@ -8,6 +8,10 @@ import { Link } from "react-router-dom";
 // COMPONENTS
 import ProductCard from "./ProductCard";
 
+import aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 export default function ProductsList() {
   const categoryAndGenderFilteredProducts = useSelector(
     (state) => state.products.categoryAndGenderFilteredProducts,
@@ -17,12 +21,22 @@ export default function ProductsList() {
   );
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    aos.init();
+  }, []);
+
   return (
     <div className="m-10 flex flex-col lg:col-span-3 lg:m-5 2xl:col-span-4">
       <ul className="items-top flex  min-h-screen flex-1 flex-wrap justify-around gap-10">
         {Array.isArray(colorFilteredAndPriceSortedProducts)
           ? colorFilteredAndPriceSortedProducts.map((product) => (
-              <li key={product.id}>
+              <li
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="100"
+                data-aos-offset="200"
+                key={product.id}
+              >
                 <Link
                   to={product.id}
                   onClick={() => dispatch(filterById(product.id))}
@@ -32,7 +46,13 @@ export default function ProductsList() {
               </li>
             ))
           : categoryAndGenderFilteredProducts.map((product) => (
-              <li key={product.id}>
+              <li
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="100"
+                data-aos-offset="200"
+                key={product.id}
+              >
                 <Link
                   to={product.id}
                   onClick={() => dispatch(filterById(product.id))}
