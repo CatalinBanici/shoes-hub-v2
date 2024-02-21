@@ -102,7 +102,7 @@ export default function ProductsList() {
         <button
           className={`${
             currentPage === 1
-              ? "bg-gray-300"
+              ? "cursor-not-allowed bg-gray-300"
               : "bg-amber-500 lg:hover:scale-105 lg:hover:bg-amber-400"
           } flex flex-row items-center rounded-md  px-4 py-2 text-base text-white lg:text-lg lg:transition lg:delay-75 lg:ease-out `}
           // className="rounded-md bg-amber-500 px-2 py-1 text-base text-white disabled:bg-gray-300 lg:px-4 lg:py-2 lg:text-lg lg:transition lg:delay-75 lg:ease-out lg:hover:scale-105 lg:hover:bg-amber-400 lg:disabled:hover:scale-100 lg:disabled:hover:bg-gray-300"
