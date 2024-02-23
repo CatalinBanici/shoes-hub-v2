@@ -1,18 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { ClipLoader } from "react-spinners";
+import data from "../../../data/data.json";
 
 export default function Summary({
   cart,
   totalProductsAmount,
   totalProductsOldPrice,
-  freeShipping,
-  shippingCost,
-  totalPrice,
   discountedProducts,
   totalProductsPrice,
   handleSubmit,
   isSubmitting,
 }) {
+  const [freeShipping, setFreeShipping] = useState(false);
+
+  const shippingCost = data.misc.shippingCost;
+  const minCostFreeShipping = data.misc.minimumPriceFreeShipping;
+  const totalPrice = freeShipping
+    ? totalProductsPrice
+    : totalProductsPrice + shippingCost;
+
+  useEffect(() => {
+    if (totalProductsPrice >= minCostFreeShipping) {
+      setFreeShipping(true);
+    } else {
+      setFreeShipping(false);
+    }
+  }, [totalProductsPrice]);
+
   return (
     <div className="lg:w-[35%]">
       <h2 className="m-3 text-lg font-medium sm:m-6 sm:text-xl">Summary:</h2>

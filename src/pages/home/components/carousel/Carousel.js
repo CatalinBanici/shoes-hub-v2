@@ -1,6 +1,12 @@
+// REACT
 import React from "react";
-import data from "../../../data/data.json";
+
+// REACT ROUTER
+import { Link } from "react-router-dom";
+
+// REACT ICONS
 import { IoIosArrowRoundForward } from "react-icons/io";
+
 // SWIPER
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
@@ -14,10 +20,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import "./swiperStyles.css";
-import { Link } from "react-router-dom";
+import "../swiperStyles.css";
 
-export default function Carousel() {
+export default function Carousel({ homePageData }) {
   return (
     <div className="h-[60vh] sm:h-[100vh]">
       <Swiper
@@ -36,7 +41,7 @@ export default function Carousel() {
         onSlideChange={() => null}
         onSwiper={(swiper) => null}
       >
-        {data.carousel.map((element) => (
+        {homePageData.map((element) => (
           <SwiperSlide key={element.id}>
             <div className="relative flex h-full w-full flex-col items-center justify-center ">
               <div className="absolute flex w-full flex-col items-center justify-center bg-black bg-opacity-40 px-10 py-2 text-center text-white sm:py-5">

@@ -21,23 +21,9 @@ export default function CheckoutPage() {
 
   const dispatch = useDispatch();
 
-  const [freeShipping, setFreeShipping] = useState(false);
   const [orderCompleted, setOrderCompleted] = useState(false);
-  const shippingCost = 20;
-  const minCostFreeShipping = 200;
-  const totalPrice = freeShipping
-    ? totalProductsPrice
-    : totalProductsPrice + shippingCost;
 
   const discountedProducts = cart.filter((item) => item.discount);
-
-  useEffect(() => {
-    if (totalProductsPrice >= minCostFreeShipping) {
-      setFreeShipping(true);
-    } else {
-      setFreeShipping(false);
-    }
-  }, [totalProductsPrice]);
 
   const paymentOptions = [
     { label: "Cash on Delivery", value: "Cash-on-Delivery" },
@@ -140,9 +126,6 @@ export default function CheckoutPage() {
             totalProductsPrice={totalProductsPrice}
             totalProductsOldPrice={totalProductsOldPrice}
             discountedProducts={discountedProducts}
-            freeShipping={freeShipping}
-            shippingCost={shippingCost}
-            totalPrice={totalPrice}
             handleSubmit={handleSubmit}
             isSubmitting={isSubmitting}
           />
