@@ -19,29 +19,25 @@ export const productsSlice = createSlice({
   },
   reducers: {
     filterByCategoryMale(state, action) {
-      const maleProducts = allProducts.filter(
-        (product) => product.gender === "male",
-      );
-      const categoryFilterMale = maleProducts.filter(
-        (product) => product.category === action.payload,
-      );
-      state.categoryAndGenderFilteredProducts = categoryFilterMale;
+      const maleCategoryProducts = allProducts
+        .filter((product) => product.gender === "male")
+        .filter((product) => product.category === action.payload);
 
-      // saving the state to session storage
+      state.categoryAndGenderFilteredProducts = maleCategoryProducts;
+
+      // save state to session storage
       const saveState = JSON.stringify(state.categoryAndGenderFilteredProducts);
       sessionStorage.setItem("categoryAndGenderFilteredProducts", saveState);
     },
 
     filterByCategoryFemale(state, action) {
-      const femaleProducts = allProducts.filter(
-        (product) => product.gender === "female",
-      );
-      const categoryFilterFemale = femaleProducts.filter(
-        (product) => product.category === action.payload,
-      );
-      state.categoryAndGenderFilteredProducts = categoryFilterFemale;
+      const femaleCategoryProducts = allProducts
+        .filter((product) => product.gender === "female")
+        .filter((product) => product.category === action.payload);
 
-      // saving the state to session storage
+      state.categoryAndGenderFilteredProducts = femaleCategoryProducts;
+
+      // save state to session storage
       const saveState = JSON.stringify(state.categoryAndGenderFilteredProducts);
       sessionStorage.setItem("categoryAndGenderFilteredProducts", saveState);
     },
@@ -50,9 +46,10 @@ export const productsSlice = createSlice({
       const categoryProducts = allProducts.filter(
         (product) => product.category === action.payload,
       );
+
       state.categoryAndGenderFilteredProducts = categoryProducts;
 
-      // saving the state to session storage
+      // save state to session storage
       const saveState = JSON.stringify(state.categoryAndGenderFilteredProducts);
       sessionStorage.setItem("categoryAndGenderFilteredProducts", saveState);
     },
@@ -64,6 +61,7 @@ export const productsSlice = createSlice({
       const femaleProducts = allProducts.filter(
         (product) => product.gender === "female",
       );
+
       switch (action.payload) {
         case "male":
           state.categoryAndGenderFilteredProducts = maleProducts;
@@ -75,7 +73,7 @@ export const productsSlice = createSlice({
           return allProducts;
       }
 
-      // saving the state to session storage
+      // save state to session storage
       const saveState = JSON.stringify(state.categoryAndGenderFilteredProducts);
       sessionStorage.setItem("categoryAndGenderFilteredProducts", saveState);
     },
@@ -84,9 +82,10 @@ export const productsSlice = createSlice({
       const oneProduct = allProducts.filter((product) => {
         return product.id === action.payload;
       });
+
       state.singleProduct = oneProduct;
 
-      // saving the state to session storage
+      // save state to session storage
       const saveState = JSON.stringify(state.singleProduct);
       sessionStorage.setItem("singleProduct", saveState);
     },
@@ -121,6 +120,7 @@ export const productsSlice = createSlice({
         return compareArrays(colorFilterType, colorValues);
       });
 
+      // sort logic
       if (productColors.length === 0) {
         if (priceSortType === "price-asc") {
           const priceAsc = filteredProductsCopy.sort((a, b) => {

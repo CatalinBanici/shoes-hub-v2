@@ -56,6 +56,7 @@ export const cartSlice = createSlice({
           action.payload.oldPrice * action.payload.amount;
       }
 
+      // save cart state to local storage
       const saveCart = JSON.stringify(state.cart);
       localStorage.setItem("cart", saveCart);
       const saveTotalProductsAmount = JSON.stringify(state.totalProductsAmount);
@@ -95,6 +96,7 @@ export const cartSlice = createSlice({
         state.totalProductsOldPrice -= action.payload.totalOldPrice;
       }
 
+      // save cart state to local storage
       const saveCart = JSON.stringify(state.cart);
       localStorage.setItem("cart", saveCart);
       const saveTotalProductsAmount = JSON.stringify(state.totalProductsAmount);
@@ -145,6 +147,7 @@ export const cartSlice = createSlice({
           return null;
       }
 
+      // save cart state to local storage
       const saveCart = JSON.stringify(state.cart);
       localStorage.setItem("cart", saveCart);
       const saveTotalProductsAmount = JSON.stringify(state.totalProductsAmount);
@@ -165,6 +168,7 @@ export const cartSlice = createSlice({
         state.totalProductsOldPrice = 0;
       }
 
+      // save cart state to local storage
       const saveCart = JSON.stringify(state.cart);
       localStorage.setItem("cart", saveCart);
       const saveTotalProductsAmount = JSON.stringify(state.totalProductsAmount);
