@@ -1,6 +1,6 @@
 import React from "react";
 import data from "../../../data/data.json";
-import ProductCard from "../../store/components/ProductCard";
+import ProductCard from "../../store/components/product-card/ProductCard";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { filterById } from "../../../redux/features/slices/productsSlice";

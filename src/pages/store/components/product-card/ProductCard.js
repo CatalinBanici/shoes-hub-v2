@@ -1,13 +1,14 @@
-export default function ProductCard({ product }) {
-  // getting each individual color
-  const stock = product.stock.map((e) => e);
-  const colorsStock = stock[1].colors;
-  const colorValues = colorsStock.map((e) => e.colorValue);
+// REACT
+import React from "react";
 
-  //getting the discount % if there is any
+export default function ProductCard({ product }) {
+  // get each individual color from the products to be renderd in the product card
+  const stock = product.stock.map((e) => e);
+  const colorValues = stock[1].colors.map((e) => e.colorValue);
+
+  //get the discount % if there is any
   const substract = product.price.current - product.price.old;
-  const divide = substract / product.price.old;
-  const discount = divide * 100;
+  const discount = (substract / product.price.old) * 100;
 
   return (
     <div className=" flex h-[350px] w-60 flex-col rounded-lg bg-white shadow-xl duration-150 ease-out lg:hover:scale-105">

@@ -31,7 +31,7 @@ import "aos/dist/aos.css";
 import data from "../../../../../data/data.json";
 
 // COMPONENTS
-import ProductCard from "../../../../store/components/ProductCard";
+import ProductCard from "../../../../store/components/product-card/ProductCard";
 
 export default function SaleSneakers({ homePageData }) {
   const dispatch = useDispatch();
