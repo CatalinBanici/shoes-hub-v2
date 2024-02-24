@@ -115,8 +115,7 @@ export const productsSlice = createSlice({
           return array1.some((element) => array2.includes(element));
         }
         const stock = product.stock.map((e) => e);
-        const colorsStock = stock[1].colors;
-        const colorValues = colorsStock.map((e) => e.colorValue);
+        const colorValues = stock[1].colors.map((e) => e.colorValue);
         return compareArrays(colorFilterType, colorValues);
       });
 
