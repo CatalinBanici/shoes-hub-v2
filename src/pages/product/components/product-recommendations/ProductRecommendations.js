@@ -1,9 +1,18 @@
+// REACT
 import React from "react";
-import data from "../../../data/data.json";
-import ProductCard from "../../store/components/product-card/ProductCard";
+
+// REACT ROUTER
 import { Link } from "react-router-dom";
+
+// REDUX
 import { useDispatch } from "react-redux";
-import { filterById } from "../../../redux/features/slices/productsSlice";
+import { filterById } from "../../../../redux/features/slices/productsSlice";
+
+// OTHER
+import data from "../../../../data/data.json";
+
+// COMPONENTS
+import ProductCard from "../../../store/components/product-card/ProductCard";
 
 export default function ProductRecommendations({ product }) {
   const dispatch = useDispatch();

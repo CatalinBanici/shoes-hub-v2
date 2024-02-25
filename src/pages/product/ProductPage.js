@@ -1,8 +1,13 @@
+// REACT
 import React from "react";
-import ProductGallery from "./components/ProductGallery";
-import ProductSection from "./components/ProductSection";
+
+// REDUX
 import { useSelector } from "react-redux";
-import ProductRecommendations from "./components/ProductRecommendations";
+
+// COMPONENTS
+import ProductGallery from "./components/product-gallery/ProductGallery";
+import ProductSection from "./components/product-section/ProductSection";
+import ProductRecommendations from "./components/product-recommendations/ProductRecommendations";
 
 export default function ProductPage() {
   const singleProduct = useSelector((state) => state.products.singleProduct);
