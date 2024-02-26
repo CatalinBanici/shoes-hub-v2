@@ -1,5 +1,5 @@
 // REACT
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 // REACT ROUTER
 import { Link } from "react-router-dom";
@@ -12,7 +12,7 @@ import { filterByGender } from "../../../../../redux/features/slices/productsSli
 import aos from "aos";
 import "aos/dist/aos.css";
 
-// OTHER
+// IMAGES
 import womenCategory from "../../../../../assets/images/home-page/women.jpg";
 
 export default function FemaleCategoryCard() {

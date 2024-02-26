@@ -1,6 +1,3 @@
-// REACT
-import React from "react";
-
 export default function ProductCard({ product }) {
   // get each individual color from the products to be renderd in the product card
   const stock = product.stock.map((e) => e);

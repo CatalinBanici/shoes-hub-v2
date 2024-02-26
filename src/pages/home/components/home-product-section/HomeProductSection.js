@@ -1,6 +1,3 @@
-// REACT
-import React from "react";
-
 // COMPONENTS
 import NewArrivals from "./sub-components/NewArrivals";
 import SaleSneakers from "./sub-components/SaleSneakers";

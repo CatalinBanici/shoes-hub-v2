@@ -1,6 +1,3 @@
-// REACT
-import React from "react";
-
 export default function ProductQuantity(props) {
   const { productCount, setProductCount, colorName, numberOfProducts } = props;
 

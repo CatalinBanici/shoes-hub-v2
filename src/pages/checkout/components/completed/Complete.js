@@ -1,6 +1,8 @@
-import React, { useEffect } from "react";
+// REACT ROUTER
 import { useNavigate } from "react-router-dom";
-import SuccessImg from "../../../assets/images/other/success-green-check-mark-icon.webp";
+
+// IMAGES
+import SuccessImg from "../../../../assets/images/other/success-green-check-mark-icon.webp";
 
 export default function Complete() {
   const navigate = useNavigate();

@@ -1,6 +1,3 @@
-// REACT
-import React from "react";
-
 // OTHER
 import data from "../../data/data.json";
 

@@ -1,6 +1,3 @@
-// REACT
-import React from "react";
-
 export default function ProductStock({ colorName, numberOfProducts }) {
   return (
     <>

@@ -1,16 +1,21 @@
-import React, { useState, useEffect } from "react";
-import Header from "./components/Header";
+// REACT
+import { useState, useEffect } from "react";
+
+// REACT ROUTER
 import { Outlet } from "react-router-dom";
-import Footer from "./components/Footer";
+
+// COMPONENTS
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 
 export default function RootPage() {
+  // window position logic to change the transparency of the header
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = () => {
     const position = window.pageYOffset;
 
     setScrollPosition(position);
   };
-
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
 

@@ -1,6 +1,3 @@
-// REACT
-import React from "react";
-
 export default function PriceSort(props) {
   const { priceType, priceSort } = props;
 

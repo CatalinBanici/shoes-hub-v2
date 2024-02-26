@@ -1,13 +1,23 @@
-import React, { useEffect, useState } from "react";
+// REACT
+import { useState } from "react";
+
+// REDUX
 import { useDispatch, useSelector } from "react-redux";
-import Summary from "./components/Summary";
-import BillingDetails from "./components/BillingDetails";
-import * as yup from "yup";
-import { useFormik } from "formik";
-import Complete from "./components/Complete";
 import { resetCart } from "../../redux/features/slices/cartSlice";
 
+// FORMIK - YUP
+import { useFormik } from "formik";
+import * as yup from "yup";
+
+// COMPONENTS
+import Summary from "./components/summary/Summary";
+import CheckoutDetails from "./components/checkout-details/CheckoutDetails";
+import Complete from "./components/completed/Complete";
+
 export default function CheckoutPage() {
+  const dispatch = useDispatch();
+
+  // get cart state to display products data in summary section
   const cart = useSelector((state) => state.cart.cart);
   const totalProductsAmount = useSelector(
     (state) => state.cart.totalProductsAmount,
@@ -19,10 +29,10 @@ export default function CheckoutPage() {
     (state) => state.cart.totalProductsOldPrice,
   );
 
-  const dispatch = useDispatch();
-
+  // display 'completed - thank you'page based on 'orderCompleted'state
   const [orderCompleted, setOrderCompleted] = useState(false);
 
+  // get discounted products to change price color style
   const discountedProducts = cart.filter((item) => item.discount);
 
   const paymentOptions = [
@@ -30,6 +40,7 @@ export default function CheckoutPage() {
     { label: "e-Money", value: "e-Money" },
   ];
 
+  // formik - yup related
   const initialValues = {
     firstName: "",
     lastName: "",
@@ -112,7 +123,7 @@ export default function CheckoutPage() {
         <Complete />
       ) : (
         <div className="flex w-full flex-col lg:flex-row">
-          <BillingDetails
+          <CheckoutDetails
             values={values}
             errors={errors}
             touched={touched}

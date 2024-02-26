@@ -1,5 +1,5 @@
 // REACT
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 // REACT ROUTER
 import { Link } from "react-router-dom";
@@ -27,7 +27,7 @@ import "../../swiperStyles.css";
 import aos from "aos";
 import "aos/dist/aos.css";
 
-// OTHER
+// JSON DATA
 import data from "../../../../../data/data.json";
 
 // COMPONENTS

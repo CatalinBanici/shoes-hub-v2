@@ -1,7 +1,4 @@
-//REACT
-import React from "react";
-
-//COMPONENTS
+// COMPONENTS
 import MaleCategoryCard from "./sub-components/MaleCategoryCard";
 import FemaleCategoryCard from "./sub-components/FemaleCategoryCard";
 

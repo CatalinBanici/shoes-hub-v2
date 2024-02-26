@@ -1,6 +1,3 @@
-// REACT
-import React from "react";
-
 export default function ProductPrice({ product, discount }) {
   return (
     <div className="my-5">

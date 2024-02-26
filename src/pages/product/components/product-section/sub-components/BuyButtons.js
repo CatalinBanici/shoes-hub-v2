@@ -1,6 +1,3 @@
-// REACT
-import React from "react";
-
 // REACT ROUTER
 import { useNavigate } from "react-router-dom";
 

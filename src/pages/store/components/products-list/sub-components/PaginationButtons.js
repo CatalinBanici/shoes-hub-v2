@@ -1,6 +1,3 @@
-// REACT
-import React from "react";
-
 // REACT ICONS
 import { FaArrowRight } from "react-icons/fa";
 

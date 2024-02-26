@@ -1,6 +1,3 @@
-// REACT
-import React from "react";
-
 export default function ProductName({ product }) {
   return (
     <div className="mb-5 bg-white p-5">

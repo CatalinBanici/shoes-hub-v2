@@ -1,7 +1,7 @@
 // REACT
-import React, { useState } from "react";
+import { useState } from "react";
 
-//REDUX
+// REDUX
 import { useDispatch, useSelector } from "react-redux";
 import {
   filterByCategoryFemale,
@@ -10,7 +10,7 @@ import {
   resetFilterByColorAndSortByPrice,
 } from "../../../../redux/features/slices/productsSlice";
 
-// OTHER
+// JSON DATA
 import data from "../../../../data/data.json";
 
 // COMPONENTS

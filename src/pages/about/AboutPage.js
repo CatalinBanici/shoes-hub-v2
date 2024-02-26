@@ -1,16 +1,21 @@
-import React, { useEffect } from "react";
+// REACT
+import { useEffect } from "react";
+
+// REACT ICONS
+import { IoMailOutline } from "react-icons/io5";
+import { BsTelephone } from "react-icons/bs";
+
+// AOS
+import aos from "aos";
+import "aos/dist/aos.css";
+
+// IMAGES
 import Image1 from "../../assets/images/about-section/image-1.jpg";
 import Image2 from "../../assets/images/about-section/image-2.jpg";
 import Image3 from "../../assets/images/about-section/image-3.jpg";
 import Image4 from "../../assets/images/about-section/image-4.jpg";
 
-import { IoMailOutline } from "react-icons/io5";
-import { BsTelephone } from "react-icons/bs";
-
-import aos from "aos";
-import "aos/dist/aos.css";
-
-export default function About() {
+export default function AboutPage() {
   useEffect(() => {
     aos.init();
   }, []);

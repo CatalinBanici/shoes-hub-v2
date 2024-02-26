@@ -12,7 +12,7 @@ import ProductPage from "./pages/product/ProductPage";
 import CheckoutPage from "./pages/checkout/CheckoutPage";
 import CartPage from "./pages/cart/CartPage";
 import { useSelector } from "react-redux";
-import About from "./pages/about/About";
+import AboutPage from "./pages/about/AboutPage";
 
 function App() {
   const aboutSecttionRef = useRef();
@@ -21,7 +21,7 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<RootPage />}>
         <Route index element={<HomePage />} />
-        <Route path="about" element={<About />} />
+        <Route path="about" element={<AboutPage />} />
         <Route path="store" element={<StorePage />} />
         <Route path="store/:id" element={<ProductPage />} />
         <Route path="checkout" element={<CheckoutPage />} />

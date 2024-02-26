@@ -1,6 +1,3 @@
-// REACT
-import React from "react";
-
 // REACT ROUTER
 import { Link } from "react-router-dom";
 
@@ -8,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { filterById } from "../../../../redux/features/slices/productsSlice";
 
-// OTHER
+// JSON DATA
 import data from "../../../../data/data.json";
 
 // COMPONENTS

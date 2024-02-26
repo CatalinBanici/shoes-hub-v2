@@ -1,6 +1,3 @@
-// REACT
-import React from "react";
-
 // REACT ICONS
 import { IoIosArrowDown } from "react-icons/io";
 

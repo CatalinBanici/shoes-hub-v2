@@ -1,6 +1,3 @@
-// REACT
-import React from "react";
-
 // COMPONENTS
 import Categories from "./components/categories/Categories";
 import Filters from "./components/filters/Filters";
