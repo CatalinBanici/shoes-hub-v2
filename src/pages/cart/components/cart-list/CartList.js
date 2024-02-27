@@ -1,3 +1,9 @@
+// REACT ROUTER
+import { Link } from "react-router-dom";
+
+// REDUX
+import { filterById } from "../../../../redux/features/slices/productsSlice";
+
 // REACT ICONS
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { TiDelete } from "react-icons/ti";
@@ -38,21 +44,32 @@ export default function CartList(props) {
                 </button>
               </div>
               <div>
-                <div className="relative overflow-hidden">
-                  <img
-                    className=" h-20 w-20 sm:h-32 sm:w-32"
-                    src={item.img}
-                    alt={item.name}
-                  />
-                  {item.discount && (
-                    <div className="absolute left-[-20px] top-[-3px] w-[60px] -rotate-45 bg-black text-center text-white">
-                      %
-                    </div>
-                  )}
-                </div>
+                <Link
+                  to={`/store/${item.id}`}
+                  onClick={() => dispatch(filterById(item.id))}
+                >
+                  <div className="relative overflow-hidden">
+                    <img
+                      className=" h-20 w-20 sm:h-32 sm:w-32"
+                      src={item.img}
+                      alt={item.name}
+                    />
+                    {item.discount && (
+                      <div className="absolute left-[-20px] top-[-3px] w-[60px] -rotate-45 bg-black text-center text-white">
+                        %
+                      </div>
+                    )}
+                  </div>
+                </Link>
               </div>
               <div className="flex-1 sm:mx-5">
-                <h3 className=" my-2 text-lg font-medium">{item.name}</h3>
+                <Link
+                  className=" underline lg:transition lg:delay-75 lg:ease-out lg:hover:text-gray-600"
+                  to={`/store/${item.id}`}
+                  onClick={() => dispatch(filterById(item.id))}
+                >
+                  <h3 className=" my-2 text-lg font-medium">{item.name}</h3>
+                </Link>
 
                 <div>
                   <div className="my-2 flex flex-row flex-wrap items-center">
