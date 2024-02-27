@@ -18,11 +18,20 @@ import "swiper/css/thumbs";
 import "./swiperStyles.css";
 
 export default function ProductGallery({ product }) {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const productImages = product[0].gallery.images.map((image) => image);
 
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+  // image magnifier logic
+  const [showImgMagnifier, setShowImgMagnifier] = useState(false);
+  const [[imgWidth, imgHeight], setSize] = useState([0, 0]);
+  const [[x, y], setXY] = useState([0, 0]);
+  const magnifierHeight = 300;
+  const magnifieWidth = 300;
+  const zoomLevel = 2;
+
   return (
-    <div className=" w-full max-w-[600px] self-center justify-self-center lg:m-5   lg:self-start">
+    <div className=" relative w-full max-w-[600px] self-center justify-self-center lg:m-5 lg:self-start">
       {/* product image */}
       <Swiper
         style={{
@@ -39,13 +48,70 @@ export default function ProductGallery({ product }) {
         autoplay={{
           delay: 5000,
           disableOnInteraction: true,
+          pauseOnMouseEnter: true,
         }}
         modules={[FreeMode, Navigation, Thumbs, Pagination, Autoplay]}
         className="mySwiper2"
       >
         {productImages.map((image, index) => (
           <SwiperSlide key={index}>
-            <img className="w-full" src={image} alt="shoes images" />
+            <img
+              className=" relative w-full cursor-zoom-in"
+              src={image}
+              alt="shoes images"
+              onMouseEnter={(e) => {
+                // update image size and turn-on magnifier
+                const elem = e.currentTarget;
+                const { width, height } = elem.getBoundingClientRect();
+                setSize([width, height]);
+                setShowImgMagnifier(true);
+              }}
+              onMouseMove={(e) => {
+                // update cursor position
+                const element = e.currentTarget;
+                const { top, left } = element.getBoundingClientRect();
+
+                // calculate cursor position on the image
+                const x = e.pageX - left - window.pageXOffset;
+                const y = e.pageY - top - window.pageYOffset;
+                setXY([x, y]);
+              }}
+              onMouseLeave={() => setShowImgMagnifier(false)}
+            />
+
+            {/* magnifier */}
+            <div
+              style={{
+                display: showImgMagnifier ? "" : "none",
+                position: "absolute",
+
+                // prevent magnifier blocks the mousemove event of img
+                pointerEvents: "none",
+                // set size of magnifier
+                height: `${magnifierHeight}px`,
+                width: `${magnifieWidth}px`,
+                // move element center to cursor pos
+                top: `${y - magnifierHeight / 2}px`,
+                left: `${x - magnifieWidth / 2}px`,
+                opacity: "1", // reduce opacity so you can verify position
+                border: "1px solid lightgray",
+                borderRadius: "50%",
+                backgroundColor: "white",
+                backgroundImage: `url('${image}')`,
+                backgroundRepeat: "no-repeat",
+
+                //calculate zoomed image size
+                backgroundSize: `${imgWidth * zoomLevel}px ${
+                  imgHeight * zoomLevel
+                }px`,
+
+                //calculate position of zoomed image.
+                backgroundPositionX: `${-x * zoomLevel + magnifieWidth / 2}px`,
+                backgroundPositionY: `${
+                  -y * zoomLevel + magnifierHeight / 2
+                }px`,
+              }}
+            ></div>
           </SwiperSlide>
         ))}
       </Swiper>

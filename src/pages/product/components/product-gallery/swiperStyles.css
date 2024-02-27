@@ -8,6 +8,10 @@
   opacity: 0.7;
 }
 
+.swiper-slide {
+  overflow: hidden;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   color: rgb(0, 0, 0);
