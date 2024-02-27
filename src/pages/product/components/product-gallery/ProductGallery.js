@@ -54,7 +54,7 @@ export default function ProductGallery({ product }) {
         className="mySwiper2"
       >
         {productImages.map((image, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} className=" overflow-hidden">
             <img
               className=" relative w-full cursor-zoom-in"
               src={image}
