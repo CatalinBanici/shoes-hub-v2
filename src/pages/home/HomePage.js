@@ -17,13 +17,13 @@ export default function HomePage() {
     {
       id: 2,
       title: "FREE SHIPPING",
-      text: `Free shipping on orders over $${data.misc.minimumPriceFreeShipping}! `,
+      text: `Free shipping on orders over $${data.misc.freeShippingThreshold}! `,
       image: "../assets/carousel-gallery/shoes-preview-2.jpg",
     },
     {
       id: 3,
-      title: `SALE - OVER ${data.misc.minimumSneakersDiscountFilter}% DISCOUNT`,
-      text: `Don't miss your chance on our last products SALE over ${data.misc.minimumSneakersDiscountFilter}% off on our Sneakers!`,
+      title: `SNEAKERS SALE - OVER ${data.misc.sneakersDiscountThreshold}% DISCOUNT`,
+      text: `Don't miss your chance on our last products SALE over ${data.misc.sneakersDiscountThreshold}% off on our Sneakers!`,
       image: "../assets/carousel-gallery/shoes-preview-3.jpg",
     },
     {
@@ -34,8 +34,8 @@ export default function HomePage() {
     },
     {
       id: 5,
-      title: `WINTER SALE - OVER ${data.misc.minimumBootsDiscountFilter}% DISCOUNT!`,
-      text: `We got you covered this winter with over ${data.misc.minimumBootsDiscountFilter}% off on our warm and stylish boots!`,
+      title: `WINTER BOOTS SALE - OVER ${data.misc.bootsDiscountThreshold}% DISCOUNT!`,
+      text: `We got you covered this winter with over ${data.misc.bootsDiscountThreshold}% off on our warm and stylish boots!`,
       image: "../assets/carousel-gallery/shoes-preview-5.jpg",
     },
   ];

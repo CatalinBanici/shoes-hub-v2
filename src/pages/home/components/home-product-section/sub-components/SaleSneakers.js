@@ -48,16 +48,14 @@ export default function SaleSneakers({ homePageData }) {
   const discountedSneakers = allProducts.filter(
     (product) => product.category === "sneakers" && product.price.discount,
   );
-  const discountedSneakersOverCertainPercentage = discountedSneakers.filter(
-    (item) => {
-      const discount = Math.abs(
-        Math.trunc(
-          ((item.price.current - item.price.old) / item.price.old) * 100,
-        ),
-      );
-      return discount >= data.misc.minimumSneakersDiscountFilter;
-    },
-  );
+  const sneakersDiscountThreshold = discountedSneakers.filter((item) => {
+    const discount = Math.abs(
+      Math.trunc(
+        ((item.price.current - item.price.old) / item.price.old) * 100,
+      ),
+    );
+    return discount >= data.misc.sneakersDiscountThreshold;
+  });
 
   return (
     <div
@@ -99,7 +97,7 @@ export default function SaleSneakers({ homePageData }) {
         onSlideChange={() => null}
         onSwiper={(swiper) => null}
       >
-        {discountedSneakersOverCertainPercentage.map((element) => (
+        {sneakersDiscountThreshold.map((element) => (
           <SwiperSlide className="my-10" key={element.id}>
             <Link
               to={`store/${element.id}`}

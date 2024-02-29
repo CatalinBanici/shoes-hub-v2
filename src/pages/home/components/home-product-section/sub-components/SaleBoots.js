@@ -48,16 +48,14 @@ export default function SaleBoots({ homePageData }) {
   const discountedBoots = allProducts.filter(
     (product) => product.category === "boots" && product.price.discount,
   );
-  const discountedBootsOverCertainPercentage = discountedBoots.filter(
-    (item) => {
-      const discount = Math.abs(
-        Math.trunc(
-          ((item.price.current - item.price.old) / item.price.old) * 100,
-        ),
-      );
-      return discount >= data.misc.minimumBootsDiscountFilter;
-    },
-  );
+  const bootsDiscountThreshold = discountedBoots.filter((item) => {
+    const discount = Math.abs(
+      Math.trunc(
+        ((item.price.current - item.price.old) / item.price.old) * 100,
+      ),
+    );
+    return discount >= data.misc.bootsDiscountThreshold;
+  });
   return (
     <div
       data-aos="fade-up"
@@ -98,7 +96,7 @@ export default function SaleBoots({ homePageData }) {
         onSlideChange={() => null}
         onSwiper={(swiper) => null}
       >
-        {discountedBootsOverCertainPercentage.map((element) => (
+        {bootsDiscountThreshold.map((element) => (
           <SwiperSlide className="my-10" key={element.id}>
             <Link
               to={`store/${element.id}`}

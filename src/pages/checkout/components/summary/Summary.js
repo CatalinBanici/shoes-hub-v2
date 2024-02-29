@@ -20,12 +20,12 @@ export default function Summary({
   // shipping logic
   const [freeShipping, setFreeShipping] = useState(false);
   const shippingCost = data.misc.shippingCost;
-  const minCostFreeShipping = data.misc.minimumPriceFreeShipping;
+  const freeShippingThreshold = data.misc.freeShippingThreshold;
   const totalPrice = freeShipping
     ? totalProductsPrice
     : totalProductsPrice + shippingCost;
   useEffect(() => {
-    if (totalProductsPrice >= minCostFreeShipping) {
+    if (totalProductsPrice >= freeShippingThreshold) {
       setFreeShipping(true);
     } else {
       setFreeShipping(false);

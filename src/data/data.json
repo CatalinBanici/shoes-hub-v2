@@ -1,9 +1,9 @@
 {
   "misc": {
-    "minimumSneakersDiscountFilter": 30,
-    "minimumBootsDiscountFilter": 30,
+    "sneakersDiscountThreshold": 30,
+    "bootsDiscountThreshold": 30,
     "shippingCost": 20,
-    "minimumPriceFreeShipping": 200
+    "freeShippingThreshold": 200
   },
   "products": [
     {
@@ -3400,7 +3400,7 @@
         "discount": true,
         "old": 109
       },
-      "gender": "nale",
+      "gender": "male",
       "specs": {
         "Seals": "Lace-Up",
         "Line material": "short plush",
