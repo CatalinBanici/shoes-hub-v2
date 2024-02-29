@@ -80,6 +80,9 @@ export default function ProductsList() {
   function prevPage() {
     setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
   }
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [categoryAndGenderFilteredProducts, colorFilteredAndPriceSortedProducts]);
 
   return (
     // if 'colorFilteredAndPriceSortedProducts' is an empty array, there are no keywords that match in the search filter
