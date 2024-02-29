@@ -198,20 +198,11 @@
         }
       ],
       "price": {
-        "current": 39,
+        "current": 33,
         "discount": true,
         "old": 49
       },
       "gender": "male",
-      "specs": {
-        "Shoes Type": "Basic",
-        "Gender": "Male",
-        "Season": "Spring/Autumn",
-        "Line material": "Cotton fabric",
-        "Upper material": "Leatherette",
-        "Insole Material": "Latex",
-        "Outsole material": "Rubber"
-      },
       "gallery": {
         "main": "../assets/products-gallery/sneakers-men-1/main.jpg",
         "images": [
@@ -355,14 +346,6 @@
         "old": 41
       },
       "gender": "male",
-      "specs": {
-        "Shoes Type": "Runing Shoes",
-        "Gender": "Male",
-        "Material": "Polyester",
-        "Outsole material": "Rubber",
-        "Insole Material": "Rubber",
-        "Upper material": "Mesh (Airmesh)"
-      },
       "gallery": {
         "main": "../assets/products-gallery/sneakers-men-2/main.jpg",
         "images": [
@@ -589,17 +572,9 @@
       "price": {
         "current": 79,
         "discount": true,
-        "old": 109
+        "old": 99
       },
       "gender": "male",
-      "specs": {
-        "Season": "Spring/Autumn",
-        "Upper material": "Leather",
-        "Outsole material": "Rubber",
-        "Line material": "Canvas",
-        "Functions": "Breathable",
-        "Gender": "Male"
-      },
       "gallery": {
         "main": "../assets/products-gallery/sneakers-men-3/main.jpg",
         "images": [
@@ -825,18 +800,11 @@
         }
       ],
       "price": {
-        "current": 25,
+        "current": 29,
         "discount": true,
-        "old": 38
+        "old": 45
       },
       "gender": "female",
-      "specs": {
-        "Patterns": "Solid",
-        "Insole Material": "PU",
-        "Upper material": "Cotton fabric",
-        "Season": "Spring/Autumn",
-        "Seals": "Lace Up"
-      },
       "gallery": {
         "main": "../assets/products-gallery/sneakers-women-1/main.jpg",
         "images": [
@@ -1146,18 +1114,11 @@
         }
       ],
       "price": {
-        "current": 29,
+        "current": 25,
         "discount": true,
-        "old": 45
+        "old": 39
       },
       "gender": "female",
-      "specs": {
-        "Patterns": "Solid",
-        "Insole Material": "Rubber",
-        "Upper material": "Mesh (Airmesh)",
-        "Season": "Summer",
-        "Seals": "Loafers"
-      },
       "gallery": {
         "main": "../assets/products-gallery/sneakers-women-2/main.jpg",
         "images": [
@@ -1337,12 +1298,6 @@
         "old": 69
       },
       "gender": "female",
-      "specs": {
-        "Shoes Type": "Sneakers",
-        "Upper material": "Microfiber",
-        "Season": "Spring/Summer/Autumn",
-        "Gender": "Female"
-      },
       "gallery": {
         "main": "../assets/products-gallery/sneakers-women-3/main.jpg",
         "images": [
@@ -1629,14 +1584,6 @@
         "old": 35
       },
       "gender": "female",
-      "specs": {
-        "Shoes Type": "Sneakers",
-        "Line material": "Canvas",
-        "Upper material": "Canvas",
-        "Canvas": "Spring/Summer/Autumn",
-        "Patterns": "Bordered",
-        "Gender": "Female"
-      },
       "gallery": {
         "main": "../assets/products-gallery/sneakers-women-4/main.jpg",
         "images": [
@@ -1794,16 +1741,9 @@
       "price": {
         "current": 39,
         "discount": true,
-        "old": 55
+        "old": 59
       },
       "gender": "female",
-      "specs": {
-        "Insole Material": "Eva",
-        "Upper material": "Microfiber",
-        "Shoes Type": "Sneakers",
-        "Gender": "Female",
-        "Season": "Spring/Summer/Autumn"
-      },
       "gallery": {
         "main": "../assets/products-gallery/sneakers-women-5/main.jpg",
         "images": [
@@ -1996,19 +1936,9 @@
       "price": {
         "current": 49,
         "discount": true,
-        "old": 79
+        "old": 59
       },
       "gender": "male",
-      "specs": {
-        "Shoes Type": "Basic",
-        "Patterns": "Graffiti",
-        "Season": "Summer",
-        "Line material": "None",
-        "Seals": "Lace Up",
-        "Upper material": "Canvas",
-        "Insole Material": "Latex",
-        "Outsole material": "Rubber"
-      },
       "gallery": {
         "main": "../assets/products-gallery/sneakers-men-4/main.jpg",
         "images": [
@@ -2240,15 +2170,6 @@
         "old": 69
       },
       "gender": "male",
-      "specs": {
-        "Shoes Type": "Basic",
-        "Season": "Spring/Autumn",
-        "Line material": "Nylon",
-        "Seals": "Lace Up",
-        "Upper material": "Faux Nubuck",
-        "Insole Material": "Eva",
-        "Outsole material": "Rubber"
-      },
       "gallery": {
         "main": "../assets/products-gallery/sneakers-men-5/main.jpg",
         "images": [
@@ -2410,15 +2331,6 @@
         "old": 79
       },
       "gender": "male",
-      "specs": {
-        "Upper Material": "Pigskin",
-        "Insole Material": "EVA",
-        "Outsole Material": "Rubber",
-        "Shaft Material": "Cotton Fabric",
-        "Lining Material": "Cotton Fabric",
-        "Pattern Type": "Solid",
-        "Season": "Winter"
-      },
       "gallery": {
         "main": "../assets/products-gallery/boots-men-1/main.jpg",
         "images": [
@@ -2580,13 +2492,6 @@
         "old": 95
       },
       "gender": "male",
-      "specs": {
-        "Style": "retro",
-        "Patterns": "Solid",
-        "Lining material": "Cotton",
-        "Insole material": "EVA",
-        "Season": "Spring/Autumn"
-      },
       "gallery": {
         "main": "../assets/products-gallery/boots-men-2/main.jpg",
         "images": [
@@ -2818,17 +2723,6 @@
         "old": 109
       },
       "gender": "male",
-      "specs": {
-        "Style": "Concise",
-        "Patterns": "Solid",
-        "Line material": "Cotton Fabric",
-        "Insole Material": "Fabric",
-        "Upper material": "PU",
-        "Ash material": "Canvas",
-        "Outsole material": "Rubber",
-        "Season": "Spring/Autumn",
-        "Boot height": "Ankle"
-      },
       "gallery": {
         "main": "../assets/products-gallery/boots-men-3/main.jpg",
         "images": [
@@ -2942,16 +2836,6 @@
         "old": 74
       },
       "gender": "female",
-      "specs": {
-        "Style": "British Style",
-        "Line material": "Synthetic",
-        "Upper material": "PU",
-        "Ash material": "PU",
-        "Insole Material": "PU",
-        "Outsole material": "Rubber",
-        "Season": "Winter",
-        "Platform Height": "5-7cm"
-      },
       "gallery": {
         "main": "../assets/products-gallery/boots-women-1/main.jpg",
         "images": [
@@ -3210,20 +3094,11 @@
         }
       ],
       "price": {
-        "current": 29,
+        "current": 38,
         "discount": true,
-        "old": 69
+        "old": 55
       },
       "gender": "female",
-      "specs": {
-        "Style": "Concise",
-        "Platform Height": "0-3cm",
-        "Outsole material": "Rubber",
-        "Insole Material": "Short Plush",
-        "Line material": "Short Plush",
-        "Upper material": "PU",
-        "Season": "Winter"
-      },
       "gallery": {
         "main": "../assets/products-gallery/boots-women-2/main.jpg",
         "images": [
@@ -3396,21 +3271,11 @@
         }
       ],
       "price": {
-        "current": 59,
+        "current": 75,
         "discount": true,
         "old": 109
       },
       "gender": "male",
-      "specs": {
-        "Seals": "Lace-Up",
-        "Line material": "short plush",
-        "Insole Material ": "short plush",
-        "Heel Height": "Lage (1 cm-3 cm)",
-        "Patterns": "GEOMETRIC",
-        "Outsole material": "Rubber",
-        "Boot height": "Ankle",
-        "Season": "Autumn/Winter"
-      },
       "gallery": {
         "main": "../assets/products-gallery/boots-men-4/main.jpg",
         "images": [
@@ -3635,19 +3500,11 @@
         }
       ],
       "price": {
-        "current": 29,
+        "current": 33,
         "discount": true,
         "old": 49
       },
       "gender": "male",
-      "specs": {
-        "Style": "Concise",
-        "Seals": "Lace Up",
-        "Line material": "Plush",
-        "Upper material": "Faux suede",
-        "Season": "Autumn/Winter",
-        "Boot height": "Ankle"
-      },
       "gallery": {
         "main": "../assets/products-gallery/boots-men-5/main.jpg",
         "images": [

@@ -1,31 +1,41 @@
- {
-    "key": __NUMBER__,
-    "name": "__STRING__",
-    "category": "__STRING__",
-    "description": "__STRING__",
-    "stock": __NUMBER__,
-    "sizes": [__NUMBER__],
-    "colors": [
-      {
-        "__COLORNAME__": "../assets/products-gallery/__PATH__/colors/__PATH__.jpg"
-      } 
-    ],
-    "price": {
-      "current": __NUMBER__,
-      "discount": __BOOLEAN__,
-      "old": __NUMBER__
-    },
-    "gender": "__STRING__",
-    "specs": {
-      "__SPEC__": "__STRING__"      
-    },
-    "gallery": {
-      "main": "../assets/products-gallery/__PATH__/__PATH__.jpg",
-      "images": [
-        "../assets/products-gallery/__PATH__/__PATH__.jpg"
-      ]
-    }
-}
+NOTE:
+"colorName" - is the name of the color that is displayed in the website for a specific product.
+              For example: "White-2", "Dark-Grey" or "Outstanding-Pink" - whatever color you like to name it.
+"colorValue" - is the actual color value recognizable by CSS.
+              For example: "white", "grey", or "pink".
+"price" -> "current" and "price" -> "old" - MUST be the same if "discount" boolean is FALSE!
+
+{
+      "id": "__STRING__",
+      "name": "__STRING__",
+      "category": "__STRING__",
+      "description": "__STRING__",
+      "stock": [
+        {
+          "size": __NUMBER__,
+          "colors": [
+            {
+              "numberOfItems": __NUMBER__,
+              "colorImage": "../assets/products-gallery/__PATH__/colors/__IMAGE__.jpg",
+              "colorName": "__STRING__",
+              "colorValue": "__STRING__"
+            },
+          ]
+        },       
+      ],
+      "price": {
+        "current": __NUMBER__,
+        "discount": __BOOLEAN__,
+        "old": __NUMBER__
+      },
+      "gender": "__STRING__",
+      "gallery": {
+        "main": "../assets/products-gallery/__PATH__/__IMAGE__.jpg",
+        "images": [
+          "../assets/products-gallery/__PATH__/__IMAGE__.jpg",
+        ]
+      }
+},
 
  {
     "id": "__STRING__",
@@ -40,6 +50,12 @@
               "numberOfItems": __NUMBER__,
               "__COLORNAME__": "../assets/products-gallery/__PATH__/colors/__PATH__.jpg"
             },
+            {
+              "numberOfItems": __NUMBER__,
+              "colorImage": "../assets/products-gallery/__/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
           ]
         },
     ],
@@ -49,9 +65,6 @@
       "old": __NUMBER__
     },
     "gender": "__STRING__",
-    "specs": {
-      "__SPEC__": "__STRING__"      
-    },
     "gallery": {
       "main": "../assets/products-gallery/__PATH__/__PATH__.jpg",
       "images": [
@@ -60,268 +73,3 @@
     }
 }
 
-{
-      "key": 11,
-      "name": "Men Sneakers Outdoor Stylish",
-      "category": "sneakers",
-      "description": "Autumn Men Sneakers Natural Pig Skin Material Male Trainers Outdoor Stylish Shoes Lace-up Flats Non-slip Rubber Sole Gray",
-      "stock": [
-        {
-          "size": 36,
-          "colors": [
-            {
-              "numberOfItems": 0,
-              "Grey-1": "../assets/products-gallery/sneakers-men-5/colors/grey-1.jpg"
-            },
-            {
-              "numberOfItems": 6,
-              "Black": "../assets/products-gallery/sneakers-men-5/colors/black.jpg"
-            },
-            {
-              "numberOfItems": 2,
-              "Grey-2": "../assets/products-gallery/sneakers-men-5/colors/grey-2.jpg"
-            }
-          ]
-        },
-        {
-          "size": 37,
-          "colors": [
-            {
-              "numberOfItems": 2,
-              "Grey-1": "../assets/products-gallery/sneakers-men-5/colors/grey-1.jpg"
-            },
-            {
-              "numberOfItems": 0,
-              "Black": "../assets/products-gallery/sneakers-men-5/colors/black.jpg"
-            },
-            {
-              "numberOfItems": 2,
-              "Grey-2": "../assets/products-gallery/sneakers-men-5/colors/grey-2.jpg"
-            }
-          ]
-        },
-        {
-          "size": 38,
-          "colors": [
-            {
-              "numberOfItems": 0,
-              "Grey-1": "../assets/products-gallery/sneakers-men-5/colors/grey-1.jpg"
-            },
-            {
-              "numberOfItems": 6,
-              "Black": "../assets/products-gallery/sneakers-men-5/colors/black.jpg"
-            },
-            {
-              "numberOfItems": 3,
-              "Grey-2": "../assets/products-gallery/sneakers-men-5/colors/grey-2.jpg"
-            }
-          ]
-        },
-        {
-          "size": 39,
-          "colors": [
-            {
-              "numberOfItems": 4,
-              "Grey-1": "../assets/products-gallery/sneakers-men-5/colors/grey-1.jpg"
-            },
-            {
-              "numberOfItems": 8,
-              "Black": "../assets/products-gallery/sneakers-men-5/colors/black.jpg"
-            },
-            {
-              "numberOfItems": 2,
-              "Grey-2": "../assets/products-gallery/sneakers-men-5/colors/grey-2.jpg"
-            }
-          ]
-        },
-        {
-          "size": 40,
-          "colors": [
-            {
-              "numberOfItems": 4,
-              "Grey-1": "../assets/products-gallery/sneakers-men-5/colors/grey-1.jpg"
-            },
-            {
-              "numberOfItems": 0,
-              "Black": "../assets/products-gallery/sneakers-men-5/colors/black.jpg"
-            },
-            {
-              "numberOfItems": 0,
-              "Grey-2": "../assets/products-gallery/sneakers-men-5/colors/grey-2.jpg"
-            }
-          ]
-        },
-        {
-          "size": 41,
-          "colors": [
-            {
-              "numberOfItems": 4,
-              "Grey-1": "../assets/products-gallery/sneakers-men-5/colors/grey-1.jpg"
-            },
-            {
-              "numberOfItems": 6,
-              "Black": "../assets/products-gallery/sneakers-men-5/colors/black.jpg"
-            },
-            {
-              "numberOfItems": 2,
-              "Grey-2": "../assets/products-gallery/sneakers-men-5/colors/grey-2.jpg"
-            }
-          ]
-        },
-        {
-          "size": 42,
-          "colors": [
-            {
-              "numberOfItems": 4,
-              "Grey-1": "../assets/products-gallery/sneakers-men-5/colors/grey-1.jpg"
-            },
-            {
-              "numberOfItems": 10,
-              "Black": "../assets/products-gallery/sneakers-men-5/colors/black.jpg"
-            },
-            {
-              "numberOfItems": 2,
-              "Grey-2": "../assets/products-gallery/sneakers-men-5/colors/grey-2.jpg"
-            }
-          ]
-        }
-      ],
-      "price": {
-        "current": 45,
-        "discount": true,
-        "old": 69
-      },
-      "gender": "male",
-      "specs": {
-        "Shoes Type": "Basic",
-        "Season": "Spring/Autumn",
-        "Line material": "Nylon",
-        "Seals": "Lace Up",
-        "Upper material": "Faux Nubuck",
-        "Insole Material": "Eva",
-        "Outsole material": "Rubber"
-      },
-      "gallery": {
-        "main": "../assets/products-gallery/sneakers-men-5/main.jpg",
-        "images": [
-          "../assets/products-gallery/sneakers-men-5/main.jpg",
-          "../assets/products-gallery/sneakers-men-5/showcase1.jpg",
-          "../assets/products-gallery/sneakers-men-5/showcase2.jpg",
-          "../assets/products-gallery/sneakers-men-5/showcase3.jpg",
-          "../assets/products-gallery/sneakers-men-5/showcase4.jpg",
-          "../assets/products-gallery/sneakers-men-5/showcase5.jpg"
-        ]
-      }
-    }
-
-
-
-    const [colorIndex, setColorIndex] = useState(0);
-    const color = data.products[0].stock[colorIndex].colors;
-
-{/* {data.products[0].stock.map((e, i) => (
-        <div key={i}>
-          <button onClick={() => setColorIndex(i)}>{e.size}</button>
-        </div>
-      ))}
-
-      {color.map((e, i) => (
-        <div>
-          <p>{Object.keys(e)[1]}</p>
-          <img
-            src={`${Object.values(e)[1]}`}
-            key={i}
-            style={
-              Object.values(e)[0] <= 0
-                ? {
-                    width: "100px",
-                    height: "100px",
-                    border: "5px solid red",
-                  }
-                : { width: "100px", height: "100px" }
-            }
-          />
-          <p>in stock: {e.numberOfItems}</p>
-        </div>
-      ))} */}
-
-
-      main template:
-
-      import { useState } from "react";
-      import data from "./data/data.json";
-
-       // console.log(data);
-  const [colorIndex, setColorIndex] = useState(0);
-  // const color = data.products.map((e) => {
-  //   return e.stock[colorIndex].colors;
-  // });
-  const color = data.products[0].stock[colorIndex].colors;
-  const size = data.products.map((e) => {
-    return e.stock;
-  });
-  // console.log(size);
-  // console.log(color);
-  return (
-    <div className="App">
-      {data.products.map((item, index) => (
-        <div key={index}>
-          <h2>{item.name}</h2>
-          <p>{item.description}</p>
-          <img
-            style={{ width: "500px", height: "500px" }}
-            src={`${item.gallery.main}`}
-          />
-          <div style={{ display: "flex" }}>
-            <div>
-              {Object.keys(item.specs).map((item, index) => (
-                <p key={index}>{item}</p>
-              ))}
-            </div>
-            <div>
-              {Object.values(item.specs).map((item, index) => (
-                <p key={index}>{item}</p>
-              ))}
-            </div>
-          </div>
-          {item.gallery.images.map((item, index) => (
-            <img
-              style={{ width: "300px", height: "300px" }}
-              src={item}
-              key={index}
-            />
-          ))}
-          <hr></hr>
-          <hr></hr>
-          <hr></hr>
-          <hr></hr>
-        </div>
-      ))}
-
-      {/* {data.products[0].stock.map((e, i) => (
-        <div key={i}>
-          <button onClick={() => setColorIndex(i)}>{e.size}</button>
-        </div>
-      ))}
-
-      {color.map((e, i) => (
-        <div key={i}>
-          <p>{Object.keys(e)[1]}</p>
-          <img
-            src={`${Object.values(e)[1]}`}
-            key={i}
-            style={
-              Object.values(e)[0] <= 0
-                ? {
-                    width: "100px",
-                    height: "100px",
-                    border: "5px solid red",
-                  }
-                : { width: "100px", height: "100px" }
-            }
-          />
-          <p>in stock: {e.numberOfItems}</p>
-        </div>
-      ))} */}
-    </div>
-  );
