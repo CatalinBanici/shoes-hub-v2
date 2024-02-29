@@ -19,6 +19,7 @@ import DesktopCategories from "./sub-components/DesktopCategories";
 
 export default function Categories() {
   // category menu open / close logic
+  const [showAllCategories, setShowAllCategories] = useState(false);
   const [showMaleCategories, setShowMaleCategories] = useState(false);
   const [showFemaleCategories, setShowFemaleCategories] = useState(false);
 
@@ -31,6 +32,9 @@ export default function Categories() {
   const selectedCategoryType = [...new Set(selectedCategories)];
 
   // extract the product categories type to be rendered in the male/female categories section
+  const allCategories = data.products.map((e) => e.category);
+  const allCategoriesType = [...new Set(allCategories)];
+
   const maleCategories = data.products
     .filter((product) => product.gender === "male")
     .map((e) => e.category);
@@ -38,16 +42,19 @@ export default function Categories() {
 
   const femaleCategories = data.products
     .filter((product) => product.gender === "female")
-    .map((product) => product.category);
+    .map((e) => e.category);
   const femaleCategoriesType = [...new Set(femaleCategories)];
 
   return (
     <div className=" p-2 lg:row-span-2 lg:m-5 lg:flex lg:justify-center lg:bg-white">
       <MobileCategories
+        showAllCategories={showAllCategories}
+        setShowAllCategories={setShowAllCategories}
         showMaleCategories={showMaleCategories}
         setShowMaleCategories={setShowMaleCategories}
         showFemaleCategories={showFemaleCategories}
         setShowFemaleCategories={setShowFemaleCategories}
+        allCategoriesType={allCategoriesType}
         maleCategoriesType={maleCategoriesType}
         femaleCategoriesType={femaleCategoriesType}
         selectedCategoryType={selectedCategoryType}
@@ -59,10 +66,13 @@ export default function Categories() {
       />
 
       <DesktopCategories
+        showAllCategories={showAllCategories}
+        setShowAllCategories={setShowAllCategories}
         showMaleCategories={showMaleCategories}
         setShowMaleCategories={setShowMaleCategories}
         showFemaleCategories={showFemaleCategories}
         setShowFemaleCategories={setShowFemaleCategories}
+        allCategoriesType={allCategoriesType}
         maleCategoriesType={maleCategoriesType}
         femaleCategoriesType={femaleCategoriesType}
         selectedCategoryType={selectedCategoryType}

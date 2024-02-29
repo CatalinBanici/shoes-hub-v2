@@ -1,12 +1,19 @@
 // REACT ICONS
 import { IoIosArrowDown } from "react-icons/io";
+import {
+  filterByCategory,
+  resetCategoryAndGenderFilteredProducts,
+} from "../../../../../redux/features/slices/productsSlice";
 
 export default function DesktopCategories(props) {
   const {
+    showAllCategories,
+    setShowAllCategories,
     showMaleCategories,
     setShowMaleCategories,
     showFemaleCategories,
     setShowFemaleCategories,
+    allCategoriesType,
     maleCategoriesType,
     femaleCategoriesType,
     selectedCategoryType,
@@ -24,6 +31,68 @@ export default function DesktopCategories(props) {
         <h2 className="text-2xl font-bold text-gray-800">Categories</h2>
       </div>
 
+      {/* all */}
+      <div className="my-4 flex w-full flex-col items-start ">
+        <button
+          className="group relative my-2 w-full"
+          onClick={() => {
+            setShowAllCategories((current) => !current);
+            setShowFemaleCategories(false);
+            setShowMaleCategories(false);
+            dispatch(resetCategoryAndGenderFilteredProducts());
+            dispatch(resetFilterByColorAndSortByPrice());
+          }}
+        >
+          <span
+            className={`flex w-full flex-row items-center justify-start text-lg duration-300 ease-out hover:translate-x-2 ${
+              showAllCategories
+                ? "translate-x-2 font-medium italic text-black "
+                : "font-regular text-gray-700"
+            }`}
+          >
+            All{" "}
+            <span className="ml-2">
+              <IoIosArrowDown className={showAllCategories && "rotate-180"} />
+            </span>
+          </span>
+          <div
+            className={`absolute bottom-0 h-0.5 w-full origin-left scale-x-0 duration-300 ease-out group-hover:scale-x-100 group-hover:bg-gray-800 ${
+              showAllCategories && "scale-x-100 bg-gray-300"
+            }`}
+          />
+        </button>
+        {showAllCategories && (
+          <div className="m-2 flex w-full flex-col items-start">
+            {allCategoriesType.map((category, index) => (
+              <button
+                className="group relative my-2 w-full text-left"
+                key={index}
+                onClick={() => {
+                  dispatch(filterByCategory(category.toLowerCase()));
+                  dispatch(resetFilterByColorAndSortByPrice());
+                }}
+              >
+                <span
+                  className={`text-md font-regular block w-full duration-300 ease-out hover:translate-x-2 ${
+                    selectedCategoryType.toString() === category
+                      ? "translate-x-2 font-medium italic text-black"
+                      : "text-gray-700"
+                  } `}
+                >
+                  {category.charAt(0).toUpperCase() + category.slice(1)}
+                </span>
+                <div
+                  className={`absolute bottom-0 h-0.5 w-full origin-left scale-x-0 duration-300 ease-out group-hover:scale-x-100 group-hover:bg-gray-800 ${
+                    selectedCategoryType.toString() === category &&
+                    "scale-x-100 bg-gray-300"
+                  }`}
+                />
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+
       {/* men */}
       <div className="my-4 flex w-full flex-col items-start ">
         <button
@@ -31,7 +100,9 @@ export default function DesktopCategories(props) {
           onClick={() => {
             setShowMaleCategories((current) => !current);
             setShowFemaleCategories(false);
+            setShowAllCategories(false);
             dispatch(filterByGender("male"));
+            dispatch(resetFilterByColorAndSortByPrice());
           }}
         >
           <span
@@ -91,7 +162,9 @@ export default function DesktopCategories(props) {
           onClick={() => {
             setShowFemaleCategories((current) => !current);
             setShowMaleCategories(false);
+            setShowAllCategories(false);
             dispatch(filterByGender("female"));
+            dispatch(resetFilterByColorAndSortByPrice());
           }}
         >
           <span
