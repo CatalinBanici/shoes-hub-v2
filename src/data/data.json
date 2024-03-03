@@ -7,7 +7,7 @@
   },
   "products": [
     {
-      "id": "sneakers-1",
+      "id": "sm4586329986",
       "name": "New Fashion Men Sneakers",
       "category": "sneakers",
       "description": "2023 New Fashion Men Sneakers For Men Casual Shoes Breathable Lace Up Mens Casual Shoes Spring Shoes Men Chaussure Homme.",
@@ -215,7 +215,7 @@
       }
     },
     {
-      "id": "sneakers-2",
+      "id": "sm2246335901",
       "name": "Running Shoes Lightweight",
       "category": "sneakers",
       "description": "Summer Autumn Running Shoes for Men Lightweight Design Quick-Dry Marathon Shock Absorption Support Male Sneakers.",
@@ -356,7 +356,7 @@
       }
     },
     {
-      "id": "sneakers-3",
+      "id": "sm4458999621",
       "name": "Leather Loafers Casual Shoes For Men",
       "category": "sneakers",
       "description": "Genuine Suede Leather Men Loafers Casual Shoes Men Sneakers Laup Oxford Shoes Outdoor Jogging Shoes Board Shoes Safety Shoes",
@@ -586,7 +586,7 @@
       }
     },
     {
-      "id": "sneakers-4",
+      "id": "sf2201002545",
       "name": "Women Sneakers Shoes Fashion",
       "category": "sneakers",
       "description": "Women Sneakers Shoes Fashion Women Vulcanized Shoes High Quality Flats Shoes Women Walking Platform Plus Size Zapatillas Mujer",
@@ -817,7 +817,7 @@
       }
     },
     {
-      "id": "sneakers-5",
+      "id": "sf0012225462",
       "name": "Summer Women Fashion Vulcanized Sneakers",
       "category": "sneakers",
       "description": "Summer Women Fashion Vulcanized Sneakers Platform Solid Color Flat Ladies Shoes Casual Breathable Wedges Ladies Walking Sneakers",
@@ -1133,7 +1133,7 @@
       }
     },
     {
-      "id": "sneakers-6",
+      "id": "sf5544259886",
       "name": "Women's Casual Sneakers",
       "category": "sneakers",
       "description": "Women's Casual Sneakers White Metallic Detail Embroidered Floral Skate Shoes For Women Lightweight Walking Shoes",
@@ -1311,7 +1311,7 @@
       }
     },
     {
-      "id": "sneakers-7",
+      "id": "sf5541225880",
       "name": "Vulcanized Sneakers Platform",
       "category": "sneakers",
       "description": "Fashion Vulcanized Sneakers Platform Solid Color Flats Women Shoes Casual Breathable Wedges Ladies Walking Sneakers",
@@ -1596,7 +1596,7 @@
       }
     },
     {
-      "id": "sneakers-8",
+      "id": "sf5569985541",
       "name": "New Style Casual Sports Shoes",
       "category": "sneakers",
       "description": "New Style Thick Sole Lift Casual Sports Shoes With Comfortable Bottom And White Color Suitable For Short Stature Women",
@@ -1757,7 +1757,7 @@
       }
     },
     {
-      "id": "sneakers-9",
+      "id": "sm5548533651",
       "name": "Luxury Designer Vulcanized Shoes",
       "category": "sneakers",
       "description": "Valstone Luxury Designer Vulcanized Shoes For Men Casual Outdoor Quality Male Footwear Breathable Mens Fashion Sneakes",
@@ -1951,7 +1951,7 @@
       }
     },
     {
-      "id": "sneakers-10",
+      "id": "sm0023644892",
       "name": "Men Sneakers Outdoor Stylish",
       "category": "sneakers",
       "description": "Autumn Men Sneakers Natural Pig Skin Material Male Trainers Outdoor Stylish Shoes Lace-up Flats Non-slip Rubber Sole Gray",
@@ -2183,7 +2183,7 @@
       }
     },
     {
-      "id": "boots-1",
+      "id": "bm3325987445",
       "name": " Tactical Military Combat Boots",
       "category": "boots",
       "description": "2023 Men Boots Tactical Military Combat Boots Outdoor Hiking Winter Shoes Light Non-slip Men Desert Ankle Boots",
@@ -2344,7 +2344,7 @@
       }
     },
     {
-      "id": "boots-2",
+      "id": "bm0336441805",
       "name": "Mens Leather Boots 2023",
       "category": "boots",
       "description": "Mens Leather Boots 2023 Winter Platform Warm Fur Ankle Boots Short Lace-up Shoes New Borwn Casual Shoes For Men Work Bota",
@@ -2504,7 +2504,7 @@
       }
     },
     {
-      "id": "boots-3",
+      "id": "bm0233005941",
       "name": "Tactical Military Men Boots Special Force",
       "category": "boots",
       "description": "Tactical Military Boots Men Boots Special Force Desert Combat Army Boots Outdoor Hiking Boots Ankle Shoes Men Tactical Boots",
@@ -2736,7 +2736,7 @@
       }
     },
     {
-      "id": "boots-4",
+      "id": "bf033987114",
       "name": "Women's Boots 2023 New Lace Up",
       "category": "boots",
       "description": "Women's Boots 2023 New Lace Up Boots For Women Fashion Knight Boots Women Round Head Thick Heel Boots Women Women",
@@ -2847,7 +2847,7 @@
       }
     },
     {
-      "id": "boots-5",
+      "id": "bf58996540214",
       "name": "Lightweight Ankle Boots Platform",
       "category": "boots",
       "description": "Women Boots Lightweight Ankle Boots Platform Shoes For Women Heels Winter Botas Mujer Keep Warm Snow Winter Shoes Female Botines",
@@ -3111,7 +3111,7 @@
       }
     },
     {
-      "id": "boots-6",
+      "id": "bm5945520349",
       "name": "Snow Boots Winter Warm",
       "category": "boots",
       "description": "Men Snow Boots Winter Warm Lace Up Shoes New Fashion Flock Plush Winter Boots Ankle Safety Shoes Men Zapatillas De Hombre",
@@ -3290,7 +3290,7 @@
       }
     },
     {
-      "id": "boots-7",
+      "id": "bm59776001345",
       "name": "Waterproof Winter Boots Lightweight",
       "category": "boots",
       "description": "Men Boots Waterproof Winter Boots Men Lightweight Hight Top Leather Shoes Plus 48 No Slip Warm Snow Boots Plush Women Footwear",
@@ -3515,6 +3515,4383 @@
           "../assets/products-gallery/boots-men-5/showcase4.jpg",
           "../assets/products-gallery/boots-men-5/showcase5.jpg",
           "../assets/products-gallery/boots-men-5/showcase6.jpg"
+        ]
+      }
+    },
+    {
+      "id": "osm458860013",
+      "name": "Men Shoes Office Wedding",
+      "category": "office shoes",
+      "description": "Men Shoes Sizes For Formal Dress Male Oxfords Triple Joint Office Leather Wedding Lace Up Autumn Spring",
+      "stock": [
+        {
+          "size": 36,
+          "colors": [
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/office-shoes-men-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-men-1/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            }
+          ]
+        },
+        {
+          "size": 37,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-men-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-men-1/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            }
+          ]
+        },
+        {
+          "size": 38,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-men-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-men-1/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            }
+          ]
+        },
+        {
+          "size": 39,
+          "colors": [
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/office-shoes-men-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/office-shoes-men-1/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            }
+          ]
+        },
+        {
+          "size": 40,
+          "colors": [
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/office-shoes-men-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/office-shoes-men-1/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            }
+          ]
+        },
+        {
+          "size": 41,
+          "colors": [
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/office-shoes-men-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 2,
+              "colorImage": "../assets/products-gallery/office-shoes-men-1/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            }
+          ]
+        },
+        {
+          "size": 42,
+          "colors": [
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/office-shoes-men-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/office-shoes-men-1/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            }
+          ]
+        },
+        {
+          "size": 43,
+          "colors": [
+            {
+              "numberOfItems": 2,
+              "colorImage": "../assets/products-gallery/office-shoes-men-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/office-shoes-men-1/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            }
+          ]
+        },
+        {
+          "size": 44,
+          "colors": [
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/office-shoes-men-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/office-shoes-men-1/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 59,
+        "discount": true,
+        "old": 79
+      },
+      "gender": "male",
+      "gallery": {
+        "main": "../assets/products-gallery/office-shoes-men-1/main.jpg",
+        "images": [
+          "../assets/products-gallery/office-shoes-men-1/main.jpg",
+          "../assets/products-gallery/office-shoes-men-1/showcase1.jpg",
+          "../assets/products-gallery/office-shoes-men-1/showcase2.jpg",
+          "../assets/products-gallery/office-shoes-men-1/showcase3.jpg",
+          "../assets/products-gallery/office-shoes-men-1/showcase4.jpg"
+        ]
+      }
+    },
+    {
+      "id": "osm584745110",
+      "name": "Men Quality Shoes Wedding Office",
+      "category": "office shoes",
+      "description": "2024 New Mens Quality Patent Leather Shoes White Wedding Shoes Size Black Leather Soft Man Dress Shoes",
+      "stock": [
+        {
+          "size": 37,
+          "colors": [
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            }
+          ]
+        },
+        {
+          "size": 38,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            }
+          ]
+        },
+        {
+          "size": 39,
+          "colors": [
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            }
+          ]
+        },
+        {
+          "size": 40,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            }
+          ]
+        },
+        {
+          "size": 41,
+          "colors": [
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            }
+          ]
+        },
+        {
+          "size": 42,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            }
+          ]
+        },
+        {
+          "size": 43,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            }
+          ]
+        },
+        {
+          "size": 44,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            }
+          ]
+        },
+        {
+          "size": 45,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-men-2/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 89,
+        "discount": false,
+        "old": 89
+      },
+      "gender": "male",
+      "gallery": {
+        "main": "../assets/products-gallery/office-shoes-men-2/main.jpg",
+        "images": [
+          "../assets/products-gallery/office-shoes-men-2/main.jpg",
+          "../assets/products-gallery/office-shoes-men-2/showcase1.jpg",
+          "../assets/products-gallery/office-shoes-men-2/showcase2.jpg",
+          "../assets/products-gallery/office-shoes-men-2/showcase3.jpg",
+          "../assets/products-gallery/office-shoes-men-2/showcase4.jpg",
+          "../assets/products-gallery/office-shoes-men-2/showcase5.jpg"
+        ]
+      }
+    },
+    {
+      "id": "osm300978451",
+      "name": "Summer Men Casual Office Shoes Moccasins",
+      "category": "office shoes",
+      "description": "Summer Men Casual Shoes Canvas Men Shoes Lace Up Moccasins Men Flats Oxford Shoes For Men Fashion Brand Men Shoes",
+      "stock": [
+        {
+          "size": 37,
+          "colors": [
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/office-shoes-men-3/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/office-shoes-men-3/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            }
+          ]
+        },
+        {
+          "size": 38,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-men-3/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-men-3/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            }
+          ]
+        },
+        {
+          "size": 39,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-men-3/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-men-3/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            }
+          ]
+        },
+        {
+          "size": 40,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-men-3/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-men-3/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            }
+          ]
+        },
+        {
+          "size": 41,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-men-3/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-men-3/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            }
+          ]
+        },
+        {
+          "size": 42,
+          "colors": [
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/office-shoes-men-3/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/office-shoes-men-3/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            }
+          ]
+        },
+        {
+          "size": 43,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-men-3/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/office-shoes-men-3/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 49,
+        "discount": false,
+        "old": 49
+      },
+      "gender": "male",
+      "gallery": {
+        "main": "../assets/products-gallery/office-shoes-men-3/main.jpg",
+        "images": [
+          "../assets/products-gallery/office-shoes-men-3/main.jpg",
+          "../assets/products-gallery/office-shoes-men-3/showcase1.jpg",
+          "../assets/products-gallery/office-shoes-men-3/showcase2.jpg",
+          "../assets/products-gallery/office-shoes-men-3/showcase3.jpg",
+          "../assets/products-gallery/office-shoes-men-3/showcase4.jpg"
+        ]
+      }
+    },
+    {
+      "id": "osf56568100",
+      "name": "New Women Shoes Sandals",
+      "category": "office shoes",
+      "description": "New Single Women Shoes Woman Spring Pumps Summer Pointed Hollow Sandals Word Strap Fairy Shoes Black Work Shoes Girl Shoes",
+      "stock": [
+        {
+          "size": 33,
+          "colors": [
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/office-shoes-women-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/office-shoes-women-1/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-women-1/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            }
+          ]
+        },
+        {
+          "size": 34,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-women-1/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-women-1/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            }
+          ]
+        },
+        {
+          "size": 35,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-women-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/office-shoes-women-1/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-women-1/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            }
+          ]
+        },
+        {
+          "size": 36,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-women-1/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-women-1/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            }
+          ]
+        },
+        {
+          "size": 37,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-1/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-women-1/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            }
+          ]
+        },
+        {
+          "size": 38,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-women-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-1/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-1/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            }
+          ]
+        },
+        {
+          "size": 39,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-1/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/office-shoes-women-1/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 35,
+        "discount": false,
+        "old": 35
+      },
+      "gender": "female",
+      "gallery": {
+        "main": "../assets/products-gallery/office-shoes-women-1/main.jpg",
+        "images": [
+          "../assets/products-gallery/office-shoes-women-1/main.jpg",
+          "../assets/products-gallery/office-shoes-women-1/showcase1.jpg",
+          "../assets/products-gallery/office-shoes-women-1/showcase2.jpg",
+          "../assets/products-gallery/office-shoes-women-1/showcase3.jpg",
+          "../assets/products-gallery/office-shoes-women-1/showcase4.jpg",
+          "../assets/products-gallery/office-shoes-women-1/showcase5.jpg"
+        ]
+      }
+    },
+    {
+      "id": "osf20069748",
+      "name": "Square Heels Office Casual Shoes",
+      "category": "office shoes",
+      "description": "Square Heels Patent Leather Red Pumps Shoes Woman Classics Pointed Toe Dress Official Pumps Party Plus ",
+      "stock": [
+        {
+          "size": 33,
+          "colors": [
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/pink.jpg",
+              "colorName": "pink",
+              "colorValue": "pink"
+            }
+          ]
+        },
+        {
+          "size": 34,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/pink.jpg",
+              "colorName": "pink",
+              "colorValue": "pink"
+            }
+          ]
+        },
+        {
+          "size": 35,
+          "colors": [
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/pink.jpg",
+              "colorName": "pink",
+              "colorValue": "pink"
+            }
+          ]
+        },
+        {
+          "size": 36,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/pink.jpg",
+              "colorName": "pink",
+              "colorValue": "pink"
+            }
+          ]
+        },
+        {
+          "size": 37,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/pink.jpg",
+              "colorName": "pink",
+              "colorValue": "pink"
+            }
+          ]
+        },
+        {
+          "size": 38,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/pink.jpg",
+              "colorName": "pink",
+              "colorValue": "pink"
+            }
+          ]
+        },
+        {
+          "size": 39,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/office-shoes-women-2/colors/pink.jpg",
+              "colorName": "pink",
+              "colorValue": "pink"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 39,
+        "discount": false,
+        "old": 39
+      },
+      "gender": "female",
+      "gallery": {
+        "main": "../assets/products-gallery/office-shoes-women-2/main.jpg",
+        "images": [
+          "../assets/products-gallery/office-shoes-women-2/main.jpg",
+          "../assets/products-gallery/office-shoes-women-2/showcase1.jpg",
+          "../assets/products-gallery/office-shoes-women-2/showcase2.jpg",
+          "../assets/products-gallery/office-shoes-women-2/showcase3.jpg",
+          "../assets/products-gallery/office-shoes-women-2/showcase4.jpg",
+          "../assets/products-gallery/office-shoes-women-2/showcase5.jpg"
+        ]
+      }
+    },
+    {
+      "id": "osf796443201",
+      "name": "Low Heels Office Casual Lady",
+      "category": "office shoes",
+      "description": "Lady Silk Stain New In Low Heels Zapatos 5cm OL Elegant Shoes Pointed Toe Beige Sole De Mujer Moccasins",
+      "stock": [
+        {
+          "size": 32,
+          "colors": [
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 33,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 34,
+          "colors": [
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 35,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 36,
+          "colors": [
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 37,
+          "colors": [
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 38,
+          "colors": [
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/office-shoes-women-3/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 29,
+        "discount": true,
+        "old": 39
+      },
+      "gender": "female",
+      "gallery": {
+        "main": "../assets/products-gallery/office-shoes-women-3/main.jpg",
+        "images": [
+          "../assets/products-gallery/office-shoes-women-3/main.jpg",
+          "../assets/products-gallery/office-shoes-women-3/showcase1.jpg",
+          "../assets/products-gallery/office-shoes-women-3/showcase2.jpg",
+          "../assets/products-gallery/office-shoes-women-3/showcase3.jpg",
+          "../assets/products-gallery/office-shoes-women-3/showcase4.jpg",
+          "../assets/products-gallery/office-shoes-women-3/showcase5.jpg",
+          "../assets/products-gallery/office-shoes-women-3/showcase6.jpg"
+        ]
+      }
+    },
+    {
+      "id": "hhf98746548",
+      "name": "High Heels Ladies",
+      "category": "high heels",
+      "description": "2023 Pumps For Women High Heel Shoes Ladies Fashion Patent Sexy Pointed Toe Thin Heel Wedding Shoes",
+      "stock": [
+        {
+          "size": 33,
+          "colors": [
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/pink.jpg",
+              "colorName": "pink",
+              "colorValue": "pink"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            }
+          ]
+        },
+        {
+          "size": 34,
+          "colors": [
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/pink.jpg",
+              "colorName": "pink",
+              "colorValue": "pink"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            }
+          ]
+        },
+        {
+          "size": 35,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/pink.jpg",
+              "colorName": "pink",
+              "colorValue": "pink"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            }
+          ]
+        },
+        {
+          "size": 36,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/pink.jpg",
+              "colorName": "pink",
+              "colorValue": "pink"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            }
+          ]
+        },
+        {
+          "size": 37,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/pink.jpg",
+              "colorName": "pink",
+              "colorValue": "pink"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            }
+          ]
+        },
+        {
+          "size": 38,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/pink.jpg",
+              "colorName": "pink",
+              "colorValue": "pink"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            }
+          ]
+        },
+        {
+          "size": 39,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/pink.jpg",
+              "colorName": "pink",
+              "colorValue": "pink"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/high-heels-women-1/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 45,
+        "discount": false,
+        "old": 45
+      },
+      "gender": "female",
+      "gallery": {
+        "main": "../assets/products-gallery/high-heels-women-1/main.jpg",
+        "images": [
+          "../assets/products-gallery/high-heels-women-1/main.jpg",
+          "../assets/products-gallery/high-heels-women-1/showcase1.jpg",
+          "../assets/products-gallery/high-heels-women-1/showcase2.jpg",
+          "../assets/products-gallery/high-heels-women-1/showcase3.jpg",
+          "../assets/products-gallery/high-heels-women-1/showcase4.jpg"
+        ]
+      }
+    },
+    {
+      "id": "hhf58716548",
+      "name": "High Heels Casual Sandals",
+      "category": "high heels",
+      "description": "Sandals Satin Cloth Rhinestones High Heels Shoes Woman Sandals 2024 Summer Diamond Heels Sandals Fashion Party Sexy Women Shoes",
+      "stock": [
+        {
+          "size": 33,
+          "colors": [
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/yellow.jpg",
+              "colorName": "yellow",
+              "colorValue": "yellow"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        },
+        {
+          "size": 34,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/yellow.jpg",
+              "colorName": "yellow",
+              "colorValue": "yellow"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        },
+        {
+          "size": 35,
+          "colors": [
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/yellow.jpg",
+              "colorName": "yellow",
+              "colorValue": "yellow"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        },
+        {
+          "size": 36,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/yellow.jpg",
+              "colorName": "yellow",
+              "colorValue": "yellow"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        },
+        {
+          "size": 37,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/yellow.jpg",
+              "colorName": "yellow",
+              "colorValue": "yellow"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        },
+        {
+          "size": 38,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/yellow.jpg",
+              "colorName": "yellow",
+              "colorValue": "yellow"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        },
+        {
+          "size": 39,
+          "colors": [
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/yellow.jpg",
+              "colorName": "yellow",
+              "colorValue": "yellow"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        },
+        {
+          "size": 40,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/yellow.jpg",
+              "colorName": "yellow",
+              "colorValue": "yellow"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/high-heels-women-2/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 49,
+        "discount": false,
+        "old": 49
+      },
+      "gender": "female",
+      "gallery": {
+        "main": "../assets/products-gallery/high-heels-women-2/main.jpg",
+        "images": [
+          "../assets/products-gallery/high-heels-women-2/main.jpg",
+          "../assets/products-gallery/high-heels-women-2/showcase1.jpg",
+          "../assets/products-gallery/high-heels-women-2/showcase2.jpg",
+          "../assets/products-gallery/high-heels-women-2/showcase3.jpg",
+          "../assets/products-gallery/high-heels-women-2/showcase4.jpg",
+          "../assets/products-gallery/high-heels-women-2/showcase5.jpg",
+          "../assets/products-gallery/high-heels-women-2/showcase6.jpg"
+        ]
+      }
+    },
+    {
+      "id": "hhf61568454",
+      "name": "Purple Crocodile Effect High Heels",
+      "category": "high heels",
+      "description": "Purple Embossed Crocodile Effect Women Pointed Toe Slip On High Heel Shoes For Party Sexy Ladies Dress Stiletto Pumps",
+      "stock": [
+        {
+          "size": 32,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-3/colors/purple.jpg",
+              "colorName": "purple",
+              "colorValue": "purple"
+            }
+          ]
+        },
+        {
+          "size": 33,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-3/colors/purple.jpg",
+              "colorName": "purple",
+              "colorValue": "purple"
+            }
+          ]
+        },
+        {
+          "size": 34,
+          "colors": [
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/high-heels-women-3/colors/purple.jpg",
+              "colorName": "purple",
+              "colorValue": "purple"
+            }
+          ]
+        },
+        {
+          "size": 35,
+          "colors": [
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/high-heels-women-3/colors/purple.jpg",
+              "colorName": "purple",
+              "colorValue": "purple"
+            }
+          ]
+        },
+        {
+          "size": 36,
+          "colors": [
+            {
+              "numberOfItems": 1,
+              "colorImage": "../assets/products-gallery/high-heels-women-3/colors/purple.jpg",
+              "colorName": "purple",
+              "colorValue": "purple"
+            }
+          ]
+        },
+        {
+          "size": 37,
+          "colors": [
+            {
+              "numberOfItems": 0,
+              "colorImage": "../assets/products-gallery/high-heels-women-3/colors/purple.jpg",
+              "colorName": "purple",
+              "colorValue": "purple"
+            }
+          ]
+        },
+        {
+          "size": 38,
+          "colors": [
+            {
+              "numberOfItems": 0,
+              "colorImage": "../assets/products-gallery/high-heels-women-3/colors/purple.jpg",
+              "colorName": "purple",
+              "colorValue": "purple"
+            }
+          ]
+        },
+        {
+          "size": 39,
+          "colors": [
+            {
+              "numberOfItems": 0,
+              "colorImage": "../assets/products-gallery/high-heels-women-3/colors/purple.jpg",
+              "colorName": "purple",
+              "colorValue": "purple"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 45,
+        "discount": true,
+        "old": 59
+      },
+      "gender": "female",
+      "gallery": {
+        "main": "../assets/products-gallery/high-heels-women-3/main.jpg",
+        "images": [
+          "../assets/products-gallery/high-heels-women-3/main.jpg",
+          "../assets/products-gallery/high-heels-women-3/showcase1.jpg",
+          "../assets/products-gallery/high-heels-women-3/showcase2.jpg",
+          "../assets/products-gallery/high-heels-women-3/showcase3.jpg"
+        ]
+      }
+    },
+    {
+      "id": "bm9877653014",
+      "name": "High Ankle Men Boots Fashion",
+      "category": "boots",
+      "description": "High Top Men Boots Fashion Motorcycle Ankle Boots for Men New Green Male Military Boot Winter Lace-Up Men's Shoes Botas Hombre",
+      "stock": [
+        {
+          "size": 38,
+          "colors": [
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            }
+          ]
+        },
+        {
+          "size": 39,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            }
+          ]
+        },
+        {
+          "size": 40,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            }
+          ]
+        },
+        {
+          "size": 41,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            }
+          ]
+        },
+        {
+          "size": 42,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            }
+          ]
+        },
+        {
+          "size": 43,
+          "colors": [
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 0,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            }
+          ]
+        },
+        {
+          "size": 44,
+          "colors": [
+            {
+              "numberOfItems": 0,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 2,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            }
+          ]
+        },
+        {
+          "size": 45,
+          "colors": [
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 2,
+              "colorImage": "../assets/products-gallery/boots-men-6/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 80,
+        "discount": true,
+        "old": 99
+      },
+      "gender": "male",
+      "gallery": {
+        "main": "../assets/products-gallery/boots-men-6/main.jpg",
+        "images": [
+          "../assets/products-gallery/boots-men-6/main.jpg",
+          "../assets/products-gallery/boots-men-6/showcase1.jpg",
+          "../assets/products-gallery/boots-men-6/showcase2.jpg",
+          "../assets/products-gallery/boots-men-6/showcase3.jpg",
+          "../assets/products-gallery/boots-men-6/showcase4.jpg",
+          "../assets/products-gallery/boots-men-6/showcase5.jpg"
+        ]
+      }
+    },
+    {
+      "id": "bm496638745",
+      "name": "Casual Boots Men Cowboy Style",
+      "category": "boots",
+      "description": " Men Boots Casual Shoes Winter Designer Luxury Platform Cowboy Military Chelsea Leather Tactical Work Safety Ankle Sneakers",
+      "stock": [
+        {
+          "size": 38,
+          "colors": [
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-men-7/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/boots-men-7/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-men-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        },
+        {
+          "size": 39,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/boots-men-7/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-men-7/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-men-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        },
+        {
+          "size": 40,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/boots-men-7/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/boots-men-7/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/boots-men-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        },
+        {
+          "size": 41,
+          "colors": [
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/boots-men-7/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/boots-men-7/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/boots-men-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        },
+        {
+          "size": 42,
+          "colors": [
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/boots-men-7/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/boots-men-7/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/boots-men-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        },
+        {
+          "size": 43,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/boots-men-7/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/boots-men-7/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/boots-men-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        },
+        {
+          "size": 44,
+          "colors": [
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/boots-men-7/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/boots-men-7/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/boots-men-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 55,
+        "discount": true,
+        "old": 82
+      },
+      "gender": "male",
+      "gallery": {
+        "main": "../assets/products-gallery/boots-men-7/main.jpg",
+        "images": [
+          "../assets/products-gallery/boots-men-7/main.jpg",
+          "../assets/products-gallery/boots-men-7/showcase1.jpg",
+          "../assets/products-gallery/boots-men-7/showcase2.jpg",
+          "../assets/products-gallery/boots-men-7/showcase3.jpg",
+          "../assets/products-gallery/boots-men-7/showcase4.jpg"
+        ]
+      }
+    },
+    {
+      "id": "bf330097451",
+      "name": "High Fur Boots Winter For Women",
+      "category": "boots",
+      "description": "Warm High Fur Boots Women 2022 Winter Shoes for Women Chunky Mid-calf Plush Snow Flat Boots ZIP Fashion Botas De Mujer",
+      "stock": [
+        {
+          "size": 33,
+          "colors": [
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-women-3/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/boots-women-3/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 34,
+          "colors": [
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/boots-women-3/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-women-3/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 35,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/boots-women-3/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/boots-women-3/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 36,
+          "colors": [
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/boots-women-3/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/boots-women-3/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 37,
+          "colors": [
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/boots-women-3/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/boots-women-3/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 38,
+          "colors": [
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/boots-women-3/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/boots-women-3/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 39,
+          "colors": [
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/boots-women-3/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/boots-women-3/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 41,
+        "discount": true,
+        "old": 60
+      },
+      "gender": "female",
+      "gallery": {
+        "main": "../assets/products-gallery/boots-women-3/main.jpg",
+        "images": [
+          "../assets/products-gallery/boots-women-3/main.jpg",
+          "../assets/products-gallery/boots-women-3/showcase1.jpg",
+          "../assets/products-gallery/boots-women-3/showcase2.jpg",
+          "../assets/products-gallery/boots-women-3/showcase3.jpg"
+        ]
+      }
+    },
+    {
+      "id": "bf967748641",
+      "name": "Winter Women Leather Ankle Boots",
+      "category": "boots",
+      "description": "Fur Women Boots Winter Ankle Boots Hand Sewing Thread Mom Cotton Shoes for Women 2023 New Waterproof Short Snow Boot Botas Mujer",
+      "stock": [
+        {
+          "size": 33,
+          "colors": [
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 34,
+          "colors": [
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 35,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 36,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 37,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 38,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 39,
+          "colors": [
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 40,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-women-4/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 66,
+        "discount": false,
+        "old": 66
+      },
+      "gender": "female",
+      "gallery": {
+        "main": "../assets/products-gallery/boots-women-4/main.jpg",
+        "images": [
+          "../assets/products-gallery/boots-women-4/main.jpg",
+          "../assets/products-gallery/boots-women-4/showcase1.jpg",
+          "../assets/products-gallery/boots-women-4/showcase2.jpg",
+          "../assets/products-gallery/boots-women-4/showcase3.jpg",
+          "../assets/products-gallery/boots-women-4/showcase4.jpg",
+          "../assets/products-gallery/boots-women-4/showcase5.jpg"
+        ]
+      }
+    },
+    {
+      "id": "bf769963365",
+      "name": "Genuine Leather Casual Winter Boots",
+      "category": "boots",
+      "description": "Genuine Leather Boots for Women in Autumn and Winter 2023, New Plush High Heels and Slim Boots, Casual Retro Short Boots",
+      "stock": [
+        {
+          "size": 33,
+          "colors": [
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-women-5/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/boots-women-5/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 34,
+          "colors": [
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/boots-women-5/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/boots-women-5/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 35,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/boots-women-5/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-women-5/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 36,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/boots-women-5/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/boots-women-5/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 37,
+          "colors": [
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/boots-women-5/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/boots-women-5/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 38,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/boots-women-5/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/boots-women-5/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 39,
+          "colors": [
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/boots-women-5/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/boots-women-5/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 99,
+        "discount": false,
+        "old": 99
+      },
+      "gender": "female",
+      "gallery": {
+        "main": "../assets/products-gallery/boots-women-5/main.jpg",
+        "images": [
+          "../assets/products-gallery/boots-women-5/main.jpg",
+          "../assets/products-gallery/boots-women-5/showcase1.jpg",
+          "../assets/products-gallery/boots-women-5/showcase2.jpg",
+          "../assets/products-gallery/boots-women-5/showcase3.jpg"
+        ]
+      }
+    },
+    {
+      "id": "sm79986314",
+      "name": "Hiking Casual Sneakers Men",
+      "category": "sneakers",
+      "description": "Men Sneakers Hiking Shoes For Men Outdoor Mountain Boots Climbing Sneakers Autumn Winter Shoes",
+      "stock": [
+        {
+          "size": 36,
+          "colors": [
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/sneakers-men-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 37,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/sneakers-men-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 38,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/sneakers-men-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 39,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/sneakers-men-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 40,
+          "colors": [
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/sneakers-men-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 41,
+          "colors": [
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/sneakers-men-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 42,
+          "colors": [
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/sneakers-men-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 43,
+          "colors": [
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/sneakers-men-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 44,
+          "colors": [
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/sneakers-men-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 52,
+        "discount": false,
+        "old": 52
+      },
+      "gender": "male",
+      "gallery": {
+        "main": "../assets/products-gallery/sneakers-men-6/main.jpg",
+        "images": [
+          "../assets/products-gallery/sneakers-men-6/main.jpg",
+          "../assets/products-gallery/sneakers-men-6/showcase1.jpg",
+          "../assets/products-gallery/sneakers-men-6/showcase2.jpg",
+          "../assets/products-gallery/sneakers-men-6/showcase3.jpg"
+        ]
+      }
+    },
+    {
+      "id": "sf75468454",
+      "name": "Running Shoes Comfy Casual Lightweight",
+      "category": "sneakers",
+      "description": "New 2023 Sneakers Breathable Fashion High Quality Man Running Tennis Shoe Comfortable Casual Shoe ",
+      "stock": [
+        {
+          "size": 33,
+          "colors": [
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/orange.jpg",
+              "colorName": "orange",
+              "colorValue": "orange"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 34,
+          "colors": [
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/orange.jpg",
+              "colorName": "orange",
+              "colorValue": "orange"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 35,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/orange.jpg",
+              "colorName": "orange",
+              "colorValue": "orange"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 36,
+          "colors": [
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/orange.jpg",
+              "colorName": "orange",
+              "colorValue": "orange"
+            },
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 37,
+          "colors": [
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/orange.jpg",
+              "colorName": "orange",
+              "colorValue": "orange"
+            },
+            {
+              "numberOfItems": 2,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 38,
+          "colors": [
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/orange.jpg",
+              "colorName": "orange",
+              "colorValue": "orange"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 39,
+          "colors": [
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/orange.jpg",
+              "colorName": "orange",
+              "colorValue": "orange"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/green.jpg",
+              "colorName": "green",
+              "colorValue": "green"
+            },
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/sneakers-women-6/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 32,
+        "discount": true,
+        "old": 48
+      },
+      "gender": "female",
+      "gallery": {
+        "main": "../assets/products-gallery/sneakers-women-6/main.jpg",
+        "images": [
+          "../assets/products-gallery/sneakers-women-6/main.jpg",
+          "../assets/products-gallery/sneakers-women-6/showcase1.jpg",
+          "../assets/products-gallery/sneakers-women-6/showcase2.jpg",
+          "../assets/products-gallery/sneakers-women-6/showcase3.jpg",
+          "../assets/products-gallery/sneakers-women-6/showcase4.jpg"
+        ]
+      }
+    },
+    {
+      "id": "osm8644354",
+      "name": "Genuine Leather Flat Office Business Shoes",
+      "category": "office shoes",
+      "description": "Genuine Leather Shoes Outdoor Men Loafers Slip On Business Casual Leather Shoes Classic Soft Hombre Breathable Men Shoes Flat",
+      "stock": [
+        {
+          "size": 37,
+          "colors": [
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/office-shoes-men-4/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-men-4/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 38,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-men-4/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-men-4/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 39,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-men-4/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/office-shoes-men-4/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 40,
+          "colors": [
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/office-shoes-men-4/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/office-shoes-men-4/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 41,
+          "colors": [
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/office-shoes-men-4/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/office-shoes-men-4/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 42,
+          "colors": [
+            {
+              "numberOfItems": 2,
+              "colorImage": "../assets/products-gallery/office-shoes-men-4/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/office-shoes-men-4/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 43,
+          "colors": [
+            {
+              "numberOfItems": 1,
+              "colorImage": "../assets/products-gallery/office-shoes-men-4/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/office-shoes-men-4/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 44,
+          "colors": [
+            {
+              "numberOfItems": 0,
+              "colorImage": "../assets/products-gallery/office-shoes-men-4/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            },
+            {
+              "numberOfItems": 0,
+              "colorImage": "../assets/products-gallery/office-shoes-men-4/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 69,
+        "discount": true,
+        "old": 82
+      },
+      "gender": "male",
+      "gallery": {
+        "main": "../assets/products-gallery/office-shoes-men-4/main.jpg",
+        "images": [
+          "../assets/products-gallery/office-shoes-men-4/main.jpg",
+          "../assets/products-gallery/office-shoes-men-4/showcase1.jpg",
+          "../assets/products-gallery/office-shoes-men-4/showcase2.jpg",
+          "../assets/products-gallery/office-shoes-men-4/showcase3.jpg",
+          "../assets/products-gallery/office-shoes-men-4/showcase4.jpg"
+        ]
+      }
+    },
+    {
+      "id": "osm8426845",
+      "name": "Leather Trendy Casual Print Design Shoes",
+      "category": "office shoes",
+      "description": "Trendy Men Leather Brogue Shoes Daily Outdoor Casual Shoes Brown Black Print Design Custom",
+      "stock": [
+        {
+          "size": 39,
+          "colors": [
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/office-shoes-men-5/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            }
+          ]
+        },
+        {
+          "size": 30,
+          "colors": [
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/office-shoes-men-5/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            }
+          ]
+        },
+        {
+          "size": 41,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/office-shoes-men-5/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            }
+          ]
+        },
+        {
+          "size": 42,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-men-5/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            }
+          ]
+        },
+        {
+          "size": 43,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/office-shoes-men-5/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            }
+          ]
+        },
+        {
+          "size": 44,
+          "colors": [
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/office-shoes-men-5/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            }
+          ]
+        },
+        {
+          "size": 45,
+          "colors": [
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/office-shoes-men-5/colors/brown.jpg",
+              "colorName": "brown",
+              "colorValue": "brown"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 72,
+        "discount": false,
+        "old": 72
+      },
+      "gender": "male",
+      "gallery": {
+        "main": "../assets/products-gallery/office-shoes-men-5/main.jpg",
+        "images": [
+          "../assets/products-gallery/office-shoes-men-5/main.jpg",
+          "../assets/products-gallery/office-shoes-men-5/showcase1.jpg",
+          "../assets/products-gallery/office-shoes-men-5/showcase2.jpg",
+          "../assets/products-gallery/office-shoes-men-5/showcase3.jpg"
+        ]
+      }
+    },
+    {
+      "id": "hhf64851165",
+      "name": "How Do You Walk On Those ?",
+      "category": "high heels",
+      "description": "New Fashion Sexy Pole Dancing Shoes Summer 20 Cm PVC Women Sandals Thin High Heels Buckle Strap Enormous Platforms",
+      "stock": [
+        {
+          "size": 33,
+          "colors": [
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/black-1.jpg",
+              "colorName": "black-glossy",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 10,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/black-2.jpg",
+              "colorName": "black-matte",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        },
+        {
+          "size": 34,
+          "colors": [
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/black-1.jpg",
+              "colorName": "black-glossy",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/black-2.jpg",
+              "colorName": "black-matte",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        },
+        {
+          "size": 35,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/black-1.jpg",
+              "colorName": "black-glossy",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/black-2.jpg",
+              "colorName": "black-matte",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        },
+        {
+          "size": 36,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/black-1.jpg",
+              "colorName": "black-glossy",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/black-2.jpg",
+              "colorName": "black-matte",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        },
+        {
+          "size": 37,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/black-1.jpg",
+              "colorName": "black-glossy",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/black-2.jpg",
+              "colorName": "black-matte",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        },
+        {
+          "size": 38,
+          "colors": [
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/black-1.jpg",
+              "colorName": "black-glossy",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/black-2.jpg",
+              "colorName": "black-matte",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        },
+        {
+          "size": 39,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/red.jpg",
+              "colorName": "red",
+              "colorValue": "red"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/black-1.jpg",
+              "colorName": "black-glossy",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/black-2.jpg",
+              "colorName": "black-matte",
+              "colorValue": "black"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-4/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 69,
+        "discount": false,
+        "old": 69
+      },
+      "gender": "female",
+      "gallery": {
+        "main": "../assets/products-gallery/high-heels-women-4/main.jpg",
+        "images": [
+          "../assets/products-gallery/high-heels-women-4/main.jpg",
+          "../assets/products-gallery/high-heels-women-4/showcase1.jpg",
+          "../assets/products-gallery/high-heels-women-4/showcase2.jpg",
+          "../assets/products-gallery/high-heels-women-4/showcase3.jpg",
+          "../assets/products-gallery/high-heels-women-4/showcase4.jpg"
+        ]
+      }
+    },
+    {
+      "id": "hhf648654500",
+      "name": "High Heels Casual Stiletto",
+      "category": "high heels",
+      "description": " High Heels Stiletto Open Toe Shoes Platform Patent Women's Shoes 10cm Thin Heels",
+      "stock": [
+        {
+          "size": 32,
+          "colors": [
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-5/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-5/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 33,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-5/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/high-heels-women-5/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 34,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/high-heels-women-5/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-5/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 35,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-5/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-5/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 36,
+          "colors": [
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/high-heels-women-5/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/high-heels-women-5/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 37,
+          "colors": [
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/high-heels-women-5/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/high-heels-women-5/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 38,
+          "colors": [
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/high-heels-women-5/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/high-heels-women-5/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 39,
+          "colors": [
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/high-heels-women-5/colors/beige.jpg",
+              "colorName": "beige",
+              "colorValue": "beige"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/high-heels-women-5/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 59,
+        "discount": false,
+        "old": 59
+      },
+      "gender": "female",
+      "gallery": {
+        "main": "../assets/products-gallery/high-heels-women-5/main.jpg",
+        "images": [
+          "../assets/products-gallery/high-heels-women-5/main.jpg",
+          "../assets/products-gallery/high-heels-women-5/showcase1.jpg",
+          "../assets/products-gallery/high-heels-women-5/showcase2.jpg",
+          "../assets/products-gallery/high-heels-women-5/showcase3.jpg",
+          "../assets/products-gallery/high-heels-women-5/showcase4.jpg"
+        ]
+      }
+    },
+    {
+      "id": "sm96844554",
+      "name": "Male Sneakers Fashion Comfortable",
+      "category": "sneakers",
+      "description": "Male Sneakers Fashion Comfortable Sneakers Man Shoes 2023 New Wedges Sneakers Casual Outdoors Vulcanized Running Shoes for Men",
+      "stock": [
+        {
+          "size": 37,
+          "colors": [
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            }
+          ]
+        },
+        {
+          "size": 38,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            }
+          ]
+        },
+        {
+          "size": 39,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            }
+          ]
+        },
+        {
+          "size": 40,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            }
+          ]
+        },
+        {
+          "size": 41,
+          "colors": [
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            }
+          ]
+        },
+        {
+          "size": 42,
+          "colors": [
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            }
+          ]
+        },
+        {
+          "size": 43,
+          "colors": [
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            }
+          ]
+        },
+        {
+          "size": 44,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            }
+          ]
+        },
+        {
+          "size": 45,
+          "colors": [
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/blue.jpg",
+              "colorName": "blue",
+              "colorValue": "blue"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/sneakers-men-7/colors/grey.jpg",
+              "colorName": "grey",
+              "colorValue": "grey"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 64,
+        "discount": false,
+        "old": 64
+      },
+      "gender": "male",
+      "gallery": {
+        "main": "../assets/products-gallery/sneakers-men-7/main.jpg",
+        "images": [
+          "../assets/products-gallery/sneakers-men-7/main.jpg",
+          "../assets/products-gallery/sneakers-men-7/showcase1.jpg",
+          "../assets/products-gallery/sneakers-men-7/showcase2.jpg",
+          "../assets/products-gallery/sneakers-men-7/showcase3.jpg",
+          "../assets/products-gallery/sneakers-men-7/showcase4.jpg"
+        ]
+      }
+    },
+    {
+      "id": "sf565411165",
+      "name": "Women Casual Sneakers Platform",
+      "category": "sneakers",
+      "description": "Platform Women's Sneakers 2023 Autumn Lace-Up Thick Bottom Sports Shoes Woman Pu Leather Breathable Walking Shoes Female",
+      "stock": [
+        {
+          "size": 33,
+          "colors": [
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/sneakers-women-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 9,
+              "colorImage": "../assets/products-gallery/sneakers-women-7/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 34,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/sneakers-women-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 8,
+              "colorImage": "../assets/products-gallery/sneakers-women-7/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 35,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/sneakers-women-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/sneakers-women-7/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 36,
+          "colors": [
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/sneakers-women-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/sneakers-women-7/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 37,
+          "colors": [
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/sneakers-women-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/sneakers-women-7/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 38,
+          "colors": [
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/sneakers-women-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 4,
+              "colorImage": "../assets/products-gallery/sneakers-women-7/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 39,
+          "colors": [
+            {
+              "numberOfItems": 3,
+              "colorImage": "../assets/products-gallery/sneakers-women-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 5,
+              "colorImage": "../assets/products-gallery/sneakers-women-7/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        },
+        {
+          "size": 40,
+          "colors": [
+            {
+              "numberOfItems": 6,
+              "colorImage": "../assets/products-gallery/sneakers-women-7/colors/white.jpg",
+              "colorName": "white",
+              "colorValue": "white"
+            },
+            {
+              "numberOfItems": 7,
+              "colorImage": "../assets/products-gallery/sneakers-women-7/colors/black.jpg",
+              "colorName": "black",
+              "colorValue": "black"
+            }
+          ]
+        }
+      ],
+      "price": {
+        "current": 49,
+        "discount": false,
+        "old": 49
+      },
+      "gender": "female",
+      "gallery": {
+        "main": "../assets/products-gallery/sneakers-women-7/main.jpg",
+        "images": [
+          "../assets/products-gallery/sneakers-women-7/main.jpg",
+          "../assets/products-gallery/sneakers-women-7/showcase1.jpg",
+          "../assets/products-gallery/sneakers-women-7/showcase2.jpg",
+          "../assets/products-gallery/sneakers-women-7/showcase3.jpg",
+          "../assets/products-gallery/sneakers-women-7/showcase4.jpg"
         ]
       }
     }
