@@ -9,7 +9,6 @@ import {
   AiOutlineInstagram,
   AiOutlineYoutube,
 } from "react-icons/ai";
-
 import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
@@ -33,22 +32,22 @@ export default function Footer() {
             </li>
           </ul>
           <ul className="mx-3 flex flex-row">
-            <li className="mx-2 text-lg">
+            <li className="mx-2 text-2xl">
               <Link>
                 <AiOutlineFacebook />
               </Link>
             </li>
-            <li className="mx-2 text-lg">
+            <li className="mx-2 text-2xl">
               <Link>
                 <AiOutlineInstagram />
               </Link>
             </li>
-            <li className="mx-2 text-lg">
+            <li className="mx-2 text-2xl">
               <Link>
                 <FaXTwitter />
               </Link>
             </li>
-            <li className="mx-2 text-lg">
+            <li className="mx-2 text-2xl">
               <Link>
                 <AiOutlineYoutube />
               </Link>
