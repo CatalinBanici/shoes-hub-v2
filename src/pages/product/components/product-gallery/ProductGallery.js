@@ -81,6 +81,7 @@ export default function ProductGallery({ product }) {
 
             {/* magnifier */}
             <div
+              className="hidden lg:block"
               style={{
                 display: showImgMagnifier ? "" : "none",
                 position: "absolute",

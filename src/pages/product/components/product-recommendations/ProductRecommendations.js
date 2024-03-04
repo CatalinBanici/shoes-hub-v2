@@ -28,7 +28,7 @@ export default function ProductRecommendations({ product }) {
     .filter((item) => item.id !== product[0].id);
 
   return (
-    <div className="col-span-2 ">
+    <div className="col-span-2 max-w-[1300px] place-self-center">
       <h3 className=" p-5 text-xl font-medium text-gray-800 sm:ml-5 ">
         You may also like:
       </h3>

@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 // REACT ROUTER
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
 // COMPONENTS
 import Header from "./components/header/Header";
@@ -23,6 +23,12 @@ export default function RootPage() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // scroll to the top of the page when navigating through routes
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <div className="font-regular relative m-auto flex max-w-[1800px] flex-col font-roboto">

@@ -1,9 +1,16 @@
+// REACT
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+
+// COMPONENTS
 import App from "./App";
+
+// REDUX
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
+
+// STYLES
+import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

@@ -18,6 +18,7 @@ export default function PriceSort(props) {
           type="radio"
           value="price-asc"
           checked={priceType === "price-asc"}
+          readOnly
         />
         <span className="absolute left-0 top-0 -z-20 h-full w-full peer-checked:rounded-md peer-checked:border-2 peer-checked:border-solid peer-checked:border-gray-800"></span>
       </label>
@@ -33,6 +34,7 @@ export default function PriceSort(props) {
           type="radio"
           value="price-desc"
           checked={priceType === "price-desc"}
+          readOnly
         />
         <span className="absolute left-0 top-0 -z-20 h-full w-full peer-checked:rounded-md peer-checked:border-2 peer-checked:border-solid peer-checked:border-gray-800"></span>
       </label>

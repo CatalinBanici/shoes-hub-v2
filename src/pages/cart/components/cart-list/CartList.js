@@ -62,7 +62,7 @@ export default function CartList(props) {
                   </div>
                 </Link>
               </div>
-              <div className="flex-1 sm:mx-5">
+              <div className="mx-2 flex-1 sm:mx-5">
                 <Link
                   className=" underline lg:transition lg:delay-75 lg:ease-out lg:hover:text-gray-600"
                   to={`/store/${item.id}`}
