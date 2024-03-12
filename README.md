@@ -1,3 +1,42 @@
+# Welcome to ShoesHUB
+
+This project is a front-end web application built for educational purposes only. All the data in it is fictional and there is no back-end application or database.
+The data is based on a static JSON file which can be easily modified or updated with new products and rendering them on the website without changing any of the JSX files.
+
+## Features
+
+* Product filtering based on a certain discount threshold
+* Product filtering by gender, category or color
+* Product sorting by price
+* Cart functionalities (add products / remove products / modify amount )
+* Product gallery with thumbnails and magnifier
+* Client-side form validation
+
+## Tools Used
+
+* React
+* React Router
+* Redux Toolkit
+* Formik
+* Swiper
+* Tailwind CSS
+
+## Screenshots
+
+### Home Page
+![home-page](https://github.com/CatalinBanici/shoes-hub-v2/assets/105233740/d1bf5ce4-31b6-491c-a115-5208ff92a3b7)
+
+### Store Page
+![store-page](https://github.com/CatalinBanici/shoes-hub-v2/assets/105233740/22125c16-a2a4-48e8-b3df-6cc9534397ab)
+
+### Cart Page
+![cart-page](https://github.com/CatalinBanici/shoes-hub-v2/assets/105233740/1d460142-205f-4fb6-8962-db4f15784475)
+
+### Checkout Page
+![checkout-page](https://github.com/CatalinBanici/shoes-hub-v2/assets/105233740/20faf8ee-2cc0-4035-9210-749eca0a6564)
+
+
+===================================================================
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
